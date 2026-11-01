@@ -3,449 +3,422 @@ const SETS = [
     {
       "id": "daily",
       "name": "Set 1",
-      "audioVersion": "95e82f41",
+      "audioVersion": "097cd31d",
       "chunks": [
       {
-      "keyPhrase": "We'll know by tomorrow."
+      "keyPhrase": "I was born in Yokohama on July 3, 1981."
 ,
-      "japanese": "Lo sabremos mañana."
-,
-      "fullQuote": "Lo sabremos mañana."
-,
-      "situation": "Space Brothers: un personaje tranquiliza a su compañero explicando que el resultado de la selección se sabrá al día siguiente."
-,
-      "explanation": "未来形 sabremos（saber の1人称複数）で「私たちは分かる」。mañana は「明日」。"
-,
-      "blankWord": "sabremos"
+      "japanese": "Nací en Yokohama el 3 de julio de 1981."
       },
       {
-      "keyPhrase": "Can't complain."
+      "keyPhrase": "I have two older sisters."
 ,
-      "japanese": "No me puedo quejar."
-,
-      "fullQuote": "No me puedo quejar."
-,
-      "situation": "One Piece: un personaje responde de forma casual que no está mal cuando le preguntan cómo está."
-,
-      "explanation": "直訳は「私は文句を言えない」。近況に対して「悪くないよ」と控えめに答える決まり文句。"
-,
-      "blankWord": "quejar"
+      "japanese": "Tengo dos hermanas mayores."
       },
       {
-      "keyPhrase": "Hey stranger."
+      "keyPhrase": "I'm the youngest in my family."
 ,
-      "japanese": "¡Hola, desconocido!"
-,
-      "fullQuote": "¡Hola, desconocido!"
-,
-      "situation": "One Piece (obra de fans): Usopp saluda a Sanji después de mucho tiempo sin verlo."
-,
-      "explanation": "desconocido は本来「知らない人」だが、親しい相手に久しぶりだと冗談めかして言う表現。"
-,
-      "blankWord": "desconocido"
+      "japanese": "Soy el menor de la familia."
       },
       {
-      "keyPhrase": "I feel you."
+      "keyPhrase": "Yokohama has about three million people."
 ,
-      "japanese": "Te entiendo."
-,
-      "fullQuote": "Te entiendo."
-,
-      "situation": "Jujutsu Kaisen (conversación de fans): un personaje muestra empatía con los sentimientos del otro."
-,
-      "explanation": "「あなたを理解する」。英語の I feel you に近い、共感を伝える自然な言い方。"
-,
-      "blankWord": "entiendo"
+      "japanese": "Yokohama tiene unos tres millones de habitantes."
       },
       {
-      "keyPhrase": "Fingers crossed."
+      "keyPhrase": "Yokohama has a large port."
 ,
-      "japanese": "Crucemos los dedos."
-,
-      "fullQuote": "Crucemos los dedos."
-,
-      "situation": "My Hero Academia (obra de fans): los personajes desean que un examen o un plan salga bien."
-,
-      "explanation": "直訳は「指を交差させよう」。成功・幸運を願うときの定番表現。"
-,
-      "blankWord": "Crucemos"
+      "japanese": "Yokohama tiene un puerto grande."
       },
       {
-      "keyPhrase": "After you."
+      "keyPhrase": "I studied physics at a university in Yokohama."
 ,
-      "japanese": "Después de usted."
-,
-      "fullQuote": "Después de usted."
-,
-      "situation": "Detective Conan: un personaje deja pasar primero a otra persona por una puerta o hacia una sala."
-,
-      "explanation": "usted を使う丁寧な「お先にどうぞ」。親しい相手なら Después de ti. となる。"
-,
-      "blankWord": "Después"
+      "japanese": "Estudié física en una universidad de Yokohama."
       },
       {
-      "keyPhrase": "Thanks for having me."
+      "keyPhrase": "I graduated from university."
 ,
-      "japanese": "Gracias por recibirme."
-,
-      "fullQuote": "Gracias por recibirme."
-,
-      "situation": "One Pieceのファン・コミュニティ：歓迎された集まりを去る際に礼を言う場面。"
-,
-      "explanation": "recibirme は recibir（迎える・受け入れる）の不定詞＋目的語 me。「招いてくれてありがとう」。"
-,
-      "blankWord": "recibirme"
+      "japanese": "Me gradué de la universidad."
       },
       {
-      "keyPhrase": "Anytime."
+      "keyPhrase": "I lived with my family during university."
 ,
-      "japanese": "Cuando quieras."
-,
-      "fullQuote": "Cuando quieras."
-,
-      "situation": "NARUTO: un personaje responde con amabilidad a un agradecimiento o a una petición."
-,
-      "explanation": "直訳は「あなたが望むときに」。Gracias への返答として「いつでもどうぞ」の意味で使える。"
-,
-      "blankWord": "quieras"
+      "japanese": "Durante la universidad vivía en casa de mis padres."
       },
       {
-      "keyPhrase": "Works for me."
+      "keyPhrase": "After university, I worked in Tokyo."
 ,
-      "japanese": "Me parece bien."
-,
-      "fullQuote": "Me parece bien."
-,
-      "situation": "One Pieceの字幕制作フォーラム：提案された表現に同意する文脈。"
-,
-      "explanation": "「私にはよく思える」から「それで大丈夫」「賛成です」。予定や提案への同意に便利。"
-,
-      "blankWord": "parece"
+      "japanese": "Después de la universidad, trabajé en Tokio."
       },
       {
-      "keyPhrase": "I'd love to."
+      "keyPhrase": "My first job was system development."
 ,
-      "japanese": "Me encantaría."
-,
-      "fullQuote": "Me encantaría."
-,
-      "situation": "Keep Your Hands Off Eizouken!: un personaje acepta con entusiasmo una invitación o propuesta."
-,
-      "explanation": "encantar は「大好きにさせる」。条件法 encantaría で、丁寧かつ前向きな「ぜひそうしたい」。"
-,
-      "blankWord": "encantaría"
+      "japanese": "Mi primer trabajo fue el desarrollo de sistemas."
       },
       {
-      "keyPhrase": "Take your time."
+      "keyPhrase": "I developed email software for mobile phones."
 ,
-      "japanese": "Tómate tu tiempo."
-,
-      "fullQuote": "Hay de sobra, así que tómate tu tiempo."
-,
-      "situation": "Attack on Titan: se les dice a Sasha y a los demás que no hace falta apresurarse mientras comen la comida de Nicolo."
-,
-      "explanation": "tómate は tomar の tú に対する肯定命令。tu tiempo は「自分の時間」→「ゆっくりして」。"
-,
-      "blankWord": "Tómate"
+      "japanese": "Desarrollé un software de correo para teléfonos móviles."
       },
       {
-      "keyPhrase": "I lost track of time."
+      "keyPhrase": "The work was interesting."
 ,
-      "japanese": "Perdí la noción del tiempo."
-,
-      "fullQuote": "Perdí un poco la noción del tiempo."
-,
-      "situation": "Frieren: Beyond Journey's End (obra de fans): Frieren explica por qué tardó tanto en volver a visitar a alguien."
-,
-      "explanation": "perder la noción de ... は「〜の感覚を失う」。時間を忘れていた、という自然な表現。"
-,
-      "blankWord": "Perdí"
+      "japanese": "El trabajo era interesante."
       },
       {
-      "keyPhrase": "Have fun."
+      "keyPhrase": "But it was very demanding."
 ,
-      "japanese": "Diviértete."
-,
-      "fullQuote": "De todos modos, es tu turno. ¡Diviértete!"
-,
-      "situation": "Dragon Ball Z: Resurrection 'F': un personaje cede un turno de combate y dice la frase con un toque irónico."
-,
-      "explanation": "divertirse（楽しむ）の tú に対する肯定命令。「楽しんでね」。usted なら Diviértase。"
-,
-      "blankWord": "Diviértete"
+      "japanese": "Pero era muy exigente."
       },
       {
-      "keyPhrase": "Talk to you soon."
+      "keyPhrase": "Over 100 hours of overtime was normal."
 ,
-      "japanese": "Hablamos pronto."
-,
-      "fullQuote": "Hablamos pronto."
-,
-      "situation": "One Piece: un personaje se despide prometiendo que volverán a hablar o verse pronto."
-,
-      "explanation": "直訳は「私たちはすぐ話す」。別れ際に「またすぐ話そう」と言うカジュアルな挨拶。"
-,
-      "blankWord": "Hablamos"
+      "japanese": "Era normal trabajar más de 100 horas extra al mes."
       },
       {
-      "keyPhrase": "Get home safe."
+      "keyPhrase": "I quit after two years."
 ,
-      "japanese": "Llega bien a casa."
-,
-      "fullQuote": "Mándame un mensaje cuando llegues bien a casa."
-,
-      "situation": "My Hero Academia: un personaje pide que le escriban al llegar a casa después de despedirse."
-,
-      "explanation": "llegar a casa は「帰宅する」。bien を添えると「無事に」。相手が tú の場合の命令形。"
-,
-      "blankWord": "Llega"
+      "japanese": "Renuncié después de dos años."
       },
       {
-      "keyPhrase": "Catch you later."
+      "keyPhrase": "I went to Germany on a working holiday."
 ,
-      "japanese": "Nos vemos luego."
-,
-      "fullQuote": "Nos vemos luego."
-,
-      "situation": "NARUTO: Naruto se despide de manera informal cuando se aleja de un puesto en un festival."
-,
-      "explanation": "「後で会おう」から「またね」。友人同士で広く使えるカジュアルな別れの挨拶。"
-,
-      "blankWord": "vemos"
+      "japanese": "Me fui a Alemania con visa de working holiday."
       },
       {
-      "keyPhrase": "Drive safe."
+      "keyPhrase": "I stayed in Germany for a year."
 ,
-      "japanese": "Conduce con cuidado."
-,
-      "fullQuote": "Está bien. Conduce con cuidado."
-,
-      "situation": "Detective Conan (obra de fans): Kaito se despide de Shinichi cuando este se va en coche."
-,
-      "explanation": "conducir（運転する）の tú に対する命令形。con cuidado は「注意して」。"
-,
-      "blankWord": "cuidado"
+      "japanese": "Me quedé en Alemania un año."
       },
       {
-      "keyPhrase": "Have a good one."
+      "keyPhrase": "I traveled around Europe with a backpack."
 ,
-      "japanese": "Que tengas un buen día."
-,
-      "fullQuote": "Que tengas un buen día."
-,
-      "situation": "Space Brothers: un personaje se despide con una frase casual deseando que el otro tenga un buen día."
-,
-      "explanation": "que + 接続法 tengas の願いを表す構文。相手の一日がよいものになるよう願う定番表現。"
-,
-      "blankWord": "tengas"
+      "japanese": "Viajé por Europa con una mochila."
       },
       {
-      "keyPhrase": "Sleep well."
+      "keyPhrase": "I enjoyed learning about other cultures."
 ,
-      "japanese": "Duerme bien."
-,
-      "fullQuote": "Duerme bien."
-,
-      "situation": "Frieren: Beyond Journey's End: un personaje se despide de sus compañeros en la posada por la noche."
-,
-      "explanation": "dormir（眠る）の tú に対する命令形。Buenas noches に「よく眠ってね」の気持ちを足した表現。"
-,
-      "blankWord": "Duerme"
+      "japanese": "Disfruté aprendiendo sobre otras culturas."
       },
       {
-      "keyPhrase": "Don't work too hard."
+      "keyPhrase": "After I came back, I decided to become an acupuncturist."
 ,
-      "japanese": "No trabajes demasiado."
-,
-      "fullQuote": "No trabajes demasiado."
-,
-      "situation": "Keep Your Hands Off Eizouken!: un personaje se preocupa por un compañero que sigue trabajando en la producción."
-,
-      "explanation": "trabajar の tú に対する否定命令。否定命令は接続法 trabajes を使う。"
-,
-      "blankWord": "demasiado"
+      "japanese": "Al volver, decidí convertirme en acupuntor."
       },
       {
-      "keyPhrase": "Let me know how it goes."
+      "keyPhrase": "I studied while working."
 ,
-      "japanese": "Avísame cómo te va."
-,
-      "fullQuote": "Avísame cómo te va."
-,
-      "situation": "My Hero Academia: un personaje pide que le cuenten después cómo salió un examen o una tarea."
-,
-      "explanation": "avisar は「知らせる」、me は「私に」。cómo te va は「どう進むか・どうだったか」。"
-,
-      "blankWord": "Avísame"
+      "japanese": "Estudiaba mientras trabajaba."
       },
       {
-      "keyPhrase": "I'm out."
+      "keyPhrase": "I went to acupuncture school for three years."
 ,
-      "japanese": "Me voy."
-,
-      "fullQuote": "¡Me voy!"
-,
-      "situation": "Dragon Ball: un personaje anuncia brevemente que va a retirarse de una conversación o de una pelea."
-,
-      "explanation": "irse は「立ち去る」。me voy は現在形で、今から去るという近い未来も表せる。"
-,
-      "blankWord": "Me"
+      "japanese": "Fui a una escuela de acupuntura durante tres años."
       },
       {
-      "keyPhrase": "a shirt in a smaller size"
+      "keyPhrase": "I worked during the day."
 ,
-      "japanese": "una camisa de talla más pequeña"
-,
-      "fullQuote": "¿Tiene esta camisa en una talla más pequeña?"
-,
-      "situation": "Detective Conan (obra de fans): un personaje busca ropa mientras hace compras."
-,
-      "explanation": "una talla más pequeña で「より小さいサイズ」。店員には丁寧に ¿Tiene ...? と尋ねられる。"
-,
-      "blankWord": "camisa"
+      "japanese": "Durante el día trabajaba."
       },
       {
-      "keyPhrase": "Is there a charge?"
+      "keyPhrase": "I had three hours of classes at night."
 ,
-      "japanese": "¿Hay algún cargo?"
-,
-      "fullQuote": "¿Hay algún cargo?"
-,
-      "situation": "One Piece: un personaje pregunta si un servicio o una instalación tiene algún coste."
-,
-      "explanation": "cargo は「料金・請求」。algún は男性名詞 cargo の前で使う alguno の短縮形。"
-,
-      "blankWord": "cargo"
+      "japanese": "Por la noche tenía tres horas de clases."
       },
       {
-      "keyPhrase": "Can I get by?"
+      "keyPhrase": "I got my acupuncture license."
 ,
-      "japanese": "¿Puedo pasar?"
-,
-      "fullQuote": "¿Puedo pasar?"
-,
-      "situation": "Attack on Titan: un personaje pide permiso para abrirse paso entre la gente o por un pasillo."
-,
-      "explanation": "poder + 不定詞で「〜してもよいですか」。pasar は「通る」。丁寧にするなら Perdón, ¿puedo pasar?。"
-,
-      "blankWord": "pasar"
+      "japanese": "Obtuve la licencia de acupuntor."
       },
       {
-      "keyPhrase": "Where did you last see it?"
+      "keyPhrase": "Then I went to Nicaragua."
 ,
-      "japanese": "¿Dónde lo viste por última vez?"
-,
-      "fullQuote": "¿Dónde lo viste por última vez?"
-,
-      "situation": "Detective Conan: durante una investigación, un personaje pregunta dónde se vio por última vez un objeto perdido o una prueba."
-,
-      "explanation": "por última vez は「最後に」。lo は男性名詞の物を指す目的語で、女性名詞なら la。"
-,
-      "blankWord": "última"
+      "japanese": "Después me fui a Nicaragua."
       },
       {
-      "keyPhrase": "We are running out of time."
+      "keyPhrase": "I stayed in Nicaragua for a year and a half."
 ,
-      "japanese": "Se nos acaba el tiempo."
-,
-      "fullQuote": "Nos queda poco tiempo."
-,
-      "situation": "Attack on Titan: los personajes discuten que deben actuar con rapidez por el poco tiempo que le queda a Zeke."
-,
-      "explanation": "acabarse el tiempo は「時間が尽きる」。nos は「私たちにとって」を表し、切迫感がある。"
-,
-      "blankWord": "acaba"
+      "japanese": "Me quedé en Nicaragua un año y medio."
       },
       {
-      "keyPhrase": "I'm not in charge of that."
+      "keyPhrase": "I worked as an acupuncturist in Nicaragua."
 ,
-      "japanese": "Yo no me encargo de eso."
-,
-      "fullQuote": "Yo no me encargo de eso."
-,
-      "situation": "One Piece: un personaje aclara que no puede decidir algo porque no es parte de sus responsabilidades."
-,
-      "explanation": "encargarse de は「〜を担当する」。no me encargo de ... で「それは私の担当ではない」。"
-,
-      "blankWord": "encargo"
+      "japanese": "Trabajé como acupuntor en Nicaragua."
       },
       {
-      "keyPhrase": "Formal attire."
+      "keyPhrase": "I also taught traditional Asian medicine."
 ,
-      "japanese": "Atuendo formal."
-,
-      "fullQuote": "Una corbata blanca; era atuendo formal."
-,
-      "situation": "Detective Conan: los investigadores deducen por una corbata blanca que la víctima llevaba ropa formal."
-,
-      "explanation": "atuendo は「服装」。formal を付けると、式典・結婚式などにふさわしい正装を指す。"
-,
-      "blankWord": "formal"
+      "japanese": "También enseñé medicina tradicional asiática."
       },
       {
-      "keyPhrase": "I'm working on my English."
+      "keyPhrase": "Then I went to Armenia."
 ,
-      "japanese": "Estoy mejorando mi inglés."
-,
-      "fullQuote": "Estoy mejorando mi inglés."
-,
-      "situation": "Space Brothers: un personaje explica que está estudiando inglés para una misión o entrenamiento internacional."
-,
-      "explanation": "estar + 動名詞 mejorando は「改善している最中」。trabajar en ... より会話的に上達への取り組みを表せる。"
-,
-      "blankWord": "mejorando"
+      "japanese": "Después me fui a Armenia."
       },
       {
-      "keyPhrase": "Right away."
+      "keyPhrase": "I stayed in Armenia for a year."
 ,
-      "japanese": "Enseguida."
-,
-      "fullQuote": "¡Enseguida!"
-,
-      "situation": "Castle in the Sky: un personaje responde a una orden diciendo que actuará de inmediato."
-,
-      "explanation": "「すぐに」「ただちに」。命令や依頼を受けて素早く対応することを示す副詞。"
-,
-      "blankWord": "Enseguida"
+      "japanese": "Me quedé en Armenia un año."
       },
       {
-      "keyPhrase": "What's your availability for...?"
+      "keyPhrase": "I also worked as an acupuncturist in Armenia."
 ,
-      "japanese": "¿Cuál es tu disponibilidad para...?"
-,
-      "fullQuote": "¿Cuál es tu disponibilidad para la próxima semana?"
-,
-      "situation": "My Hero Academia: un personaje pregunta cuándo tiene tiempo otro para una reunión o una cita."
-,
-      "explanation": "disponibilidad は「都合がつく時間・空き」。para の後ろに期間や予定を続ける。"
-,
-      "blankWord": "disponibilidad"
+      "japanese": "También trabajé como acupuntor en Armenia."
       },
       {
-      "keyPhrase": "I'll get back to you later."
+      "keyPhrase": "I also went to India."
 ,
-      "japanese": "Te respondo más tarde."
-,
-      "fullQuote": "Te respondo más tarde."
-,
-      "situation": "Detective Conan: un personaje aplaza su respuesta hasta poder revisar la información."
-,
-      "explanation": "responder は「返答する」。現在形 respondo で「後で返事する」という近い未来を自然に表せる。"
-,
-      "blankWord": "respondo"
+      "japanese": "También fui a India."
       },
       {
-      "keyPhrase": "We are running low on..."
+      "keyPhrase": "I stayed in Gurgaon, India, for four months."
 ,
-      "japanese": "Nos estamos quedando sin..."
+      "japanese": "Me quedé cuatro meses en Gurgaon, India."
+      },
+      {
+      "keyPhrase": "After I came back to Japan, I joined a travel company."
 ,
-      "fullQuote": "Nos estamos quedando sin suministros."
+      "japanese": "Al volver a Japón, entré a una agencia de viajes."
+      },
+      {
+      "keyPhrase": "Now I work as a guide."
 ,
-      "situation": "Nausicaä of the Valley of the Wind: durante un viaje o una evacuación, un personaje avisa que quedan pocos suministros."
+      "japanese": "Ahora trabajo como guía."
+      },
+      {
+      "keyPhrase": "Until last year, I mainly worked as a tour escort."
 ,
-      "explanation": "quedarse sin は「〜がなくなる／尽きる」。現在進行形で、残量が減ってきている途中を表す。"
+      "japanese": "Hasta el año pasado, trabajé principalmente como acompañante de tours."
+      },
+      {
+      "keyPhrase": "I also worked on many hiking tours."
 ,
-      "blankWord": "quedando"
+      "japanese": "También trabajé en muchas rutas de senderismo."
+      },
+      {
+      "keyPhrase": "I have climbed Mount Fuji three times."
+,
+      "japanese": "He subido al monte Fuji tres veces."
+      },
+      {
+      "keyPhrase": "Now I also work as an inbound guide."
+,
+      "japanese": "Ahora también trabajo como guía para visitantes extranjeros."
+      },
+      {
+      "keyPhrase": "I also work on cruise ships."
+,
+      "japanese": "También trabajo en barcos de crucero."
+      },
+      {
+      "keyPhrase": "I value thinking for myself."
+,
+      "japanese": "Valoro pensar por mí mismo."
+      },
+      {
+      "keyPhrase": "I want to move forward little by little."
+,
+      "japanese": "Quiero avanzar poco a poco."
+      },
+      {
+      "keyPhrase": "I want to live a life that feels right to me."
+,
+      "japanese": "Quiero vivir una vida con la que me sienta a gusto."
+      },
+      {
+      "keyPhrase": "I want to keep traveling."
+,
+      "japanese": "Quiero seguir viajando."
+      },
+      {
+      "keyPhrase": "I want to keep meeting people as I get older."
+,
+      "japanese": "Quiero seguir relacionándome con la gente aunque me haga mayor."
+      },
+      {
+      "keyPhrase": "I want to communicate in English comfortably."
+,
+      "japanese": "Quiero comunicarme en inglés sin problemas."
+      },
+      {
+      "keyPhrase": "My hobby is solo travel."
+,
+      "japanese": "Mi afición es viajar solo."
+      },
+      {
+      "keyPhrase": "I also like playing shogi."
+,
+      "japanese": "También me gusta jugar shogi."
+      },
+      {
+      "keyPhrase": "I also like following technology news."
+,
+      "japanese": "También me gusta ver las noticias de tecnología."
+      },
+      {
+      "keyPhrase": "I like traveling and hiking."
+,
+      "japanese": "Me gustan los viajes y el senderismo."
+      },
+      {
+      "keyPhrase": "But I'm not good at making plans."
+,
+      "japanese": "Pero no se me da bien hacer planes."
+      },
+      {
+      "keyPhrase": "If I'm not careful, I tend to stay home."
+,
+      "japanese": "Si me descuido, tiendo a quedarme en casa."
+      },
+      {
+      "keyPhrase": "I'm interested in unusual food."
+,
+      "japanese": "Me interesan las comidas poco comunes."
+      },
+      {
+      "keyPhrase": "I like food that gives me new ideas."
+,
+      "japanese": "Me gusta la comida que me da nuevas ideas."
+      },
+      {
+      "keyPhrase": "I don't want to eat a lot."
+,
+      "japanese": "No quiero comer mucho."
+      },
+      {
+      "keyPhrase": "I'm not very interested in familiar foods like donuts."
+,
+      "japanese": "No me interesan mucho las comidas comunes como las donas."
+      },
+      {
+      "keyPhrase": "I lived in Yokohama until I graduated from university."
+,
+      "japanese": "Viví en Yokohama hasta graduarme de la universidad."
+      },
+      {
+      "keyPhrase": "I lived by myself in Tachikawa, Tokyo."
+,
+      "japanese": "Viví solo en Tachikawa, Tokio."
+      },
+      {
+      "keyPhrase": "I currently live in Kanagawa."
+,
+      "japanese": "Actualmente vivo en Kanagawa."
+      },
+      {
+      "keyPhrase": "I'm single."
+,
+      "japanese": "Estoy soltero."
+      },
+      {
+      "keyPhrase": "I live with my aunt."
+,
+      "japanese": "Vivo con mi tía."
+      },
+      {
+      "keyPhrase": "I'm interested in getting married."
+,
+      "japanese": "Me interesa casarme."
+      },
+      {
+      "keyPhrase": "But I'm not actively looking for a partner."
+,
+      "japanese": "Pero no busco pareja de forma activa."
+      },
+      {
+      "keyPhrase": "I often spend time with friends I met while traveling."
+,
+      "japanese": "A menudo paso tiempo con amigos que conocí en mis viajes."
+      },
+      {
+      "keyPhrase": "There are many mountains you can visit from Tokyo."
+,
+      "japanese": "Hay muchas montañas a las que puedes ir desde Tokio."
+      },
+      {
+      "keyPhrase": "Many can be visited on a day trip."
+,
+      "japanese": "Muchas se pueden visitar en una excursión de un día."
+      },
+      {
+      "keyPhrase": "I recommend Yatsugatake."
+,
+      "japanese": "Recomiendo Yatsugatake."
+      },
+      {
+      "keyPhrase": "You can enjoy Yatsugatake all year round."
+,
+      "japanese": "Se puede disfrutar de Yatsugatake todo el año."
+      },
+      {
+      "keyPhrase": "You can take a bus near the mountain even in winter."
+,
+      "japanese": "Incluso en invierno, puedes ir en autobús hasta cerca de la montaña."
+      },
+      {
+      "keyPhrase": "You can take a ropeway to the middle of the mountain."
+,
+      "japanese": "Se puede subir en teleférico hasta la mitad de la montaña."
+      },
+      {
+      "keyPhrase": "You can enjoy snow hiking there."
+,
+      "japanese": "Ahí puedes disfrutar del senderismo con nieve."
+      },
+      {
+      "keyPhrase": "Public transportation is convenient in Japan."
+,
+      "japanese": "El transporte público es cómodo en Japón."
+      },
+      {
+      "keyPhrase": "You can get around by train or bus almost everywhere."
+,
+      "japanese": "Casi en todas partes te puedes mover en tren o autobús."
+      },
+      {
+      "keyPhrase": "Japan is very safe."
+,
+      "japanese": "Japón es muy seguro."
+      },
+      {
+      "keyPhrase": "Each region of Japan is different."
+,
+      "japanese": "Cada región de Japón es diferente."
+      },
+      {
+      "keyPhrase": "Japan also has a lot of nature."
+,
+      "japanese": "Japón también tiene mucha naturaleza."
+      },
+      {
+      "keyPhrase": "You can choose a place by looking at a map."
+,
+      "japanese": "Puedes elegir el destino mirando el mapa."
+      },
+      {
+      "keyPhrase": "English is still not widely spoken in Japan."
+,
+      "japanese": "En Japón todavía no se habla mucho inglés."
+      },
+      {
+      "keyPhrase": "But speaking a little Japanese can make a big difference."
+,
+      "japanese": "Pero hablar un poco de japonés puede cambiar mucho la impresión."
+      },
+      {
+      "keyPhrase": "I think Japanese people will be kind to you."
+,
+      "japanese": "Creo que los japoneses te tratarán con amabilidad."
+      },
+      {
+      "keyPhrase": "When I travel, I want to use English more."
+,
+      "japanese": "Cuando viajo, quiero usar más el inglés."
+      },
+      {
+      "keyPhrase": "That's why I'm studying English."
+,
+      "japanese": "Por eso estoy estudiando inglés."
       }
       ]
     },
