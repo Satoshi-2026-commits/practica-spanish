@@ -3,456 +3,456 @@ const SETS = [
     {
       "id": "daily",
       "name": "Set 1",
-      "audioVersion": "5b0b56eb",
+      "audioVersion": "95e82f41",
       "chunks": [
       {
-      "keyPhrase": "We'll know by tomorrow"
+      "keyPhrase": "We'll know by tomorrow."
 ,
-      "japanese": "明日になれば分かるよ。"
+      "japanese": "Lo sabremos mañana."
 ,
-      "fullQuote": "We'll know by tomorrow."
+      "fullQuote": "Lo sabremos mañana."
 ,
-      "situation": "宇宙兄弟：選考・結果が翌日には判明すると、仲間を落ち着かせる場面（英語版ファン字幕）。"
+      "situation": "Space Brothers: un personaje tranquiliza a su compañero explicando que el resultado de la selección se sabrá al día siguiente."
 ,
-      "explanation": "will を使い、将来の時点までに答えが分かることを伝える。by tomorrow は「遅くとも明日までに」。"
+      "explanation": "未来形 sabremos（saber の1人称複数）で「私たちは分かる」。mañana は「明日」。"
 ,
-      "blankWord": "by"
+      "blankWord": "sabremos"
       },
       {
-      "keyPhrase": "Can't complain"
+      "keyPhrase": "Can't complain."
 ,
-      "japanese": "悪くないよ／文句はないね。"
+      "japanese": "No me puedo quejar."
 ,
-      "fullQuote": "Can't complain."
+      "fullQuote": "No me puedo quejar."
 ,
-      "situation": "ワンピース：仲間に近況を聞かれ、悪くないと軽く返す日常的な受け答え（英語吹替）。"
+      "situation": "One Piece: un personaje responde de forma casual que no está mal cuando le preguntan cómo está."
 ,
-      "explanation": "How are you? への控えめにポジティブな返答。Everything is great. ほど大げさではない。"
+      "explanation": "直訳は「私は文句を言えない」。近況に対して「悪くないよ」と控えめに答える決まり文句。"
 ,
-      "blankWord": "Can't"
+      "blankWord": "quejar"
       },
       {
-      "keyPhrase": "Hey stranger"
+      "keyPhrase": "Hey stranger."
 ,
-      "japanese": "やあ、久しぶり。"
+      "japanese": "¡Hola, desconocido!"
 ,
-      "fullQuote": "Hey, stranger."
+      "fullQuote": "¡Hola, desconocido!"
 ,
-      "situation": "ワンピース（二次創作）：久しぶりに会ったUsoppがSanjiへ挨拶する場面。"
+      "situation": "One Piece (obra de fans): Usopp saluda a Sanji después de mucho tiempo sin verlo."
 ,
-      "explanation": "久々に会う親しい相手への冗談めいた挨拶。「知らない人」という字義ではない。"
+      "explanation": "desconocido は本来「知らない人」だが、親しい相手に久しぶりだと冗談めかして言う表現。"
 ,
-      "blankWord": "stranger"
+      "blankWord": "desconocido"
       },
       {
-      "keyPhrase": "I feel you"
+      "keyPhrase": "I feel you."
 ,
-      "japanese": "分かるよ／その気持ち分かる。"
+      "japanese": "Te entiendo."
 ,
-      "fullQuote": "I feel you."
+      "fullQuote": "Te entiendo."
 ,
-      "situation": "呪術廻戦（ファン会話・二次創作）：相手の気持ちに共感するくだけた返答。"
+      "situation": "Jujutsu Kaisen (conversación de fans): un personaje muestra empatía con los sentimientos del otro."
 ,
-      "explanation": "I understand. より口語的。相手の感情や置かれた状況への共感を示す。"
+      "explanation": "「あなたを理解する」。英語の I feel you に近い、共感を伝える自然な言い方。"
 ,
-      "blankWord": "feel"
+      "blankWord": "entiendo"
       },
       {
-      "keyPhrase": "Fingers crossed"
+      "keyPhrase": "Fingers crossed."
 ,
-      "japanese": "うまくいくといいね。"
+      "japanese": "Crucemos los dedos."
 ,
-      "fullQuote": "Fingers crossed."
+      "fullQuote": "Crucemos los dedos."
 ,
-      "situation": "僕のヒーローアカデミア（二次創作）：試験や作戦の成功を願う場面。"
+      "situation": "My Hero Academia (obra de fans): los personajes desean que un examen o un plan salga bien."
 ,
-      "explanation": "幸運を祈る決まり文句。Good luck. に近い。"
+      "explanation": "直訳は「指を交差させよう」。成功・幸運を願うときの定番表現。"
 ,
-      "blankWord": "crossed"
+      "blankWord": "Crucemos"
       },
       {
-      "keyPhrase": "After you"
+      "keyPhrase": "After you."
 ,
-      "japanese": "どうぞお先に。"
+      "japanese": "Después de usted."
 ,
-      "fullQuote": "After you."
+      "fullQuote": "Después de usted."
 ,
-      "situation": "名探偵コナン：相手を先に部屋や会場へ通す場面（英語吹替）。"
+      "situation": "Detective Conan: un personaje deja pasar primero a otra persona por una puerta o hacia una sala."
 ,
-      "explanation": "順番を譲る丁寧な一言。ドアやエレベーターの前でよく使う。"
+      "explanation": "usted を使う丁寧な「お先にどうぞ」。親しい相手なら Después de ti. となる。"
 ,
-      "blankWord": "After"
+      "blankWord": "Después"
       },
       {
-      "keyPhrase": "Thanks for having me"
+      "keyPhrase": "Thanks for having me."
 ,
-      "japanese": "招いてくれてありがとう。"
+      "japanese": "Gracias por recibirme."
 ,
-      "fullQuote": "Thanks for having me."
+      "fullQuote": "Gracias por recibirme."
 ,
-      "situation": "ワンピースのファン・コミュニティ会話：歓迎された場で別れ際にお礼を言う例。"
+      "situation": "One Pieceのファン・コミュニティ：歓迎された集まりを去る際に礼を言う場面。"
 ,
-      "explanation": "訪問先・会合・番組などへ招いてくれた人に使う。Thank you for inviting me. より自然な言い方。"
+      "explanation": "recibirme は recibir（迎える・受け入れる）の不定詞＋目的語 me。「招いてくれてありがとう」。"
 ,
-      "blankWord": "having"
+      "blankWord": "recibirme"
       },
       {
-      "keyPhrase": "Anytime"
+      "keyPhrase": "Anytime."
 ,
-      "japanese": "いつでもどうぞ。"
+      "japanese": "Cuando quieras."
 ,
-      "fullQuote": "Anytime."
+      "fullQuote": "Cuando quieras."
 ,
-      "situation": "NARUTO：頼まれごとへの返答として使われる英語表記の台詞。"
+      "situation": "NARUTO: un personaje responde con amabilidad a un agradecimiento o a una petición."
 ,
-      "explanation": "Thank you. への返答で「気にしないで、いつでも頼って」の気持ちを表す。"
+      "explanation": "直訳は「あなたが望むときに」。Gracias への返答として「いつでもどうぞ」の意味で使える。"
 ,
-      "blankWord": "Anytime"
+      "blankWord": "quieras"
       },
       {
-      "keyPhrase": "Works for me"
+      "keyPhrase": "Works for me."
 ,
-      "japanese": "私はそれで大丈夫です。"
+      "japanese": "Me parece bien."
 ,
-      "fullQuote": "That works for me."
+      "fullQuote": "Me parece bien."
 ,
-      "situation": "ワンピースの字幕制作フォーラム：提案された訳文に同意する文脈。"
+      "situation": "One Pieceの字幕制作フォーラム：提案された表現に同意する文脈。"
 ,
-      "explanation": "予定・案・条件への賛成を伝える表現。That sounds good. とほぼ同じように使える。"
+      "explanation": "「私にはよく思える」から「それで大丈夫」「賛成です」。予定や提案への同意に便利。"
 ,
-      "blankWord": "works"
+      "blankWord": "parece"
       },
       {
-      "keyPhrase": "I'd love to"
+      "keyPhrase": "I'd love to."
 ,
-      "japanese": "ぜひそうしたいです。"
+      "japanese": "Me encantaría."
 ,
-      "fullQuote": "I'd love to."
+      "fullQuote": "Me encantaría."
 ,
-      "situation": "映像研には手を出すな！：誘いや提案に喜んで応じる場面（英語字幕）。"
+      "situation": "Keep Your Hands Off Eizouken!: un personaje acepta con entusiasmo una invitación o propuesta."
 ,
-      "explanation": "I'd like to. より積極的で温かい「ぜひ」の返答。後ろに動詞を続けられる。"
+      "explanation": "encantar は「大好きにさせる」。条件法 encantaría で、丁寧かつ前向きな「ぜひそうしたい」。"
 ,
-      "blankWord": "love"
+      "blankWord": "encantaría"
       },
       {
-      "keyPhrase": "Take your time"
+      "keyPhrase": "Take your time."
 ,
-      "japanese": "ゆっくりでいいよ。"
+      "japanese": "Tómate tu tiempo."
 ,
-      "fullQuote": "There's plenty, so take your time."
+      "fullQuote": "Hay de sobra, así que tómate tu tiempo."
 ,
-      "situation": "進撃の巨人：Nicoloの料理を食べるSashaたちに、慌てなくてよいと声をかける場面（英語字幕）。"
+      "situation": "Attack on Titan: se les dice a Sasha y a los demás que no hace falta apresurarse mientras comen la comida de Nicolo."
 ,
-      "explanation": "相手に急ぐ必要がないと伝える表現。急かす意味の Take your time! とは文脈・口調で区別する。"
+      "explanation": "tómate は tomar の tú に対する肯定命令。tu tiempo は「自分の時間」→「ゆっくりして」。"
 ,
-      "blankWord": "time"
+      "blankWord": "Tómate"
       },
       {
-      "keyPhrase": "I lost track of time"
+      "keyPhrase": "I lost track of time."
 ,
-      "japanese": "時間を忘れていた。"
+      "japanese": "Perdí la noción del tiempo."
 ,
-      "fullQuote": "I lost track of time a little."
+      "fullQuote": "Perdí un poco la noción del tiempo."
 ,
-      "situation": "葬送のフリーレン（二次創作）：Frierenが長く会いに来なかったことを説明する場面。"
+      "situation": "Frieren: Beyond Journey's End (obra de fans): Frieren explica por qué tardó tanto en volver a visitar a alguien."
 ,
-      "explanation": "何時なのか、どれほど時間がたったのか意識しなくなったときに使う。"
+      "explanation": "perder la noción de ... は「〜の感覚を失う」。時間を忘れていた、という自然な表現。"
 ,
-      "blankWord": "track"
+      "blankWord": "Perdí"
       },
       {
-      "keyPhrase": "Have fun"
+      "keyPhrase": "Have fun."
 ,
-      "japanese": "楽しんでね。"
+      "japanese": "Diviértete."
 ,
-      "fullQuote": "It's your turn anyway. Have fun!"
+      "fullQuote": "De todos modos, es tu turno. ¡Diviértete!"
 ,
-      "situation": "ドラゴンボールZ 復活の「F」：戦闘の順番を譲り、皮肉まじりに楽しめと言う場面（英語字幕）。"
+      "situation": "Dragon Ball Z: Resurrection 'F': un personaje cede un turno de combate y dice la frase con un toque irónico."
 ,
-      "explanation": "別れ際や活動を始める相手に使う気軽な励まし。皮肉にも使えるので口調に注意。"
+      "explanation": "divertirse（楽しむ）の tú に対する肯定命令。「楽しんでね」。usted なら Diviértase。"
 ,
-      "blankWord": "fun"
+      "blankWord": "Diviértete"
       },
       {
-      "keyPhrase": "Talk to you soon"
+      "keyPhrase": "Talk to you soon."
 ,
-      "japanese": "またすぐ話そう。"
+      "japanese": "Hablamos pronto."
 ,
-      "fullQuote": "I'll see you soon."
+      "fullQuote": "Hablamos pronto."
 ,
-      "situation": "ワンピース：Luffyとの再会を予告する別れ際の場面（英語字幕）。"
+      "situation": "One Piece: un personaje se despide prometiendo que volverán a hablar o verse pronto."
 ,
-      "explanation": "電話・チャットを終える際の挨拶。See you soon は対面での再会にも使える近い表現。"
+      "explanation": "直訳は「私たちはすぐ話す」。別れ際に「またすぐ話そう」と言うカジュアルな挨拶。"
 ,
-      "blankWord": "soon"
+      "blankWord": "Hablamos"
       },
       {
-      "keyPhrase": "Get home safe"
+      "keyPhrase": "Get home safe."
 ,
-      "japanese": "気をつけて帰ってね。"
+      "japanese": "Llega bien a casa."
 ,
-      "fullQuote": "Text me when you get home safe."
+      "fullQuote": "Mándame un mensaje cuando llegues bien a casa."
 ,
-      "situation": "僕のヒーローアカデミア：帰宅後に連絡するよう伝える、別れ際の気遣い。"
+      "situation": "My Hero Academia: un personaje pide que le escriban al llegar a casa después de despedirse."
 ,
-      "explanation": "get home safely と同じ意味で、会話では safe を補語として使うことが多い。"
+      "explanation": "llegar a casa は「帰宅する」。bien を添えると「無事に」。相手が tú の場合の命令形。"
 ,
-      "blankWord": "safe"
+      "blankWord": "Llega"
       },
       {
-      "keyPhrase": "Catch you later"
+      "keyPhrase": "Catch you later."
 ,
-      "japanese": "またね。"
+      "japanese": "Nos vemos luego."
 ,
-      "fullQuote": "Catch you later."
+      "fullQuote": "Nos vemos luego."
 ,
-      "situation": "NARUTO：祭りでNarutoが店を離れようとする場面のカジュアルな別れ（英語字幕）。"
+      "situation": "NARUTO: Naruto se despide de manera informal cuando se aleja de un puesto en un festival."
 ,
-      "explanation": "See you later よりくだけた表現。友人・同僚など親しい相手向け。"
+      "explanation": "「後で会おう」から「またね」。友人同士で広く使えるカジュアルな別れの挨拶。"
 ,
-      "blankWord": "Catch"
+      "blankWord": "vemos"
       },
       {
-      "keyPhrase": "Drive safe"
+      "keyPhrase": "Drive safe."
 ,
-      "japanese": "運転気をつけてね。"
+      "japanese": "Conduce con cuidado."
 ,
-      "fullQuote": "Fine. Drive safe."
+      "fullQuote": "Está bien. Conduce con cuidado."
 ,
-      "situation": "名探偵コナン（二次創作）：Kaitoが車で去るShinichiに安全運転を促す場面。"
+      "situation": "Detective Conan (obra de fans): Kaito se despide de Shinichi cuando este se va en coche."
 ,
-      "explanation": "運転する人への別れの言葉。Drive safely も正しいが、会話では safe が一般的。"
+      "explanation": "conducir（運転する）の tú に対する命令形。con cuidado は「注意して」。"
 ,
-      "blankWord": "safe"
+      "blankWord": "cuidado"
       },
       {
-      "keyPhrase": "Have a good one"
+      "keyPhrase": "Have a good one."
 ,
-      "japanese": "よい一日を／じゃあね。"
+      "japanese": "Que tengas un buen día."
 ,
-      "fullQuote": "Have a good one."
+      "fullQuote": "Que tengas un buen día."
 ,
-      "situation": "宇宙兄弟：会話を終えて別れる際のくだけた挨拶（英語版ファン字幕）。"
+      "situation": "Space Brothers: un personaje se despide con una frase casual deseando que el otro tenga un buen día."
 ,
-      "explanation": "one は day・weekend・evening など、その時点に合うものを幅広く指す便利な言い方。"
+      "explanation": "que + 接続法 tengas の願いを表す構文。相手の一日がよいものになるよう願う定番表現。"
 ,
-      "blankWord": "one"
+      "blankWord": "tengas"
       },
       {
-      "keyPhrase": "Sleep well"
+      "keyPhrase": "Sleep well."
 ,
-      "japanese": "よく眠ってね。"
+      "japanese": "Duerme bien."
 ,
-      "fullQuote": "Sleep well."
+      "fullQuote": "Duerme bien."
 ,
-      "situation": "葬送のフリーレン：夜の宿で仲間に休息を促して別れる場面（英語字幕）。"
+      "situation": "Frieren: Beyond Journey's End: un personaje se despide de sus compañeros en la posada por la noche."
 ,
-      "explanation": "Good night. に、心地よくよく眠れるよう願う気持ちを加えた表現。"
+      "explanation": "dormir（眠る）の tú に対する命令形。Buenas noches に「よく眠ってね」の気持ちを足した表現。"
 ,
-      "blankWord": "well"
+      "blankWord": "Duerme"
       },
       {
-      "keyPhrase": "Don't work too hard"
+      "keyPhrase": "Don't work too hard."
 ,
-      "japanese": "無理して働きすぎないでね。"
+      "japanese": "No trabajes demasiado."
 ,
-      "fullQuote": "Don't work too hard."
+      "fullQuote": "No trabajes demasiado."
 ,
-      "situation": "映像研には手を出すな！：制作を続ける仲間への軽い気遣い（英語字幕）。"
+      "situation": "Keep Your Hands Off Eizouken!: un personaje se preocupa por un compañero que sigue trabajando en la producción."
 ,
-      "explanation": "働きすぎ・頑張りすぎを心配してかける言葉。仕事終わりやメールの結びにも使える。"
+      "explanation": "trabajar の tú に対する否定命令。否定命令は接続法 trabajes を使う。"
 ,
-      "blankWord": "hard"
+      "blankWord": "demasiado"
       },
       {
-      "keyPhrase": "Let me know how it goes"
+      "keyPhrase": "Let me know how it goes."
 ,
-      "japanese": "どうだったか教えてね。"
+      "japanese": "Avísame cómo te va."
 ,
-      "fullQuote": "Let me know how it goes."
+      "fullQuote": "Avísame cómo te va."
 ,
-      "situation": "僕のヒーローアカデミア：試験や用事の後、結果を知らせるよう頼む場面（英語吹替）。"
+      "situation": "My Hero Academia: un personaje pide que le cuenten después cómo salió un examen o una tarea."
 ,
-      "explanation": "物事の結果・進み具合を後で知らせてほしいときの定番表現。"
+      "explanation": "avisar は「知らせる」、me は「私に」。cómo te va は「どう進むか・どうだったか」。"
 ,
-      "blankWord": "goes"
+      "blankWord": "Avísame"
       },
       {
-      "keyPhrase": "I'm out"
+      "keyPhrase": "I'm out."
 ,
-      "japanese": "俺は抜ける／もう行くよ。"
+      "japanese": "Me voy."
 ,
-      "fullQuote": "I'm out!"
+      "fullQuote": "¡Me voy!"
 ,
-      "situation": "ドラゴンボール：戦いまたは会話から退出することを短く告げる場面（英語吹替）。"
+      "situation": "Dragon Ball: un personaje anuncia brevemente que va a retirarse de una conversación o de una pelea."
 ,
-      "explanation": "「退出する」「もう残っていない」「参加しない」などの意味があり、場面で解釈が変わる。"
+      "explanation": "irse は「立ち去る」。me voy は現在形で、今から去るという近い未来も表せる。"
 ,
-      "blankWord": "out"
+      "blankWord": "Me"
       },
       {
-      "keyPhrase": "shirt in a smaller size"
+      "keyPhrase": "a shirt in a smaller size"
 ,
-      "japanese": "このシャツ、もっと小さいサイズはありますか？"
+      "japanese": "una camisa de talla más pequeña"
 ,
-      "fullQuote": "Do you have this shirt in a smaller size?"
+      "fullQuote": "¿Tiene esta camisa en una talla más pequeña?"
 ,
-      "situation": "名探偵コナン（二次創作）：衣服を選ぶ買い物場面の学習用例。"
+      "situation": "Detective Conan (obra de fans): un personaje busca ropa mientras hace compras."
 ,
-      "explanation": "Do you have ... in a smaller size? で、同じ品のより小さいサイズがあるかを店員に尋ねられる。"
+      "explanation": "una talla más pequeña で「より小さいサイズ」。店員には丁寧に ¿Tiene ...? と尋ねられる。"
 ,
-      "blankWord": "in"
+      "blankWord": "camisa"
       },
       {
       "keyPhrase": "Is there a charge?"
 ,
-      "japanese": "料金はかかりますか？"
+      "japanese": "¿Hay algún cargo?"
 ,
-      "fullQuote": "Is there a charge?"
+      "fullQuote": "¿Hay algún cargo?"
 ,
-      "situation": "ワンピース：サービスや施設の利用料金を確認する場面（英語字幕）。"
+      "situation": "One Piece: un personaje pregunta si un servicio o una instalación tiene algún coste."
 ,
-      "explanation": "無料か有料かを短く尋ねる表現。Is there a fee? も同じ意味で使える。"
+      "explanation": "cargo は「料金・請求」。algún は男性名詞 cargo の前で使う alguno の短縮形。"
 ,
-      "blankWord": "charge"
+      "blankWord": "cargo"
       },
       {
       "keyPhrase": "Can I get by?"
 ,
-      "japanese": "通ってもいいですか？"
+      "japanese": "¿Puedo pasar?"
 ,
-      "fullQuote": "Can I get by?"
+      "fullQuote": "¿Puedo pasar?"
 ,
-      "situation": "進撃の巨人：人混みや通路で通してもらえるか尋ねる場面（英語字幕）。"
+      "situation": "Attack on Titan: un personaje pide permiso para abrirse paso entre la gente o por un pasillo."
 ,
-      "explanation": "人や物のそばをすり抜けるときの丁寧な一言。Excuse me. を添えるとさらに自然。"
+      "explanation": "poder + 不定詞で「〜してもよいですか」。pasar は「通る」。丁寧にするなら Perdón, ¿puedo pasar?。"
 ,
-      "blankWord": "by"
+      "blankWord": "pasar"
       },
       {
       "keyPhrase": "Where did you last see it?"
 ,
-      "japanese": "最後にそれを見たのはどこですか？"
+      "japanese": "¿Dónde lo viste por última vez?"
 ,
-      "fullQuote": "Where did you last see it?"
+      "fullQuote": "¿Dónde lo viste por última vez?"
 ,
-      "situation": "名探偵コナン：失くした物や証拠品について、最後に見た場所を確認する捜査の問い。"
+      "situation": "Detective Conan: durante una investigación, un personaje pregunta dónde se vio por última vez un objeto perdido o una prueba."
 ,
-      "explanation": "紛失物を探すときの重要な質問。it は物、him/her は人に置き換えられる。"
+      "explanation": "por última vez は「最後に」。lo は男性名詞の物を指す目的語で、女性名詞なら la。"
 ,
-      "blankWord": "last"
+      "blankWord": "última"
       },
       {
-      "keyPhrase": "We are running out of time"
+      "keyPhrase": "We are running out of time."
 ,
-      "japanese": "時間がなくなってきている。"
+      "japanese": "Se nos acaba el tiempo."
 ,
-      "fullQuote": "We're short on time."
+      "fullQuote": "Nos queda poco tiempo."
 ,
-      "situation": "進撃の巨人：Zekeの残り時間を踏まえ、急ぐ必要があると議論する場面（英語字幕）。"
+      "situation": "Attack on Titan: los personajes discuten que deben actuar con rapidez por el poco tiempo que le queda a Zeke."
 ,
-      "explanation": "run out of は「使い果たす」。時間以外にも、食料・資金などに使える。"
+      "explanation": "acabarse el tiempo は「時間が尽きる」。nos は「私たちにとって」を表し、切迫感がある。"
 ,
-      "blankWord": "out"
+      "blankWord": "acaba"
       },
       {
       "keyPhrase": "I'm not in charge of that."
 ,
-      "japanese": "それは私の担当ではありません。"
+      "japanese": "Yo no me encargo de eso."
 ,
-      "fullQuote": "I'm not in charge of that."
+      "fullQuote": "Yo no me encargo de eso."
 ,
-      "situation": "ワンピース：担当外のことは決められないと、責任範囲を明確にする場面（英語吹替）。"
+      "situation": "One Piece: un personaje aclara que no puede decidir algo porque no es parte de sus responsabilidades."
 ,
-      "explanation": "be in charge of で「〜を担当している」。断るだけでなく、適切な担当者へ案内すると丁寧。"
+      "explanation": "encargarse de は「〜を担当する」。no me encargo de ... で「それは私の担当ではない」。"
 ,
-      "blankWord": "charge"
+      "blankWord": "encargo"
       },
       {
-      "keyPhrase": "Formal attire"
+      "keyPhrase": "Formal attire."
 ,
-      "japanese": "正装だね。"
+      "japanese": "Atuendo formal."
 ,
-      "fullQuote": "A white tie, so it was formal attire."
+      "fullQuote": "Una corbata blanca; era atuendo formal."
 ,
-      "situation": "名探偵コナン：遺体の白いネクタイから、正装だったと判断する捜査場面（英語字幕）。"
+      "situation": "Detective Conan: los investigadores deducen por una corbata blanca que la víctima llevaba ropa formal."
 ,
-      "explanation": "attire は clothing よりややフォーマルな「服装」。formal attire は式典・結婚式などの正装。"
+      "explanation": "atuendo は「服装」。formal を付けると、式典・結婚式などにふさわしい正装を指す。"
 ,
-      "blankWord": "attire"
+      "blankWord": "formal"
       },
       {
-      "keyPhrase": "I’m working on my English."
+      "keyPhrase": "I'm working on my English."
 ,
-      "japanese": "英語を勉強しているところです。"
+      "japanese": "Estoy mejorando mi inglés."
 ,
-      "fullQuote": "I'm working on my English."
+      "fullQuote": "Estoy mejorando mi inglés."
 ,
-      "situation": "宇宙兄弟：海外任務や訓練に向け、英語を勉強中だと伝える場面（英語版ファン字幕）。"
+      "situation": "Space Brothers: un personaje explica que está estudiando inglés para una misión o entrenamiento internacional."
 ,
-      "explanation": "work on は「取り組む・改善する」。I'm studying English. より、上達のため継続中という響きがある。"
+      "explanation": "estar + 動名詞 mejorando は「改善している最中」。trabajar en ... より会話的に上達への取り組みを表せる。"
 ,
-      "blankWord": "on"
+      "blankWord": "mejorando"
       },
       {
       "keyPhrase": "Right away."
 ,
-      "japanese": "すぐにやります。"
+      "japanese": "Enseguida."
 ,
-      "fullQuote": "Right away."
+      "fullQuote": "¡Enseguida!"
 ,
-      "situation": "天空の城ラピュタ：命令を受けてすぐ行動すると返事をする場面（英語吹替）。"
+      "situation": "Castle in the Sky: un personaje responde a una orden diciendo que actuará de inmediato."
 ,
-      "explanation": "「ただちに」「すぐに」。命令への返答だけでなく、依頼を引き受けるときにも使える。"
+      "explanation": "「すぐに」「ただちに」。命令や依頼を受けて素早く対応することを示す副詞。"
 ,
-      "blankWord": "away"
+      "blankWord": "Enseguida"
       },
       {
-      "keyPhrase": "What's your availability for"
+      "keyPhrase": "What's your availability for...?"
 ,
-      "japanese": "〜について、いつ都合がつきますか？"
+      "japanese": "¿Cuál es tu disponibilidad para...?"
 ,
-      "fullQuote": "What's your availability for next week?"
+      "fullQuote": "¿Cuál es tu disponibilidad para la próxima semana?"
 ,
-      "situation": "僕のヒーローアカデミア：面談や予定のため、来週の都合を尋ねる場面（英語吹替）。"
+      "situation": "My Hero Academia: un personaje pregunta cuándo tiene tiempo otro para una reunión o una cita."
 ,
-      "explanation": "availability は「空いている時間・都合」。for の後ろに日程・会議・作業などを続ける。"
+      "explanation": "disponibilidad は「都合がつく時間・空き」。para の後ろに期間や予定を続ける。"
 ,
-      "blankWord": "availability"
+      "blankWord": "disponibilidad"
       },
       {
       "keyPhrase": "I'll get back to you later."
 ,
-      "japanese": "あとで返事します。"
+      "japanese": "Te respondo más tarde."
 ,
-      "fullQuote": "I'll get back to you later."
+      "fullQuote": "Te respondo más tarde."
 ,
-      "situation": "名探偵コナン：情報を調べてから返答すると、いったん会話を保留する場面（英語吹替）。"
+      "situation": "Detective Conan: un personaje aplaza su respuesta hasta poder revisar la información."
 ,
-      "explanation": "get back to someone は「改めて連絡・返答する」。必ず相手に返す含みがある。"
+      "explanation": "responder は「返答する」。現在形 respondo で「後で返事する」という近い未来を自然に表せる。"
 ,
-      "blankWord": "get"
+      "blankWord": "respondo"
       },
       {
-      "keyPhrase": "We are running low on"
+      "keyPhrase": "We are running low on..."
 ,
-      "japanese": "〜が少なくなってきている。"
+      "japanese": "Nos estamos quedando sin..."
 ,
-      "fullQuote": "We're running low on supplies."
+      "fullQuote": "Nos estamos quedando sin suministros."
 ,
-      "situation": "風の谷のナウシカ：長旅または避難の最中に、物資が少なくなっていると知らせる場面（英語字幕）。"
+      "situation": "Nausicaä of the Valley of the Wind: durante un viaje o una evacuación, un personaje avisa que quedan pocos suministros."
 ,
-      "explanation": "run low on は「残りが少ない」。run out of より、まだ少し残っている段階で使う。"
+      "explanation": "quedarse sin は「〜がなくなる／尽きる」。現在進行形で、残量が減ってきている途中を表す。"
 ,
-      "blankWord": "low"
+      "blankWord": "quedando"
       }
       ]
     },
     {
       "id": "business",
       "name": "Set 2",
-      "audioVersion": "df9f613c",
+      "audioVersion": "3630bc59",
       "chunks": [
       {
       "keyPhrase": "ought to"
@@ -979,7 +979,7 @@ const SETS = [
     {
       "id": "travel",
       "name": "Set 3",
-      "audioVersion": "dec933a9",
+      "audioVersion": "a687b926",
       "chunks": [
       {
       "japanese": "1981年7月3日に横浜で生まれた。"
