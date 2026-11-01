@@ -1,9 +1,9 @@
 {
   "sets": [
-    { "id": "daily",    "name": "Daily",          "tsv": "daily.tsv" },
-    { "id": "business", "name": "Business",       "tsv": "business.tsv" },
-    { "id": "travel",   "name": "Travel & Hotel", "tsv": "travel.tsv" },
-    { "id": "idiom",    "name": "Idioms",         "tsv": "idiom.tsv" },
-    { "id": "toeic",    "name": "TOEIC Core",     "tsv": "toeic.tsv" }
+    { "id": "daily",    "name": "Set 1", "tsv": "daily.tsv" },
+    { "id": "business", "name": "Set 2", "tsv": "business.tsv" },
+    { "id": "travel",   "name": "Set 3", "tsv": "travel.tsv" },
+    { "id": "idiom",    "name": "Set 4", "tsv": "idiom.tsv" },
+    { "id": "toeic",    "name": "Set 5", "tsv": "toeic.tsv" }
   ]
 }

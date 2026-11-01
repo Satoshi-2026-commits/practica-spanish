@@ -2,7 +2,7 @@
 const SETS = [
     {
       "id": "daily",
-      "name": "日常会話",
+      "name": "Set 1",
       "audioVersion": "5b0b56eb",
       "chunks": [
       {
@@ -451,7 +451,7 @@ const SETS = [
     },
     {
       "id": "business",
-      "name": "ビジネス",
+      "name": "Set 2",
       "audioVersion": "df9f613c",
       "chunks": [
       {
@@ -978,7 +978,7 @@ const SETS = [
     },
     {
       "id": "travel",
-      "name": "旅行・ホテル",
+      "name": "Set 3",
       "audioVersion": "dec933a9",
       "chunks": [
       {
