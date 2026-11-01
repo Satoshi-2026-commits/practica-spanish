@@ -1553,7 +1553,7 @@ function updateProgress() {
     progressCount.textContent = `完了：${allChunks.length} / ${allChunks.length}問`;
     return;
   }
-  progressCount.textContent = `残り：${activeChunks.length} / ${allChunks.length}問`;
+  progressCount.textContent = `Left: ${activeChunks.length} / ${allChunks.length}`;
 }
 
 // タイマー表示の更新
@@ -1634,9 +1634,9 @@ function showCurrentChunk(resetTimerState = true) {
     completeArea.hidden = true;
     instructionGuide.hidden = false;
     timerContainer.hidden = true;
-    questionTranslation.textContent = "データがありません";
+    questionTranslation.textContent = "No data available";
     questionQuote.textContent = "";
-    questionSituation.textContent = "貼り付けデータを確認してください";
+    questionSituation.textContent = "Check the learning set data";
     meaningArea.hidden = false;
     answerMain.textContent = "";
     answerExplanation.textContent = "";
@@ -1777,13 +1777,13 @@ function updateMaskButtonDisplay() {
   if (maskMode === "hidden") {
     maskToggleButton.classList.add("mode-hidden");
     maskIcon.textContent = "⬛";
-    maskText.textContent = "セリフ全文";
-    maskToggleButton.setAttribute("aria-label", "現在の表示：セリフ全文（クリックで穴埋めに変更）");
+    maskText.textContent = "Hidden";
+    maskToggleButton.setAttribute("aria-label", "Current mode: sentence hidden (click to switch to fill-in)");
   } else {
     maskToggleButton.classList.remove("mode-hidden");
     maskIcon.textContent = "🔲";
-    maskText.textContent = "穴埋め";
-    maskToggleButton.setAttribute("aria-label", "現在の表示：穴埋め（クリックでセリフ全文に変更）");
+    maskText.textContent = "Fill-in";
+    maskToggleButton.setAttribute("aria-label", "Current mode: fill-in (click to hide the whole sentence)");
   }
 }
 
@@ -1801,13 +1801,13 @@ function updateOrderButtonDisplay() {
   if (orderMode === "random") {
     orderToggleButton.classList.add("mode-random");
     orderIcon.textContent = "🔀";
-    orderText.textContent = "ランダム";
-    orderToggleButton.setAttribute("aria-label", "現在の出題順：ランダム（クリックで順番通りに変更）");
+    orderText.textContent = "Random";
+    orderToggleButton.setAttribute("aria-label", "Current order: random (click to switch to sequential)");
   } else {
     orderToggleButton.classList.remove("mode-random");
     orderIcon.textContent = "🔢";
-    orderText.textContent = "順番通り";
-    orderToggleButton.setAttribute("aria-label", "現在の出題順：順番通り（クリックでランダムに変更）");
+    orderText.textContent = "In order";
+    orderToggleButton.setAttribute("aria-label", "Current order: sequential (click to switch to random)");
   }
 }
 
@@ -1877,7 +1877,7 @@ function switchToSet(set) {
     return;
   }
 
-  if (!confirm(`「${getSetDisplayName(set)}」に切り替えますか？\n\n進行中の学習はリセットされます。`)) {
+  if (!confirm(`Switch to "${getSetDisplayName(set)}"?\n\nYour current session will be reset.`)) {
     populateSetSelect();
     return;
   }
@@ -1909,7 +1909,7 @@ renameSetButton.addEventListener("click", () => {
   const set = getCurrentSet();
   if (!set) return;
   const name = prompt(
-    `「${getSetDisplayName(set)}」の名前を変更します。\n\n空欄にすると元の名前に戻ります。`,
+    `Rename "${getSetDisplayName(set)}".\n\nLeave empty to restore the original name.`,
     getSetDisplayName(set)
   );
   if (name === null) return;
@@ -2040,7 +2040,7 @@ chunkCard.addEventListener("pointermove", (event) => {
     swipeActionBadge.hidden = false;
     swipeActionBadge.className = `swipe-action-badge visible badge-learned ${isReady ? "ready" : ""}`;
     swipeActionIcon.textContent = isReady ? "✅" : "☝️";
-    swipeActionText.textContent = isReady ? "覚えた！ (離して完了)" : "覚えた";
+    swipeActionText.textContent = isReady ? "Memorized! (release to confirm)" : "Memorized";
   }
   // 左スワイプ判定（水平方向かつ左向き）：次の問題へ
   else if (absH >= absV && currentDeltaX < 0) {
@@ -2048,7 +2048,7 @@ chunkCard.addEventListener("pointermove", (event) => {
     swipeActionBadge.hidden = false;
     swipeActionBadge.className = `swipe-action-badge visible badge-next ${isReady ? "ready" : ""}`;
     swipeActionIcon.textContent = isReady ? "➡️" : "👈";
-    swipeActionText.textContent = isReady ? "次の問題へ (離して完了)" : "次の問題へ";
+    swipeActionText.textContent = isReady ? "Next (release to confirm)" : "Next";
   }
   // 右スワイプ判定（水平方向かつ右向き）：前の問題へ
   else if (absH >= absV && currentDeltaX > 0) {
@@ -2056,7 +2056,7 @@ chunkCard.addEventListener("pointermove", (event) => {
     swipeActionBadge.hidden = false;
     swipeActionBadge.className = `swipe-action-badge visible badge-prev ${isReady ? "ready" : ""}`;
     swipeActionIcon.textContent = isReady ? "⬅️" : "👉";
-    swipeActionText.textContent = isReady ? "前の問題へ (離して完了)" : "前の問題へ";
+    swipeActionText.textContent = isReady ? "Previous (release to confirm)" : "Previous";
   }
   // 下スワイプなどその他
   else {
@@ -2272,20 +2272,22 @@ if ("speechSynthesis" in window) {
 }
 
 // iOS Safari / iOS 18 に最適化された高品質ボイスの選択
-function getBestVoice(lang = "ja-JP") {
+function getBestVoice(lang = "es-MX") {
   if (!cachedVoices || cachedVoices.length === 0) {
     loadVoices();
   }
 
-  const isJa = lang.startsWith("ja");
+  const isEs = lang.startsWith("es");
   const matchingVoices = cachedVoices.filter((v) => {
     const vLang = (v.lang || "").replace("_", "-").toLowerCase();
-    return isJa ? vLang.startsWith("ja") : (vLang.startsWith("en-us") || vLang.startsWith("en"));
+    return isEs
+      ? vLang.startsWith("es")
+      : (vLang.startsWith("en-us") || vLang.startsWith("en"));
   });
 
   if (matchingVoices.length === 0) return null;
 
-  // iOSの高品質ボイス（Enhanced / Premium / Siri / Kyoko / Samantha）をスコアリング
+  // iOSの高品質ボイス（Enhanced / Premium / Siri / Paulina / Samantha）をスコアリング
   const scoreVoice = (voice) => {
     let score = 0;
     const name = (voice.name || "").toLowerCase();
@@ -2295,11 +2297,12 @@ function getBestVoice(lang = "ja-JP") {
     if (name.includes("premium")) score += 90;
     if (name.includes("siri")) score += 80;
 
-    if (isJa) {
-      if (name.includes("kyoko")) score += 50;
-      if (name.includes("otoya")) score += 40;
-      if (name.includes("o-ren")) score += 30;
-      if (voice.lang === "ja-JP") score += 10;
+    if (isEs) {
+      if (name.includes("paulina")) score += 50;
+      if (name.includes("paloma")) score += 40;
+      if (name.includes("eulalia")) score += 38;
+      if (name.includes("mónica") || name.includes("monica")) score += 30;
+      if (voice.lang === "es-MX") score += 10;
     } else {
       if (name.includes("samantha")) score += 50;
       if (name.includes("ava")) score += 45;
@@ -2318,7 +2321,7 @@ function getBestVoice(lang = "ja-JP") {
 }
 
 // 発話テキストの整形（スラッシュや記号の誤読を防ぎ自然にする）
-function sanitizeTextForSpeech(text, lang = "ja-JP") {
+function sanitizeTextForSpeech(text, lang = "es-MX") {
   if (!text) return "";
   let cleaned = String(text).trim();
 
@@ -2327,7 +2330,7 @@ function sanitizeTextForSpeech(text, lang = "ja-JP") {
     cleaned = cleaned.split(/[／\/]/)[0].trim();
   }
 
-  // 英語の余分な記号を整理
+  // スペイン語・英語の余分な記号を整理
   if (!lang.startsWith("ja")) {
     cleaned = cleaned.replace(/[「」『』]/g, "");
   }
@@ -2374,12 +2377,12 @@ function getDefaultAudioFile(chunk, lang) {
  * Service Workerの音声キャッシュ管理（オフライン／ロック再生用の先行読み込み）
  * -------------------------------------------------------------------------- */
 
-// セットの全音声URL（ja/en × 問題数）
+// セットの全音声URL（es/en × 問題数）
 function getAudioUrlsOfSet(set) {
   return set.chunks.flatMap((_, i) => {
     const num = String(i + 1).padStart(2, "0");
     return [
-      `audio/${set.id}/ja-${num}.m4a?v=${set.audioVersion}`,
+      `audio/${set.id}/es-${num}.m4a?v=${set.audioVersion}`,
       `audio/${set.id}/en-${num}.m4a?v=${set.audioVersion}`,
     ];
   });
@@ -2489,7 +2492,7 @@ async function playInstantSpeech(chunk, text, lang, customRate, audioLang) {
   await speakText(text, lang, customRate);
 }
 
-function speakText(rawText, lang = "ja-JP", customRate = null) {
+function speakText(rawText, lang = "es-MX", customRate = null) {
   return new Promise((resolve) => {
     const text = sanitizeTextForSpeech(rawText, lang);
     if (!("speechSynthesis" in window) || !text) {
@@ -2506,8 +2509,8 @@ function speakText(rawText, lang = "ja-JP", customRate = null) {
     if (customRate !== null) {
       utterance.rate = customRate;
     } else {
-      // 日本語は 1.06、英語は 1.0（標準スピード）
-      utterance.rate = lang.startsWith("ja") ? 1.06 : 1.0;
+      // スペイン語・英語は標準スピード
+      utterance.rate = customRate || 1.0;
     }
 
     utterance.pitch = 1.0;
@@ -2573,10 +2576,10 @@ function updateMediaSession(chunk) {
 
   navigator.mediaSession.metadata = new MediaMetadata({
     title: japanese,
-    artist: english || "English QUIZ",
-    album: "瞬間英作文トレーニング",
+    artist: english || "Práctica",
+    album: "Spanish ⇄ English Practice",
     artwork: [
-      { src: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='128' height='128' viewBox='0 0 128 128'><rect width='128' height='128' fill='%2354708a'/><text x='50%25' y='55%25' font-size='56' text-anchor='middle' dominant-baseline='middle' fill='%23ffffff'>⚡</text></svg>", sizes: "128x128", type: "image/svg+xml" }
+      { src: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='128' height='128' viewBox='0 0 128 128'><rect width='128' height='128' fill='%23c97b4a'/><text x='50%25' y='55%25' font-size='56' text-anchor='middle' dominant-baseline='middle' fill='%23ffffff'>☀️</text></svg>", sizes: "128x128", type: "image/svg+xml" }
     ]
   });
 
@@ -2607,17 +2610,19 @@ function setupMediaSessionHandlers() {
 function setInstantThinkTime(seconds) {
   instantThinkSeconds = seconds;
   localStorage.setItem(INSTANT_THINK_KEY, seconds);
-  instantThinkCount.textContent = `${seconds}秒`;
+  instantThinkCount.textContent = `${seconds}s`;
   instantThinkSelect.value = String(seconds);
 }
 
-// 読み上げ順序（日本語→英語 / 英語→日本語）の切替・UI反映
+// 読み上げ順序（スペイン語→英語 / 英語→スペイン語）の切替・UI反映
+// ※ 内部キーはEnglish版と同じ "ja-first" / "en-first" を使い回す
+//   （ja-first = スペイン語→英語 のデフォルト、en-first = 英語→スペイン語）
 function updateInstantOrderUI() {
   const isEnFirst = instantOrder === "en-first";
-  instantOrderBtn.textContent = isEnFirst ? "🇬🇧→🇯🇵" : "🇯🇵→🇬🇧";
+  instantOrderBtn.textContent = isEnFirst ? "🇬🇧→🇪🇸" : "🇪🇸→🇬🇧";
   instantOrderBtn.title = isEnFirst
-    ? "読み上げ順序: 英語→日本語（クリックで日本語→英語に戻す）"
-    : "読み上げ順序: 日本語→英語（クリックで英語→日本語に変更）";
+    ? "Playback order: English → Spanish (click to return to Spanish → English)"
+    : "Playback order: Spanish → English (click to switch to English → Spanish)";
   instantOrderBtn.classList.toggle("order-en-first", isEnFirst);
 }
 
@@ -2633,8 +2638,8 @@ function updateInstantSeqUI() {
   const isRandom = instantSeqMode === "random";
   instantSeqBtn.textContent = isRandom ? "🔀" : "🔢";
   instantSeqBtn.title = isRandom
-    ? "出題順: ランダム（クリックで順番通りに変更）"
-    : "出題順: 順番通り（クリックでランダムに変更）";
+    ? "Question order: random (click to switch to sequential)"
+    : "Question order: sequential (click to switch to random)";
   // クイズモードのorder-toggle-btnと同じ見た目を適用
   instantSeqBtn.classList.toggle("mode-random", isRandom);
 }
@@ -2675,19 +2680,19 @@ function updateInstantStatus(status, text) {
   instantStatusBadge.className = `instant-status-badge status-${status}`;
   if (status === "reading-ja") {
     instantStatusIcon.textContent = "🔊";
-    instantStatusText.textContent = text || "日本語を読み上げ中...";
+    instantStatusText.textContent = text || "Reading Spanish...";
   } else if (status === "thinking") {
     instantStatusIcon.textContent = "🤔";
-    instantStatusText.textContent = text || "英語を考えてください...";
+    instantStatusText.textContent = text || "Say it in English...";
   } else if (status === "reading-en") {
     instantStatusIcon.textContent = "📢";
-    instantStatusText.textContent = text || "正解の英語を再生中！";
+    instantStatusText.textContent = text || "Playing the correct English answer!";
   } else if (status === "paused") {
     instantStatusIcon.textContent = "⏸";
-    instantStatusText.textContent = text || "一時停止中";
+    instantStatusText.textContent = text || "Paused";
   } else {
     instantStatusIcon.textContent = "⚡";
-    instantStatusText.textContent = text || "準備中";
+    instantStatusText.textContent = text || "Getting ready...";
   }
 
   if ("mediaSession" in navigator) {
@@ -2708,18 +2713,18 @@ function renderInstantCard(chunk) {
   instantEnglish.textContent = getEnglishAnswer(chunk);
   const japaneseLabel = instantJapaneseBox.querySelector(".card-label");
   if (instantOrder === "en-first") {
-    // 英語→日本語モード: 英文は最初に見せる / 日本語は後で見せる
+    // 英語→スペイン語モード: 英文は最初に見せる / スペイン語は後で見せる
     instantAnswerBox.hidden = false;
     instantJapaneseBox.hidden = true;
-    if (japaneseLabel) japaneseLabel.textContent = "JAPANESE (正解の日本語)";
+    if (japaneseLabel) japaneseLabel.textContent = "SPANISH (Correct answer in Spanish)";
   } else {
-    // 日本語→英語モード（従来通り）
+    // スペイン語→英語モード（従来通り）
     instantJapaneseBox.hidden = false;
     instantAnswerBox.hidden = true;
-    if (japaneseLabel) japaneseLabel.textContent = "JAPANESE (日本語を聞いて英語を想起)";
+    if (japaneseLabel) japaneseLabel.textContent = "SPANISH (Listen in Spanish, recall in English)";
   }
   instantTimerBar.style.width = "0%";
-  instantProgressCount.textContent = `問 ${instantCurrentIndex + 1} / ${instantQueue.length}`;
+  instantProgressCount.textContent = `Q ${instantCurrentIndex + 1} / ${instantQueue.length}`;
   updateMediaSession(chunk);
 }
 
@@ -2774,7 +2779,7 @@ async function playInstantStep() {
   renderInstantCard(currentChunk);
 
   if (!isInstantPlaying) {
-    updateInstantStatus("paused", "一時停止中（再生ボタンで開始）");
+    updateInstantStatus("paused", "Paused (press play to start)");
     releaseWakeLock();
     return;
   }
@@ -2787,30 +2792,30 @@ async function playInstantStep() {
   const englishText = getEnglishAnswer(currentChunk);
 
   if (instantOrder === "en-first") {
-    // 英語→日本語モード
+    // 英語→スペイン語モード
 
     // STEP 1: 英文読み上げ（1回 / 標準スピード 1.0）
-    updateInstantStatus("reading-en", "英文を聞いて意味を思い出...");
+    updateInstantStatus("reading-en", "Listen in English — recall the Spanish...");
     await playInstantSpeech(currentChunk, englishText, "en-US", 1.0, "en");
 
     if (!isInstantPlaying) return;
 
     // STEP 2: 考える時間（シンキングタイム）
-    updateInstantStatus("thinking", `意味を思い出してください... (${instantThinkSeconds}秒)`);
+    updateInstantStatus("thinking", `Recall it in Spanish... (${instantThinkSeconds}s)`);
     await runThinkCountdown(instantThinkSeconds);
 
     if (!isInstantPlaying) return;
   } else {
-    // 日本語→英語モード（従来通り）
+    // スペイン語→英語モード（従来通り）
 
-    // STEP 1: 日本語読み上げ（自然でテンポの良い速度 1.06）
-    updateInstantStatus("reading-ja", "日本語を聞いて英語を想起...");
-    await playInstantSpeech(currentChunk, currentChunk.japanese, "ja-JP", 1.06, "ja");
+    // STEP 1: スペイン語読み上げ（標準スピード）
+    updateInstantStatus("reading-ja", "Listen in Spanish — recall the English...");
+    await playInstantSpeech(currentChunk, currentChunk.japanese, "es-MX", 1.0, "es");
 
     if (!isInstantPlaying) return;
 
     // STEP 2: 考える時間（シンキングタイム）
-    updateInstantStatus("thinking", `英語を考えてください... (${instantThinkSeconds}秒)`);
+    updateInstantStatus("thinking", `Say it in English... (${instantThinkSeconds}s)`);
     await runThinkCountdown(instantThinkSeconds);
 
     if (!isInstantPlaying) return;
@@ -2818,16 +2823,16 @@ async function playInstantStep() {
 
   // STEP 3: 正解の読み上げ & 答え表示
   if (instantOrder === "en-first") {
-    // 英語→日本語モード: 日本語の答えを読み上げて表示
+    // 英語→スペイン語モード: スペイン語の答えを読み上げて表示
     instantJapaneseBox.hidden = false;
-    updateInstantStatus("reading-ja", "正解の日本語を再生中！");
-    await playInstantSpeech(currentChunk, currentChunk.japanese, "ja-JP", 1.06, "ja");
+    updateInstantStatus("reading-ja", "Playing the correct Spanish answer!");
+    await playInstantSpeech(currentChunk, currentChunk.japanese, "es-MX", 1.0, "es");
   } else {
-    // 日本語→英語モード: 英語の正解を2回読み上げて表示
+    // スペイン語→英語モード: 英語の正解を2回読み上げて表示
     instantAnswerBox.hidden = false;
 
     // 1回目の英語読み上げ（標準スピード 1.0）
-    updateInstantStatus("reading-en", "正解の英語 (1/2)");
+    updateInstantStatus("reading-en", "Correct answer in English (1/2)");
     await playInstantSpeech(currentChunk, englishText, "en-US", 1.0, "en");
 
     if (!isInstantPlaying) return;
@@ -2838,14 +2843,14 @@ async function playInstantStep() {
     if (!isInstantPlaying) return;
 
     // 2回目の英語読み上げ（標準スピード 1.0）
-    updateInstantStatus("reading-en", "正解の英語 (2/2)");
+    updateInstantStatus("reading-en", "Correct answer in English (2/2)");
     await playInstantSpeech(currentChunk, englishText, "en-US", 1.0, "en");
   }
 
   if (!isInstantPlaying) return;
 
   // STEP 4: 少しのインターバルの後、自動で次の問題へ
-  updateInstantStatus(instantOrder === "en-first" ? "reading-ja" : "reading-en", "次の問題へ進みます...");
+  updateInstantStatus(instantOrder === "en-first" ? "reading-ja" : "reading-en", "Moving to the next question...");
   instantStepTimer = setTimeout(() => {
     if (isInstantPlaying) {
       instantCurrentIndex++;
@@ -2864,13 +2869,13 @@ function toggleInstantPlayPause() {
     stopSpeech();
     stopSilentAudioLoop();
     releaseWakeLock();
-    instantPlayPauseBtn.textContent = "▶ 再開";
+    instantPlayPauseBtn.textContent = "▶ Resume";
     instantPlayPauseBtn.classList.remove("is-playing");
-    updateInstantStatus("paused", "一時停止中");
+    updateInstantStatus("paused", "Paused");
   } else {
     // 再開
     isInstantPlaying = true;
-    instantPlayPauseBtn.textContent = "⏸ 一時停止";
+    instantPlayPauseBtn.textContent = "⏸ Pause";
     instantPlayPauseBtn.classList.add("is-playing");
     requestWakeLock();
     startSilentAudioLoop();
@@ -2910,11 +2915,11 @@ function revealInstantAnswer() {
   if (!currentChunk) return;
 
   if (instantOrder === "en-first") {
-    // 英語→日本語モード: 日本語の答えを表示して読み上げ
+    // 英語→スペイン語モード: スペイン語の答えを表示して読み上げ
     instantJapaneseBox.hidden = false;
-    playInstantSpeech(currentChunk, currentChunk.japanese, "ja-JP", 1.06, "ja");
+    playInstantSpeech(currentChunk, currentChunk.japanese, "es-MX", 1.0, "es");
   } else {
-    // 日本語→英語モード（従来通り）: 英語の正解を表示して読み上げ
+    // スペイン語→英語モード（従来通り）: 英語の正解を表示して読み上げ
     instantAnswerBox.hidden = false;
     playInstantSpeech(currentChunk, getEnglishAnswer(currentChunk), "en-US", 1.0, "en");
   }
@@ -2975,8 +2980,8 @@ function renderReviewList() {
     const doneBtn = document.createElement("button");
     doneBtn.className = "review-done-btn";
     doneBtn.type = "button";
-    doneBtn.textContent = "✅ 覚えた";
-    doneBtn.setAttribute("aria-label", `${chunk.japanese} を覚えた問題として除外`);
+    doneBtn.textContent = "✅ Memorized";
+    doneBtn.setAttribute("aria-label", `Mark "${chunk.japanese}" as memorized`);
 
     doneBtn.addEventListener("click", (e) => {
       e.stopPropagation();
@@ -3081,7 +3086,7 @@ function retryRemainingInstant() {
   instantCompleteView.hidden = true;
   instantPlayView.hidden = false;
 
-  instantPlayPauseBtn.textContent = "⏸ 一時停止";
+  instantPlayPauseBtn.textContent = "⏸ Pause";
   instantPlayPauseBtn.classList.add("is-playing");
 
   playInstantStep();
@@ -3097,7 +3102,7 @@ function restartAllInstant() {
   instantCompleteView.hidden = true;
   instantPlayView.hidden = false;
 
-  instantPlayPauseBtn.textContent = "⏸ 一時停止";
+  instantPlayPauseBtn.textContent = "⏸ Pause";
   instantPlayPauseBtn.classList.add("is-playing");
 
   playInstantStep();

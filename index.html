@@ -1,15 +1,15 @@
 <!doctype html>
-<html lang="ja">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <title>English QUIZ</title>
-    <!-- iOS / PWA ホーム画面対応 -->
+    <title>Práctica</title>
+    <!-- iOS / PWA home screen support -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-    <meta name="apple-mobile-web-app-title" content="English QUIZ" />
-    <meta name="theme-color" content="#7fa3bd" />
+    <meta name="apple-mobile-web-app-title" content="Práctica" />
+    <meta name="theme-color" content="#c97b4a" />
     <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180.png" />
     <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
@@ -20,58 +20,58 @@
     <main class="app-container">
       <header>
         <div class="header-top">
-          <p class="eyebrow">DAILY ENGLISH PRACTICE</p>
+          <p class="eyebrow">SPANISH ⇄ ENGLISH PRACTICE</p>
           <div class="set-bar">
-            <select id="set-select" class="set-select" aria-label="学習セットの選択"></select>
-            <button id="rename-set-button" class="rename-set-btn" type="button" title="セット名を編集" aria-label="セット名を編集">✏️</button>
+            <select id="set-select" class="set-select" aria-label="Learning set"></select>
+            <button id="rename-set-button" class="rename-set-btn" type="button" title="Rename set" aria-label="Rename set">✏️</button>
           </div>
         </div>
-        <h1>English QUIZ</h1>
-        <nav class="app-mode-nav" aria-label="学習モード切替">
-          <button id="mode-quiz-btn" class="app-mode-btn active" type="button">📖 通常クイズ</button>
-          <button id="mode-instant-btn" class="app-mode-btn" type="button">⚡ 瞬間英作文</button>
+        <h1>Práctica</h1>
+        <nav class="app-mode-nav" aria-label="Learning mode selector">
+          <button id="mode-quiz-btn" class="app-mode-btn active" type="button">📖 Quiz</button>
+          <button id="mode-instant-btn" class="app-mode-btn" type="button">⚡ Instant Recall</button>
         </nav>
       </header>
 
-      <!-- 通常クイズモード表示領域 -->
+      <!-- Quiz mode view -->
       <div id="quiz-mode-container">
-        <section class="progress-container" aria-label="学習の進捗と出題順">
+        <section class="progress-container" aria-label="Progress and question order">
           <span id="progress-count" class="progress-count">1 / 27</span>
           <div class="progress-actions">
-            <button id="mask-toggle-button" class="mode-toggle-btn" type="button" title="セリフの表示モードを切り替え（穴埋め / セリフ全隠し）" aria-label="セリフ表示モード切り替え">
+            <button id="mask-toggle-button" class="mode-toggle-btn" type="button" title="Switch sentence display mode (fill-in / fully hidden)" aria-label="Switch display mode">
               <span id="mask-icon" class="mode-icon">🔲</span>
-              <span id="mask-text" class="mode-text">穴埋め</span>
+              <span id="mask-text" class="mode-text">Fill-in</span>
             </button>
-            <button id="order-toggle-button" class="order-toggle-btn" type="button" title="出題順を変更（順番通り / ランダム）" aria-label="出題順の切り替え">
+            <button id="order-toggle-button" class="order-toggle-btn" type="button" title="Change question order (sequential / random)" aria-label="Switch question order">
               <span id="order-icon" class="order-icon">🔢</span>
-              <span id="order-text" class="order-text">順番通り</span>
+              <span id="order-text" class="order-text">In order</span>
             </button>
           </div>
         </section>
 
         <section class="chunk-card" aria-live="polite">
-          <!-- スワイプ操作中のアクションプレビューバッジ -->
+          <!-- Swipe action preview badge -->
           <div id="swipe-action-badge" class="swipe-action-badge" hidden aria-hidden="true">
             <span id="swipe-action-icon" class="swipe-action-icon">✅</span>
-            <span id="swipe-action-text" class="swipe-action-text">覚えた</span>
+            <span id="swipe-action-text" class="swipe-action-text">Memorized</span>
           </div>
 
-          <!-- タイマー表示（プログレスバー & カウントダウン / タップで設定） -->
+          <!-- Timer display -->
           <div id="timer-container" class="timer-container">
             <div class="timer-bar-track">
               <div id="timer-bar" class="timer-bar"></div>
             </div>
-            <div id="timer-badge" class="timer-badge" title="タイマー時間を変更">
+            <div id="timer-badge" class="timer-badge" title="Change timer duration">
               <span class="timer-icon">⏱️</span>
               <span id="timer-count">15s</span>
-              <select id="timer-select" class="timer-select-overlay" aria-label="タイマー時間の選択">
+              <select id="timer-select" class="timer-select-overlay" aria-label="Select timer duration">
                 <option value="0">OFF</option>
-                <option value="3">3秒</option>
-                <option value="5">5秒</option>
-                <option value="10">10秒</option>
-                <option value="15" selected>15秒</option>
-                <option value="20">20秒</option>
-                <option value="30">30秒</option>
+                <option value="3">3s</option>
+                <option value="5">5s</option>
+                <option value="10">10s</option>
+                <option value="15" selected>15s</option>
+                <option value="20">20s</option>
+                <option value="30">30s</option>
               </select>
             </div>
           </div>
@@ -89,123 +89,121 @@
           </div>
         </section>
 
-        <!-- 全問マスター完了画面 -->
+        <!-- All questions completed view -->
         <section id="complete-area" class="complete-card" hidden>
           <div class="complete-icon">🎉</div>
-          <h2>全問マスターしました！</h2>
-          <p class="complete-text">すべての問題を「覚えた」に仕分けました。</p>
-          <button id="restart-button" class="btn btn-primary" type="button">もう一度最初から学習する</button>
+          <h2>All questions mastered!</h2>
+          <p class="complete-text">You marked every question as memorized.</p>
+          <button id="restart-button" class="btn btn-primary" type="button">Practice again from the start</button>
         </section>
 
-        <p id="instruction-guide" class="instruction-guide">👆 タップで表示 / 👈 スワイプで次へ / ☝️ 上スワイプで覚えた</p>
+        <p id="instruction-guide" class="instruction-guide">👆 Tap to reveal / 👈 Swipe for next / ☝️ Swipe up to mark memorized</p>
 
-        <!-- 前の問題に戻るボタン（画面左下） -->
-        <div class="nav-controls" aria-label="ナビゲーション">
-          <button id="prev-button" class="nav-btn" type="button" title="前の問題に戻る" aria-label="前の問題に戻る">‹ 前へ</button>
+        <!-- Back-to-previous button -->
+        <div class="nav-controls" aria-label="Navigation">
+          <button id="prev-button" class="nav-btn" type="button" title="Back to previous question" aria-label="Back to previous question">‹ Prev</button>
         </div>
 
-        <!-- 文字サイズ調整アイコン（画面右下） -->
-        <div class="font-size-controls" aria-label="文字サイズの調整">
-          <button id="font-decrease-button" class="font-size-btn" type="button" title="文字を小さくする" aria-label="文字を小さくする">A−</button>
-          <button id="font-increase-button" class="font-size-btn" type="button" title="文字を大きくする" aria-label="文字を大きくする">A＋</button>
+        <!-- Font size controls -->
+        <div class="font-size-controls" aria-label="Font size controls">
+          <button id="font-decrease-button" class="font-size-btn" type="button" title="Smaller text" aria-label="Smaller text">A−</button>
+          <button id="font-increase-button" class="font-size-btn" type="button" title="Larger text" aria-label="Larger text">A＋</button>
         </div>
       </div>
 
-      <!-- 瞬間英作文モード表示領域 -->
+      <!-- Instant recall mode view -->
       <div id="instant-mode-container" hidden>
-        <!-- プレイ中画面 -->
+        <!-- Player view -->
         <div id="instant-play-view">
-          <section class="progress-container" aria-label="瞬間英作文の進捗">
-            <span id="instant-progress-count" class="progress-count">問 1 / 42</span>
+          <section class="progress-container" aria-label="Instant recall progress">
+            <span id="instant-progress-count" class="progress-count">Q 1 / 42</span>
             <div class="progress-actions">
-              <button id="instant-seq-btn" class="order-toggle-btn" type="button" title="出題順を切り替え（順番通り / ランダム）" aria-label="出題順の切り替え">🔀</button>
-              <button id="instant-order-btn" class="instant-order-btn" type="button" title="読み上げ順序を切り替え（日本語→英語 / 英語→日本語）" aria-label="読み上げ順序の切り替え">🇯🇵→🇬🇧</button>
-              <div class="instant-think-badge" title="考える時間を設定">
+              <button id="instant-seq-btn" class="order-toggle-btn" type="button" title="Switch question order (sequential / random)" aria-label="Switch question order">🔀</button>
+              <button id="instant-order-btn" class="instant-order-btn" type="button" title="Switch playback order (Spanish → English / English → Spanish)" aria-label="Switch playback order">🇪🇸→🇬🇧</button>
+              <div class="instant-think-badge" title="Set thinking time">
                 <span class="instant-think-icon">⏳</span>
-                <span id="instant-think-count">3秒</span>
-                <select id="instant-think-select" class="timer-select-overlay" aria-label="思考時間の選択">
-                  <option value="2">2秒</option>
-                  <option value="3" selected>3秒</option>
-                  <option value="5">5秒</option>
-                  <option value="7">7秒</option>
-                  <option value="10">10秒</option>
+                <span id="instant-think-count">3s</span>
+                <select id="instant-think-select" class="timer-select-overlay" aria-label="Select thinking time">
+                  <option value="2">2s</option>
+                  <option value="3" selected>3s</option>
+                  <option value="5">5s</option>
+                  <option value="7">7s</option>
+                  <option value="10">10s</option>
                 </select>
               </div>
             </div>
           </section>
 
           <section id="instant-card" class="instant-card" aria-live="polite">
-            <!-- タイマートラック -->
             <div class="timer-bar-track">
               <div id="instant-timer-bar" class="instant-timer-bar"></div>
             </div>
 
             <div class="instant-status-badge">
               <span id="instant-status-icon">🔊</span>
-              <span id="instant-status-text">日本語を読み上げ中...</span>
+              <span id="instant-status-text">Reading Spanish...</span>
             </div>
 
             <div id="instant-japanese-box" class="instant-japanese-box">
-              <p class="card-label">JAPANESE (日本語を聞いて英語を想起)</p>
+              <p class="card-label">SPANISH (Listen in Spanish, recall in English)</p>
               <p id="instant-japanese" class="instant-japanese"></p>
             </div>
 
             <div id="instant-answer-box" class="instant-answer-box" hidden>
-              <p class="card-label">ENGLISH (正解の英語)</p>
+              <p class="card-label">ENGLISH (Correct answer)</p>
               <p id="instant-english" class="instant-english"></p>
             </div>
           </section>
 
-          <!-- 瞬間英作文コントロールボタン -->
+          <!-- Instant mode controls -->
           <div class="instant-controls">
-            <button id="instant-prev-btn" class="instant-ctrl-btn" type="button" title="前の問題へ">⏮ 前へ</button>
-            <button id="instant-play-pause-btn" class="instant-ctrl-btn instant-btn-main" type="button">⏸ 一時停止</button>
-            <button id="instant-next-btn" class="instant-ctrl-btn" type="button" title="次の問題へ">次へ ⏭</button>
+            <button id="instant-prev-btn" class="instant-ctrl-btn" type="button" title="Previous question">⏮ Prev</button>
+            <button id="instant-play-pause-btn" class="instant-ctrl-btn instant-btn-main" type="button">⏸ Pause</button>
+            <button id="instant-next-btn" class="instant-ctrl-btn" type="button" title="Next question">Next ⏭</button>
           </div>
           <div class="instant-sub-controls">
-            <button id="instant-replay-btn" class="instant-sub-btn" type="button">🔄 この問題をもう一度聞く</button>
-            <button id="instant-reveal-btn" class="instant-sub-btn" type="button">💡 答えを今すぐ表示</button>
+            <button id="instant-replay-btn" class="instant-sub-btn" type="button">🔄 Replay this question</button>
+            <button id="instant-reveal-btn" class="instant-sub-btn" type="button">💡 Show answer now</button>
           </div>
-          <p class="instant-wakelock-note">🔆 再生中は画面の自動スリープを防止します</p>
+          <p class="instant-wakelock-note">🔆 Screen stays on while playing</p>
         </div>
 
-        <!-- 1ラウンド終了後の復習・仕分け画面 -->
+        <!-- Round review view -->
         <div id="instant-review-view" hidden>
           <div class="review-header-card">
             <div class="review-icon">🏁</div>
-            <h2>1ラウンド終了！</h2>
+            <h2>Round complete!</h2>
             <p class="review-instruction">
-              覚えた問題を<strong>左へスワイプ</strong>（または「覚えた」ボタン）して仕分けましょう。
+              Swipe <strong>left</strong> on the questions you've memorized (or tap the button) to sort them out.
             </p>
             <div class="review-status-bar">
-              <span>残り練習対象：<strong id="review-remaining-count">0</strong> 問</span>
+              <span>Remaining: <strong id="review-remaining-count">0</strong> questions</span>
             </div>
           </div>
 
-          <div id="review-list" class="review-list" aria-label="復習問題一覧">
-            <!-- 問題カードがJSで生成される -->
+          <div id="review-list" class="review-list" aria-label="Review list">
+            <!-- Question cards are generated by JS -->
           </div>
 
           <div class="review-bottom-actions">
             <button id="instant-retry-remain-btn" class="btn btn-primary btn-large" type="button">
-              🔁 残った問題（<span id="retry-count-label">0</span>問）を再練習
+              🔁 Retry remaining questions (<span id="retry-count-label">0</span>)
             </button>
             <button id="instant-restart-all-btn" class="btn btn-secondary" type="button">
-              最初から全問で練習し直す
+              Practice all questions from the start
             </button>
           </div>
         </div>
 
-        <!-- 全問マスター完了画面（瞬間英作文） -->
+        <!-- All questions completed view (instant mode) -->
         <section id="instant-complete-view" class="complete-card" hidden>
           <div class="complete-icon">🎉</div>
-          <h2>瞬間英作文マスター達成！</h2>
-          <p class="complete-text">全問題を「覚えた」に仕分けました！素晴らしいです！</p>
-          <button id="instant-complete-restart-btn" class="btn btn-primary" type="button">もう一度最初から練習する</button>
+          <h2>Instant recall mastered!</h2>
+          <p class="complete-text">You marked every question as memorized. Great job!</p>
+          <button id="instant-complete-restart-btn" class="btn btn-primary" type="button">Practice again from the start</button>
         </section>
       </div>
     </main>
-
 
     <script src="app.js"></script>
   </body>

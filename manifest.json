@@ -1,13 +1,13 @@
 {
-  "name": "English QUIZ - 英語チャンクトレーナー",
-  "short_name": "English QUIZ",
-  "description": "英語のセリフやフレーズを楽しく学べる単語・クイズ学習アプリ",
+  "name": "Práctica - Spanish ⇄ English Practice",
+  "short_name": "Práctica",
+  "description": "Learn Spanish phrases and lines with quizzes and instant recall practice",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait-primary",
-  "background_color": "#f5f3ee",
-  "theme_color": "#7fa3bd",
+  "background_color": "#faf4e8",
+  "theme_color": "#c97b4a",
   "icons": [
     {
       "src": "icons/icon-192.png",

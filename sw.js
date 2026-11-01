@@ -1,6 +1,6 @@
-const CACHE_NAME = 'english-quiz-v16';
+const CACHE_NAME = 'practica-v1';
 // 音声はシェルと別キャッシュにする（アプリ更新のたびに音声を消さないため）
-const AUDIO_CACHE_NAME = 'english-audio-v1';
+const AUDIO_CACHE_NAME = 'practica-audio-v1';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
