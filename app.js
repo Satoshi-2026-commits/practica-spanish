@@ -452,527 +452,956 @@ const SETS = [
     {
       "id": "business",
       "name": "Set 2",
-      "audioVersion": "3630bc59",
+      "audioVersion": "1b00a4ed",
       "chunks": [
       {
-      "keyPhrase": "ought to"
+      "keyPhrase": "Sorry, sorry. I couldn't help it."
 ,
-      "japanese": "それならしばらくの間はあなたを忙しくさせておけるはずだ。"
+      "japanese": "No pude evitarlo."
 ,
-      "fullQuote": "That ought to keep you busy for a while."
+      "fullQuote": "Lo siento, lo siento. No pude evitarlo."
 ,
-      "situation": "『ONE PIECE』サボ：相手をしばらく足止めできると考えて話す場面"
+      "situation": "NARUTO Shippuden / Yamato: se disculpa y explica que no pudo evitar su acción."
 ,
-      "explanation": "should に近い「～するはずだ／～するべきだ」。ここでは「きっと～の役に立つだろう」という予測。"
+      "explanation": "poder evitarlo は「それを避けられる」。否定の no pude で「仕方なかった」。"
 ,
-      "blankWord": "ought"
+      "blankWord": "evitarlo"
       },
       {
-      "keyPhrase": "be obliged to"
+      "keyPhrase": "They deserve it!"
 ,
-      "japanese": "そうしたら、あなたは私を起こさなければならなくなる。"
+      "japanese": "¡Se lo merece!"
 ,
-      "fullQuote": "Then you'll be obliged to wake me up."
+      "fullQuote": "¡Se lo merece!"
 ,
-      "situation": "『夏目友人帳』：勝負の結果によって相手に自分を起こす役目を負わせる場面"
+      "situation": "NARUTO: un personaje dice que el otro sufrió las consecuencias de sus propios actos."
 ,
-      "explanation": "「～する義務がある／～せざるを得ない」。be forced to よりフォーマルな響き。"
+      "explanation": "merecer は「値する」。se lo merece は文脈により「彼・彼女・あなた（敬称）はそれに値する／自業自得だ」。"
 ,
-      "blankWord": "obliged"
+      "blankWord": "mereces"
       },
       {
-      "keyPhrase": "mean any harm"
+      "keyPhrase": "Those who sympathize with a criminal like you cannot be allowed to live."
 ,
-      "japanese": "悪気はなかったんだ！"
+      "japanese": "no se puede permitir que"
 ,
-      "fullQuote": "I didn't mean any harm!"
+      "fullQuote": "No se puede permitir que vivan quienes simpatizan con un criminal como tú."
 ,
-      "situation": "『銀魂』／作中人物。自分の行為について弁解する場面。"
+      "situation": "NOBLESSE: se afirma que no se puede permitir vivir a quienes apoyan a un gran criminal."
 ,
-      "explanation": "mean harmは「害を与えるつもりである」。didn't mean any harmで「悪意はなかった」「傷つけるつもりはなかった」という意味になる。"
+      "explanation": "no se puede permitir que + 接続法は「〜するのを許すことはできない」。vivir が接続法になる。"
 ,
-      "blankWord": "harm"
+      "blankWord": "autorizado"
       },
       {
-      "keyPhrase": "He settled with a ridiculously standard pose."
+      "keyPhrase": "That old man is likely to be there."
 ,
-      "japanese": "彼はものすごく普通のポーズに落ち着いた。"
+      "japanese": "ser probable que"
 ,
-      "fullQuote": "In the end, he settled with a ridiculously standard pose."
+      "fullQuote": "Es probable que ese viejo esté allí."
 ,
-      "situation": "『葬送のフリーレン』／フリーレン。ヒンメルの銅像を建てる際、ポーズを決めるのに長い時間をかけたものの、最終的にはごく普通のポーズに決めたという場面。"
+      "situation": "ONE PIECE: se supone que cierta persona probablemente está en ese lugar."
 ,
-      "explanation": "settle は「落ち着く」だけでなく、「最終的に決める・～に決める」という意味でも使われる。settled with ～ で「最終的に～に決めた／～で落ち着いた」というニュアンス。"
+      "explanation": "Es probable que + 接続法で「〜する可能性が高い」。"
 ,
-      "blankWord": "settled"
+      "blankWord": "probable"
       },
       {
-      "keyPhrase": "be willing to"
+      "keyPhrase": "Hang in there!"
 ,
-      "japanese": "いい子にしていたら、時々会いに行ってもいいかもしれない。"
+      "japanese": "¡Aguanta!"
 ,
-      "fullQuote": "If you're a good girl, then I might be willing to visit you sometimes."
+      "fullQuote": "¡Aguanta!"
 ,
-      "situation": "『葬送のフリーレン』ハイター：良い子にしていれば時々会いに行ってもいいとフェルンに話す場面"
+      "situation": "ONE PIECE / NARUTO: se anima a alguien que está en una situación difícil."
 ,
-      "explanation": "「～する意思がある／～してもいい」。条件次第で応じる意思を表す。"
+      "explanation": "aguantar は「耐える・踏ん張る」。困難の中にいる相手を励ます。"
 ,
-      "blankWord": "willing"
+      "blankWord": "Aguanta"
       },
       {
-      "keyPhrase": "might as well"
+      "keyPhrase": "Get out of my way!"
 ,
-      "japanese": "もう単刀直入に言っちゃった方が良いですね"
+      "japanese": "¡Quítate de mi camino!"
 ,
-      "fullQuote": "Might as well ask him straight out."
+      "fullQuote": "¡Quítate de mi camino!"
 ,
-      "situation": "『葬送のフリーレン』フェルン：あれこれ考えるより、本人に直接聞いてしまおうとする場面"
+      "situation": "ONE PIECE / Luffy: exige que alguien le despeje el camino."
 ,
-      "explanation": "「いろいろ考えても仕方ないので、いっそ～しよう」というニュアンス。ask someone straight out は「人に単刀直入に聞く」。消極的な提案。"
+      "explanation": "quitarse de mi camino は「私の道からどく」、すなわち「どけ」。tú への強い命令。"
 ,
-      "blankWord": "well"
+      "blankWord": "Quítate"
       },
       {
-      "keyPhrase": "be allowed to"
+      "keyPhrase": "Cut it out!"
 ,
-      "japanese": "私たちは客を連れてきてもいいことになっている。"
+      "japanese": "¡Déjalo ya!"
 ,
-      "fullQuote": "We're allowed to bring guests."
+      "fullQuote": "¡Déjalo ya!"
 ,
-      "situation": "『葬送のフリーレン』フェルン：一級魔法使いとして招待客を連れていけることについて話す場面"
+      "situation": "ONE PIECE / Luffy: pide que otra persona deje de hacer algo molesto."
 ,
-      "explanation": "「～することを許可されている」。allow + 人 + to do の受け身。"
+      "explanation": "dejar は「やめる」。ya を添えると「今すぐやめて」の強さが出る。"
 ,
-      "blankWord": "allowed"
+      "blankWord": "Déjalo"
       },
       {
-      "keyPhrase": "be forced to"
+      "keyPhrase": "I do not know what he is plotting."
 ,
-      "japanese": "もしパーティーメンバーが足りなくて合格できなければ、撤退せざるを得なくなる。"
+      "japanese": "estar tramando algo"
 ,
-      "fullQuote": "If we can't pass because we're lacking a party member, we'll be forced to back off."
+      "fullQuote": "No sé qué está tramando."
 ,
-      "situation": "『葬送のフリーレン』リヒター：メンバー不足によって試験を諦め、撤退せざるを得なくなる可能性を話す場面"
+      "situation": "ONE PIECE: los subordinados de Caesar sospechan de lo que planea hacer Straw Hat."
 ,
-      "explanation": "自分の意思ではなく、状況や他者の力によって「～せざるを得ない」。"
+      "explanation": "¿qué está tramando? は「何を企んでいるの？」。怪しい行動に使う。"
 ,
-      "blankWord": "forced"
+      "blankWord": "tramando"
       },
       {
-      "keyPhrase": "be set to"
+      "keyPhrase": "I would rather die than kick you!"
 ,
-      "japanese": "一行は夜明けに出発する予定だ。"
+      "japanese": "preferiría"
 ,
-      "fullQuote": "The party is set to leave at dawn."
+      "fullQuote": "¡Preferiría morir antes que darte una patada!"
 ,
-      "situation": "創作例：一行が翌朝出発する予定について話す場面"
+      "situation": "ONE PIECE / Sanji: afirma que preferiría morir antes que patear a un compañero."
 ,
-      "explanation": "「～する予定だ／～することになっている」。予定されているだけでなく、準備が整っているニュアンスもある。"
+      "explanation": "preferiría A antes que B で「BするくらいならAしたい」。"
 ,
-      "blankWord": "set"
+      "blankWord": "Preferiría"
       },
       {
-      "keyPhrase": "be due to"
+      "keyPhrase": "The situation is getting out of control."
 ,
-      "japanese": "列車は正午に到着する予定です。"
+      "japanese": "salirse de control"
 ,
-      "fullQuote": "The train is due to arrive at noon."
+      "fullQuote": "La situación se está saliendo de control."
 ,
-      "situation": "創作例：駅で列車の到着予定時刻を確認する場面"
+      "situation": "ONE PIECE: se comenta que el caos de Impel Down ya no se puede controlar."
 ,
-      "explanation": "「～する予定である」。時刻表や公式スケジュールなどに基づく予定を表す。"
+      "explanation": "salirse de control は「手に負えなくなる」。"
 ,
-      "blankWord": "due"
+      "blankWord": "saliendo"
       },
       {
-      "keyPhrase": "be expected to"
+      "keyPhrase": "You had better get going."
 ,
-      "japanese": "従業員はシフトの10分前に到着するのが当然とされている／求められている。"
+      "japanese": "más vale que"
 ,
-      "fullQuote": "Employees are expected to arrive 10 minutes before their shift."
+      "fullQuote": "Más vale que te vayas yendo."
 ,
-      "situation": "創作例：そうするのが当然だと周囲から思われている」「〜すると見込まれている」というニュアンスです。「義務」というよりは、「その立場や状況なら、そうするのが当たり前・期待されている行動だ」という客観的な視点が入ります。"
+      "situation": "Re:ZERO: se aconseja a alguien que se marche pronto."
 ,
-      "explanation": "「～することを期待されている／～することになっている」。周囲からの期待や当然の行動を表す。"
+      "explanation": "más vale que + 接続法で、警告を含む「〜した方がいい」。"
 ,
-      "blankWord": "expected"
+      "blankWord": "vale"
       },
       {
-      "keyPhrase": "be required to"
+      "keyPhrase": "what's right"
 ,
-      "japanese": "すべての受験者は最初の試験に合格する必要があります。"
+      "japanese": "qué está bien"
 ,
-      "fullQuote": "All applicants are required to pass the first test."
+      "fullQuote": "Tu corazón sabe qué está bien."
 ,
-      "situation": "創作例：試験を受けるための正式な条件を説明する場面。法律や厳格なルールに使う"
+      "situation": "Space Brothers / Sharon: anima a alguien a confiar en su corazón e intuición."
 ,
-      "explanation": "規則や制度によって「～することを義務づけられている」。must より公式・事務的な響き。"
+      "explanation": "qué está bien は「何が正しいか」。間接疑問なので qué にアクセントが付く。"
 ,
-      "blankWord": "required"
+      "blankWord": "bien"
       },
       {
-      "keyPhrase": "be eager to"
+      "keyPhrase": "What shines the brightest in your life right now?"
 ,
-      "japanese": "君が何ができるのか、ぜひ見てみたい。"
+      "japanese": "¿Qué es lo que más brilla en tu vida ahora mismo?"
 ,
-      "fullQuote": "I'm eager to see what you can do."
+      "fullQuote": "¿Qué es lo que más brilla en tu vida ahora mismo?"
 ,
-      "situation": "創作例：相手の実力を見ることを楽しみにしている人物のセリフ"
+      "situation": "Space Brothers / Sharon: pregunta qué es lo más importante en la vida de alguien."
 ,
-      "explanation": "「ぜひ～したい／～したくてたまらない」。want to よりも強い熱意や期待を表す。"
+      "explanation": "brillar は比喩で「最も大切・輝かしい」を表せる。"
 ,
-      "blankWord": "eager"
+      "blankWord": "brilla"
       },
       {
-      "keyPhrase": "be meant to"
+      "keyPhrase": "It's a piece of cake."
 ,
-      "japanese": "それはあなたを守るためのものだ。"
+      "japanese": "¡Está chupado!"
 ,
-      "fullQuote": "It's meant to protect you."
+      "fullQuote": "¡Está chupado!"
 ,
-      "situation": "創作例：魔法道具の本来の目的について説明する場面"
+      "situation": "Space Brothers / Sharon: anima a alguien diciendo que algo no es difícil."
 ,
-      "explanation": "「～するためのものだ／～するよう意図されている」。本来の目的や意図を表す。創作者や神視点。supposedとの違い注意。"
+      "explanation": "chupado は口語で「楽勝」。スペインでは特に一般的。"
 ,
-      "blankWord": "meant"
+      "blankWord": "chupado"
       },
       {
-      "keyPhrase": "Almost there"
+      "keyPhrase": "The sky does not belong to anyone."
 ,
-      "japanese": "もう少しだ／もうすぐ着く"
+      "japanese": "pertenecer a alguien"
 ,
-      "fullQuote": "We're almost there. I can tell it's close."
+      "fullQuote": "El cielo no pertenece a nadie."
 ,
-      "situation": "葬送のフリーレン・ザインが目的地が近いことを感じ取る場面"
+      "situation": "Space Brothers / Deniel Young: habla sobre el cielo y el espacio."
 ,
-      "explanation": "目的地・完成・ゴールなどが「あと少し」というときに使う。"
+      "explanation": "pertenecer a は「〜のものである」。nadie で「誰のものでもない」。"
 ,
-      "blankWord": "almost"
+      "blankWord": "pertenece"
       },
       {
-      "keyPhrase": "Are you serious"
+      "keyPhrase": "You can control your life."
 ,
-      "japanese": "シュタルク、あなた本気なの？"
+      "japanese": "Puedes controlar tu vida."
 ,
-      "fullQuote": "Mr. Stark, are you serious?"
+      "fullQuote": "Puedes controlar tu vida."
 ,
-      "situation": "葬送のフリーレン・フェルンがシュタルクの発言に驚いて確認する場面"
+      "situation": "Space Brothers / Deniel Young: habla de decidir el rumbo de la propia vida."
 ,
-      "explanation": "「本気なの？」「本気で言ってるの？」。驚きや呆れを込めて使うことも多い。"
+      "explanation": "controlar tu vida は「自分の人生を自分で決める」。"
 ,
-      "blankWord": "serious"
+      "blankWord": "controlar"
       },
       {
-      "keyPhrase": "Don't mention it"
+      "keyPhrase": "Your life is yours alone."
 ,
-      "japanese": "どういたしまして！"
+      "japanese": "Tu vida solo te pertenece a ti."
 ,
-      "fullQuote": "Thanks, mister! Bye! — Don't mention it!"
+      "fullQuote": "Tu vida solo te pertenece a ti."
 ,
-      "situation": "魔女の宅急便・キキが町の男性に礼を言い、男性が返す場面"
+      "situation": "Space Brothers / Deniel Young: afirma que la vida de una persona es suya."
 ,
-      "explanation": "「どういたしまして」「礼には及ばない」。Thank you.への返答として使える。日常会話での「いえいえ」に近い"
+      "explanation": "solo と a ti で「あなた自身だけのもの」を強調する。"
 ,
-      "blankWord": "mention"
+      "blankWord": "pertenece"
       },
       {
-      "keyPhrase": "Fair enough"
+      "keyPhrase": "If you can give up, then it was not really your dream."
 ,
-      "japanese": "なるほど、それなら納得だ。ただしアニメ制作の話はしないでくれ。"
+      "japanese": "Si..., entonces..."
 ,
-      "fullQuote": "Fair enough. Just don't bring up anime production."
+      "fullQuote": "Si puedes renunciar, entonces no era realmente tu sueño."
 ,
-      "situation": "映像研には手を出すな！・金森が浅草たちの案を認めつつ条件を付ける場面"
+      "situation": "Space Brothers / Hibito Nanba: reflexiona sobre abandonar un sueño."
 ,
-      "explanation": "相手の主張を認めたうえで、自分の条件や意見を続けるときにも使える。"
+      "explanation": "Si + 現在形、entonces + 過去形で条件と結論をつなぐ。"
 ,
-      "blankWord": "Fair"
+      "blankWord": "renunciar"
       },
       {
-      "keyPhrase": "Give me a hand"
+      "keyPhrase": "Everything we have done will surely become our strength."
 ,
-      "japanese": "手を貸してくれ！"
+      "japanese": "Todo lo que hemos hecho."
 ,
-      "fullQuote": "Guys, give me a hand!"
+      "fullQuote": "Todo lo que hemos hecho se convertirá sin duda en nuestra fuerza."
 ,
-      "situation": "ONE PIECE・ルフィがエースやサボに助けを求める場面"
+      "situation": "Space Brothers / Mutta Nanba: dice que sus experiencias se convertirán en fortaleza."
 ,
-      "explanation": "「手を貸して」「手伝って」という口語表現。Help me. よりも「ちょっと手を貸す」という感じ。"
+      "explanation": "hemos hecho は現在完了で「これまでしてきたこと」。"
 ,
-      "blankWord": "hand"
+      "blankWord": "hemos"
       },
       {
-      "keyPhrase": "Good point"
+      "keyPhrase": "The spacesuit is on our side."
 ,
-      "japanese": "なるほど。それはその通りだ。"
+      "japanese": "estar de nuestro lado"
 ,
-      "fullQuote": "Good point. My name is Nami."
+      "fullQuote": "El traje espacial está de nuestro lado."
 ,
-      "situation": "ONE PIECE・相手から「質問するなら先に自分の名前を言うべき」と指摘され、ナミが納得する場面"
+      "situation": "Space Brothers / Mutta Nanba: dice que el traje espacial los protege."
 ,
-      "explanation": "相手の指摘や意見を認める「いいところを突いている」「それはその通り」という表現。"
+      "explanation": "estar de nuestro lado は人・状況・道具が「味方である」。"
 ,
-      "blankWord": "point"
+      "blankWord": "lado"
       },
       {
-      "keyPhrase": "Hang on"
+      "keyPhrase": "My enemy is myself in most cases."
 ,
-      "japanese": "しっかりつかまって"
+      "japanese": "Mi enemigo soy yo mismo en la mayoría de los casos."
 ,
-      "fullQuote": "Hang on!"
+      "fullQuote": "Mi enemigo soy yo mismo en la mayoría de los casos."
 ,
-      "situation": "もののけ姫・危険な状況で相手にしっかりつかまるよう促す場面"
+      "situation": "Space Brothers / Mutta Nanba: reconoce que su mayor obstáculo suele ser él mismo."
 ,
-      "explanation": "危険な移動中などに「つかまって」「離すな」という意味で使われる。"
+      "explanation": "en la mayoría de los casos は「たいていの場合」。"
 ,
-      "blankWord": "Hang"
+      "blankWord": "mayoría"
       },
       {
-      "keyPhrase": "Hang on"
+      "keyPhrase": "Let's talk about space."
 ,
-      "japanese": "ちょっと待って！"
+      "japanese": "Hablemos del espacio."
 ,
-      "fullQuote": "Hang on!"
+      "fullQuote": "Hablemos del espacio."
 ,
-      "situation": "映像研には手を出すな！・浅草が金森の話を途中で止める場面"
+      "situation": "Space Brothers / Mutta Nanba: cambia un ambiente tenso proponiendo hablar del espacio."
 ,
-      "explanation": "「ちょっと待って」「待ってよ」。会話を止めたり、相手の発言に異議を差し挟むときに使う。"
+      "explanation": "Hablemos de... は「〜について話そう」。"
 ,
-      "blankWord": "Hang"
+      "blankWord": "Hablemos"
       },
       {
-      "keyPhrase": "Here you go"
+      "keyPhrase": "Let's try doing something that's just a little bit impossible."
 ,
-      "japanese": "はい、どうぞ。"
+      "japanese": "Intentemos hacer algo que sea solo un poco imposible."
 ,
-      "fullQuote": "Here you go."
+      "fullQuote": "Intentemos hacer algo que sea solo un poco imposible."
 ,
-      "situation": "魔女の宅急便・キキがパン屋に残されたおしゃぶりを届けて相手に渡す場面"
+      "situation": "Space Brothers / Mutta Nanba: invita a asumir un reto nuevo."
 ,
-      "explanation": "物を手渡すときの定番表現。「はい、どうぞ」に相当する。"
+      "explanation": "Intentemos + 不定詞で「〜してみよう」。que sea は algo を説明する接続法の関係節。"
 ,
-      "blankWord": "Here"
+      "blankWord": "Intentemos"
       },
       {
-      "keyPhrase": "I appreciate it"
+      "keyPhrase": "An earnest failure has meaning."
 ,
-      "japanese": "ありがとう／感謝するよ"
+      "japanese": "Un fracaso sincero tiene sentido."
 ,
-      "fullQuote": "I appreciate it!"
+      "fullQuote": "Un fracaso sincero tiene sentido."
 ,
-      "situation": "ONE PIECE・助けてもらったことに対して礼を言う場面"
+      "situation": "Space Brothers / Mutta Nanba: habla del valor de fracasar tras intentarlo en serio."
 ,
-      "explanation": "Thank you. よりも「助かった、感謝するよ」という気持ちを表しやすい。"
+      "explanation": "sincero は「真剣な・誠実な」。"
 ,
-      "blankWord": "appreciate"
+      "blankWord": "sincero"
       },
       {
-      "keyPhrase": "I know right"
+      "keyPhrase": "I will figure out the plan as I go along. We have no time to stop!"
 ,
-      "japanese": "そうだよね！"
+      "japanese": "mientras avanzo"
 ,
-      "fullQuote": "I know, right?"
+      "fullQuote": "Iré pensando en el plan mientras avanzo. ¡No tenemos tiempo para parar!"
 ,
-      "situation": "ONE PIECE・相手の意見に強く同意する場面"
+      "situation": "Jujutsu Kaisen / Yuji Itadori: decide pensar el plan mientras sigue moviéndose."
 ,
-      "explanation": "くだけた「だよね」「そう思うよね」。I know. と right? を合わせた会話表現。それな！に近いニュアンス"
+      "explanation": "mientras + 動詞で「〜しながら」。"
 ,
-      "blankWord": "right"
+      "blankWord": "mientras"
       },
       {
-      "keyPhrase": "I owe you one"
+      "keyPhrase": "It's not my fault!"
 ,
-      "japanese": "恩に着るよ。"
+      "japanese": "No es culpa mía."
 ,
-      "fullQuote": "I owe you one."
+      "fullQuote": "¡No es culpa mía!"
 ,
-      "situation": "ONE PIECE・助けてもらった人物が相手に礼を言う場面"
+      "situation": "Attack on Titan: un personaje insiste en que no tiene responsabilidad."
 ,
-      "explanation": "「借りができた」「恩に着る」。今度何かで返すというニュアンスを含む。"
+      "explanation": "culpa は「過失・責任」。"
 ,
-      "blankWord": "owe"
+      "blankWord": "culpa"
       },
       {
-      "keyPhrase": "I should get going"
+      "keyPhrase": "Mistress Frieren is about to fall asleep."
 ,
-      "japanese": "私もそろそろ行かなきゃ。"
+      "japanese": "estar a punto de"
 ,
-      "fullQuote": "I should get going, too."
+      "fullQuote": "La señorita Frieren está a punto de dormirse."
 ,
-      "situation": "葬送のフリーレン・フリーレンが別れ際にその場を離れようとする場面"
+      "situation": "Frieren: se observa que Frieren está a punto de quedarse dormida."
 ,
-      "explanation": "「そろそろ行かなきゃ」「もう行くね」。別れ際に自然に使える。I've gotta goより穏やかで大人な表現"
+      "explanation": "estar a punto de + 不定詞は「今にも〜しそう」。"
 ,
-      "blankWord": "get"
+      "blankWord": "punto"
       },
       {
-      "keyPhrase": "I'll be right back"
+      "keyPhrase": "Even if I cannot achieve immortality, I would like a little more time."
 ,
-      "japanese": "すぐ戻るよ"
+      "japanese": "Aunque..."
 ,
-      "fullQuote": "I'm sorry, folks. But could you wait just a minute? I'll be right back."
+      "fullQuote": "Aunque no pueda conseguir la inmortalidad, me gustaría tener un poco más de tiempo."
 ,
-      "situation": "魔女の宅急便・おそのがパン屋を離れて赤ちゃんのための品物を届けようとする場面"
+      "situation": "Frieren / Heiter: dice que desea vivir algo más incluso sin inmortalidad."
 ,
-      "explanation": "短時間だけその場を離れるときの「すぐ戻るよ」。"
+      "explanation": "aunque + 接続法で「たとえ〜でも」。"
 ,
-      "blankWord": "right"
+      "blankWord": "Aunque"
       },
       {
-      "keyPhrase": "I'm on it"
+      "keyPhrase": "I can tell."
 ,
-      "japanese": "任せて！ すぐやるよ！"
+      "japanese": "Me doy cuenta."
 ,
-      "fullQuote": "I'm on it!"
+      "fullQuote": "Me doy cuenta."
 ,
-      "situation": "ONE PIECE・ナミが船を動かすよう頼まれ、すぐ行動に移る場面"
+      "situation": "Frieren / Fern: Fern explica que puede darse cuenta de lo que Frieren quiere comer."
 ,
-      "explanation": "「今やる」「任せて」「すぐ取りかかる」という意味。依頼への素早い返答として便利。"
+      "explanation": "darse cuenta de は「気づく・分かる」。"
 ,
-      "blankWord": "on"
+      "blankWord": "cuenta"
       },
       {
-      "keyPhrase": "I'm out"
+      "keyPhrase": "Way to go, Fern."
 ,
-      "japanese": "俺は抜ける／俺はもういい。"
+      "japanese": "¡Eso es, Fern!"
 ,
-      "fullQuote": "I'm out!"
+      "fullQuote": "¡Eso es, Fern!"
 ,
-      "situation": "ONE PIECE・ブルックが戦闘中にその場から離れることを宣言する場面"
+      "situation": "Frieren / Frieren: elogia una acción o un logro de Fern."
 ,
-      "explanation": "I'm out. は文脈によって「抜ける」「降りる」「もう終わりだ」などの意味になる。短く言える口語表現。I'm outta hereも。かなりカジュアル表現"
+      "explanation": "¡Eso es! は「その調子！」「よくやった！」。"
 ,
-      "blankWord": "out"
+      "blankWord": "Eso"
       },
       {
-      "keyPhrase": "Leave it to me"
+      "keyPhrase": "Since we learned, we could dance."
 ,
-      "japanese": "私に任せて"
+      "japanese": "Ya que aprendimos..."
 ,
-      "fullQuote": "Leave this to me!"
+      "fullQuote": "Ya que aprendimos, podríamos bailar."
 ,
-      "situation": "映像研には手を出すな！・浅草が自分に任せるよう申し出る場面"
+      "situation": "Frieren / Stark: propone bailar porque ya aprendieron a hacerlo."
 ,
-      "explanation": "「私に任せて」「ここは任せて」。頼まれた仕事を引き受けるときに使う。"
+      "explanation": "ya que + 直説法で「〜なので／〜だから」。podríamos で控えめな提案。"
 ,
-      "blankWord": "to"
+      "blankWord": "podríamos"
       },
       {
-      "keyPhrase": "Let's get going"
+      "keyPhrase": "Mr. Sein is supposed to be a priest."
 ,
-      "japanese": "さあ行こう"
+      "japanese": "se supone que"
 ,
-      "fullQuote": "Let's get going."
+      "fullQuote": "Se supone que el señor Sein es sacerdote."
 ,
-      "situation": "もののけ姫・負傷者を連れて移動を続ける場面"
+      "situation": "Frieren / Fern: se queja de que Sein bebe pese a que es sacerdote."
 ,
-      "explanation": "「さあ行こう」「そろそろ出発しよう」。Let's go. より「行動を始めよう」という感じ。"
+      "explanation": "se supone que は役割・予定から「本来〜のはず」。"
 ,
-      "blankWord": "get"
+      "blankWord": "supone"
       },
       {
-      "keyPhrase": "Likewise"
+      "keyPhrase": "You know Aura the Guillotine, do you not?"
 ,
-      "japanese": "こちらこそ。"
+      "japanese": "conocer a alguien"
 ,
-      "fullQuote": "Likewise."
+      "fullQuote": "Conoces a Aura la Guillotina, ¿verdad?"
 ,
-      "situation": "葬送のフリーレン・ハイターがヒンメルの「一緒に冒険できてよかった」という言葉に返す場面"
+      "situation": "Frieren / Fern: pregunta si Frieren conoce la existencia de Aura."
 ,
-      "explanation": "相手の発言や気持ちに対して「こちらも同じです」「こちらこそ」と返す表現。協力し合った後の双方の感謝。same to youも。"
+      "explanation": "conocer a alguien は「人を知っている」。人を目的語に取るため a を伴う。"
 ,
-      "blankWord": "Likewise"
+      "blankWord": "Conoces"
       },
       {
-      "keyPhrase": "Look who's here!"
+      "keyPhrase": "The entire village used to help clean the shore."
 ,
-      "japanese": "おや、誰かと思えば！"
+      "japanese": "antes solía"
 ,
-      "fullQuote": "Look who's here!"
+      "fullQuote": "Antes, todo el pueblo solía ayudar a limpiar la costa."
 ,
-      "situation": "NARUTO 疾風伝・久しぶりに現れた人物を見つける場面"
+      "situation": "Frieren / el jefe de la aldea: habla de una antigua costumbre del pueblo."
 ,
-      "explanation": "久しぶりの相手や意外な人物を見つけたときの、親しみ・驚きを含む表現。"
+      "explanation": "solía + 不定詞で、現在とは異なる昔の習慣。"
 ,
-      "blankWord": "who's"
+      "blankWord": "solía"
       },
       {
-      "keyPhrase": "My pleasure"
+      "keyPhrase": "What should we throw away, and what should we keep?"
 ,
-      "japanese": "どういたしまして。"
+      "japanese": "¿Qué deberíamos tirar y qué deberíamos conservar?"
 ,
-      "fullQuote": "Thank you very much. — My pleasure."
+      "fullQuote": "¿Qué deberíamos tirar y qué deberíamos conservar?"
 ,
-      "situation": "魔女の宅急便・キキがおしゃぶりを届けたことに礼を言われて返す場面"
+      "situation": "A Witch's Life in Mongol: Anis habla de limpiar y de decidir qué conservar."
 ,
-      "explanation": "Thank you. に対する「どういたしまして」「喜んで」。You're welcome. より少し丁寧。ビジネスやカスタマーサービスでよく使う。with pleasureも。"
+      "explanation": "deberíamos は「〜すべき」。tirar は捨てる、conservar は残す。"
 ,
-      "blankWord": "pleasure"
+      "blankWord": "deberíamos"
       },
       {
-      "keyPhrase": "No way"
+      "keyPhrase": "What matters is what you choose to keep."
 ,
-      "japanese": "まさか！ ルフィ殿！"
+      "japanese": "Lo importante es..."
 ,
-      "fullQuote": "No way! Luffy-dono!"
+      "fullQuote": "Lo importante es lo que eliges conservar."
 ,
-      "situation": "ONE PIECE・ルフィたちの登場に驚く場面"
+      "situation": "A Witch's Life in Mongol / Anis: expresa qué es esencial al ordenar cosas."
 ,
-      "explanation": "驚き・不信・拒絶などを表す非常に口語的な表現。「ありえない」「そんな！」など。"
+      "explanation": "Lo importante es... は「大切なのは〜」。"
 ,
-      "blankWord": "way"
+      "blankWord": "importante"
       },
       {
-      "keyPhrase": "No wonder"
+      "keyPhrase": "He is still alive."
 ,
-      "japanese": "どうりで複数人を相手に使わないわけだ"
+      "japanese": "Él sigue vivo."
 ,
-      "fullQuote": "No wonder you don't use it against multiple people."
+      "fullQuote": "Él sigue vivo."
 ,
-      "situation": "葬送のフリーレン・魔法を複数人に使わない理由を理解する場面(ユーベルの拘束魔法は視界に入れないと使えないため)"
+      "situation": "A Witch's Life in Mongol / Sitara: habla de Muhammad."
 ,
-      "explanation": "理由を知って納得するときの表現。「どうりで～なわけだ」。"
+      "explanation": "seguir vivo は「まだ生きている」。"
 ,
-      "blankWord": "wonder"
+      "blankWord": "sigue"
       },
       {
-      "keyPhrase": "No worries"
+      "keyPhrase": "It was supposed to arrive."
 ,
-      "japanese": "心配いらないよ／大丈夫だよ。"
+      "japanese": "Se suponía que..."
 ,
-      "fullQuote": "Then we got no worries!"
+      "fullQuote": "Se suponía que iba a llegar."
 ,
-      "situation": "ONE PIECE STAMPEDE・状況について心配する仲間を安心させる場面"
+      "situation": "A Witch's Life in Mongol / Sitara: habla de algo que no ocurrió como se esperaba."
 ,
-      "explanation": "No worries は「心配ない」「大丈夫」「気にしないで」というくだけた表現。"
+      "explanation": "過去の se suponía que は「〜するはずだった」。"
 ,
-      "blankWord": "worries"
+      "blankWord": "suponía"
       },
       {
-      "keyPhrase": "Not much"
+      "keyPhrase": "I don't want to go somewhere I don't know."
 ,
-      "japanese": "たいしたことではないけれど、水には魔力が込められている。"
+      "japanese": "No quiero ir a un lugar que no conozco."
 ,
-      "fullQuote": "It's not much, but the water is infused with mana."
+      "fullQuote": "No quiero ir a un lugar que no conozco."
 ,
-      "situation": "葬送のフリーレン・２次試験で湖の水に魔力が込められていることをデンケンが説明する場面"
+      "situation": "A Witch's Life in Mongol / Sitara: expresa miedo ante un lugar desconocido."
 ,
-      "explanation": "Not much...,but は「たいしたものではないが、、」「あまり多くない」という控えめな表現。"
+      "explanation": "un lugar que no conozco は関係節で「私が知らない場所」。"
 ,
-      "blankWord": "much"
+      "blankWord": "conozco"
       },
       {
-      "keyPhrase": "You saved me"
+      "keyPhrase": "I promised to protect my lady."
 ,
-      "japanese": "あなたに助けてもらったよ。"
+      "japanese": "Prometí proteger a mi señora."
 ,
-      "fullQuote": "Ya saved me..."
+      "fullQuote": "Prometí proteger a mi señora."
 ,
-      "situation": "メイドインアビス・危険な状況で助けてもらった人物が礼を言う場面"
+      "situation": "A Witch's Life in Mongol / Sitara: recuerda una promesa que debe cumplir."
 ,
-      "explanation": "You saved me. は「助けてくれた」「命を救ってくれた」という意味。Ya は You のくだけた発音。"
+      "explanation": "prometer + 不定詞で「〜すると約束する」。"
 ,
-      "blankWord": "saved"
+      "blankWord": "Prometí"
+      },
+      {
+      "keyPhrase": "I will not pretend to be cute anymore."
+,
+      "japanese": "fingir ser"
+,
+      "fullQuote": "Ya no fingiré ser linda."
+,
+      "situation": "A Witch's Life in Mongol / Sitara: rechaza fingir para aumentar su valor."
+,
+      "explanation": "fingir + 不定詞で「〜するふりをする」。"
+,
+      "blankWord": "fingiré"
+      },
+      {
+      "keyPhrase": "I don't want to be sold far away."
+,
+      "japanese": "No quiero que me vendan lejos."
+,
+      "fullQuote": "No quiero que me vendan lejos."
+,
+      "situation": "A Witch's Life in Mongol / Sitara: teme ser vendida lejos."
+,
+      "explanation": "querer que + 接続法で「〜してほしい／されたくない」。lejos は「遠くへ」。"
+,
+      "blankWord": "quiero"
+      },
+      {
+      "keyPhrase": "I made that decision myself."
+,
+      "japanese": "Tomé esa decisión yo misma."
+,
+      "fullQuote": "Tomé esa decisión yo misma."
+,
+      "situation": "A Witch's Life in Mongol / Sitara: recalca que decidió por sí misma."
+,
+      "explanation": "yo misma は「自分自身で」の強調。"
+,
+      "blankWord": "misma"
+      },
+      {
+      "keyPhrase": "I need to escape."
+,
+      "japanese": "Necesito escapar."
+,
+      "fullQuote": "Necesito escapar."
+,
+      "situation": "A Witch's Life in Mongol / Sitara: siente que debe huir."
+,
+      "explanation": "necesitar + 不定詞で「〜する必要がある」。"
+,
+      "blankWord": "Necesito"
+      },
+      {
+      "keyPhrase": "I won't study anymore."
+,
+      "japanese": "Ya no estudiaré."
+,
+      "fullQuote": "Ya no estudiaré."
+,
+      "situation": "A Witch's Life in Mongol / Sitara: se rebela contra seguir estudiando."
+,
+      "explanation": "ya no は「もう〜ない」。未来形で強い意思を表せる。"
+,
+      "blankWord": "Ya"
+      },
+      {
+      "keyPhrase": "That would only make me more valuable."
+,
+      "japanese": "Eso solo me haría más valiosa."
+,
+      "fullQuote": "Eso solo me haría más valiosa."
+,
+      "situation": "A Witch's Life in Mongol / Sitara: cree que estudiar elevaría el precio por el que la venderían."
+,
+      "explanation": "hacer + 目的語 + 形容詞で「〜を…にする」。"
+,
+      "blankWord": "haría"
+      },
+      {
+      "keyPhrase": "I need to understand how this works."
+,
+      "japanese": "Necesito entender cómo funciona esto."
+,
+      "fullQuote": "Necesito entender cómo funciona esto."
+,
+      "situation": "A Witch's Life in Mongol / Fatima: intenta comprender conocimiento científico o médico."
+,
+      "explanation": "cómo funciona は「どういう仕組みか」。"
+,
+      "blankWord": "funciona"
+      },
+      {
+      "keyPhrase": "You must learn to survive."
+,
+      "japanese": "Debes aprender a sobrevivir."
+,
+      "fullQuote": "Debes aprender a sobrevivir."
+,
+      "situation": "A Witch's Life in Mongol / Fatima: habla de aprender para sobrevivir en circunstancias difíciles."
+,
+      "explanation": "deber + 不定詞は義務・助言を表す。"
+,
+      "blankWord": "Debes"
+      },
+      {
+      "keyPhrase": "I will find a way."
+,
+      "japanese": "Encontraré una manera."
+,
+      "fullQuote": "Encontraré una manera."
+,
+      "situation": "A Witch's Life in Mongol / Fatima: muestra voluntad de abrirse camino."
+,
+      "explanation": "未来形 encontraré で強い決意を表す。"
+,
+      "blankWord": "Encontraré"
+      },
+      {
+      "keyPhrase": "There must be another way."
+,
+      "japanese": "Tiene que haber otra manera."
+,
+      "fullQuote": "Tiene que haber otra manera."
+,
+      "situation": "A Witch's Life in Mongol / Fatima: busca otra solución ante una dificultad."
+,
+      "explanation": "tiene que haber は「〜があるはずだ」。"
+,
+      "blankWord": "que"
+      },
+      {
+      "keyPhrase": "I can't let that happen."
+,
+      "japanese": "No puedo dejar que eso ocurra."
+,
+      "fullQuote": "No puedo dejar que eso ocurra."
+,
+      "situation": "A Witch's Life in Mongol / Fatima: muestra una firme determinación."
+,
+      "explanation": "dejar que + 接続法で「〜するのを許す」。"
+,
+      "blankWord": "dejar"
+      },
+      {
+      "keyPhrase": "Knowledge can change your fate."
+,
+      "japanese": "El conocimiento puede cambiar tu destino."
+,
+      "fullQuote": "El conocimiento puede cambiar tu destino."
+,
+      "situation": "A Witch's Life in Mongol / Fatima: habla de conocimiento y destino."
+,
+      "explanation": "puede + 不定詞で「〜できる」。"
+,
+      "blankWord": "puede"
+      },
+      {
+      "keyPhrase": "Knowledge is a duty for every Muslim."
+,
+      "japanese": "El conocimiento es un deber para todo musulmán."
+,
+      "fullQuote": "El conocimiento es un deber para todo musulmán."
+,
+      "situation": "A Witch's Life in Mongol / Fatima: habla del deber de aprender."
+,
+      "explanation": "deber は「義務・務め」。"
+,
+      "blankWord": "deber"
+      },
+      {
+      "keyPhrase": "You have to prepare yourself before using this Quirk."
+,
+      "japanese": "tener que"
+,
+      "fullQuote": "Tienes que prepararte antes de usar este Don."
+,
+      "situation": "My Hero Academia: se explica que hay que prepararse antes de usar un Don."
+,
+      "explanation": "tienes que + 不定詞は口語的な「〜しなければならない」。"
+,
+      "blankWord": "Tienes"
+      },
+      {
+      "keyPhrase": "Conan and Kogoro were passing by the apartment building by chance."
+,
+      "japanese": "por casualidad"
+,
+      "fullQuote": "Conan y Kogoro pasaban por casualidad junto al edificio de apartamentos."
+,
+      "situation": "Detective Conan: Conan y Kogoro pasan casualmente cerca de la escena."
+,
+      "explanation": "por casualidad は「たまたま・偶然に」。"
+,
+      "blankWord": "casualidad"
+      },
+      {
+      "keyPhrase": "I cannot. I am the only one immersed in memories."
+,
+      "japanese": "estar inmerso en"
+,
+      "fullQuote": "No puedo. Soy la única que está inmersa en recuerdos."
+,
+      "situation": "ONE PIECE / Nico Robin: Robin queda atrapada en un mundo de recuerdos."
+,
+      "explanation": "estar inmerso en は「〜に深く浸る・没頭する」。"
+,
+      "blankWord": "inmersa"
+      },
+      {
+      "keyPhrase": "I am tied up."
+,
+      "japanese": "estar ocupado"
+,
+      "fullQuote": "Estoy ocupado."
+,
+      "situation": "Ejemplo general: una persona tiene trabajo y recados acumulados."
+,
+      "explanation": "estar ocupado は「手が離せない」。"
+,
+      "blankWord": "ocupado"
+      },
+      {
+      "keyPhrase": "Do not pick on your sister."
+,
+      "japanese": "meterse con"
+,
+      "fullQuote": "No te metas con tu hermana."
+,
+      "situation": "Ejemplo general: alguien molesta o acosa repetidamente a su hermana."
+,
+      "explanation": "meterse con alguien は「〜をいじめる・からかう」。"
+,
+      "blankWord": "metas"
+      },
+      {
+      "keyPhrase": "I should have known!"
+,
+      "japanese": "Debería haberlo sabido."
+,
+      "fullQuote": "¡Debería haberlo sabido!"
+,
+      "situation": "Ejemplo general: una persona se arrepiente de su juicio."
+,
+      "explanation": "debería haber + 過去分詞は過去への後悔。"
+,
+      "blankWord": "Debería"
+      },
+      {
+      "keyPhrase": "Don't I know you?"
+,
+      "japanese": "¿No te conozco?"
+,
+      "fullQuote": "¿No te conozco?"
+,
+      "situation": "Ejemplo general: alguien cree haber conocido antes a otra persona."
+,
+      "explanation": "「どこかで会いましたか？」という自然な言い方。"
+,
+      "blankWord": "conozco"
+      },
+      {
+      "keyPhrase": "I got ripped off."
+,
+      "japanese": "Me estafaron."
+,
+      "fullQuote": "Me estafaron."
+,
+      "situation": "Ejemplo general: una persona paga un precio injustamente alto."
+,
+      "explanation": "estafar は「ぼったくる・だます」。"
+,
+      "blankWord": "estafaron"
+      },
+      {
+      "keyPhrase": "You've got to be kidding!"
+,
+      "japanese": "¡Tienes que estar bromeando!"
+,
+      "fullQuote": "¡Tienes que estar bromeando!"
+,
+      "situation": "Ejemplo general: alguien oye algo increíble."
+,
+      "explanation": "驚き・あきれを表す「冗談でしょ！」。"
+,
+      "blankWord": "bromeando"
+      },
+      {
+      "keyPhrase": "He has what it takes to be a leader."
+,
+      "japanese": "tener lo necesario para"
+,
+      "fullQuote": "Tiene lo necesario para ser líder."
+,
+      "situation": "Ejemplo general: se evalúa la aptitud de una persona."
+,
+      "explanation": "tener lo necesario para は「〜する資質がある」。"
+,
+      "blankWord": "necesario"
+      },
+      {
+      "keyPhrase": "Count on it!"
+,
+      "japanese": "Cuenta con ello."
+,
+      "fullQuote": "¡Cuenta con ello!"
+,
+      "situation": "Ejemplo general: alguien responde con confianza a una petición."
+,
+      "explanation": "「任せて」。contar con は「頼りにする」。"
+,
+      "blankWord": "Cuenta"
+      },
+      {
+      "keyPhrase": "Suit yourself!"
+,
+      "japanese": "Como quieras."
+,
+      "fullQuote": "¡Como quieras!"
+,
+      "situation": "Ejemplo general: alguien decide no seguir un consejo."
+,
+      "explanation": "「好きにすれば」。口調によって冷たく聞こえる。"
+,
+      "blankWord": "quieras"
+      },
+      {
+      "keyPhrase": "Could I have a word with you?"
+,
+      "japanese": "¿Podría hablar un momento contigo?"
+,
+      "fullQuote": "¿Podría hablar un momento contigo?"
+,
+      "situation": "Ejemplo general: alguien quiere hablar en privado con otra persona."
+,
+      "explanation": "podría で丁寧な依頼になる。"
+,
+      "blankWord": "Podría"
+      },
+      {
+      "keyPhrase": "I'll make it up to you."
+,
+      "japanese": "Te compensaré."
+,
+      "fullQuote": "Te compensaré."
+,
+      "situation": "Ejemplo general: alguien promete compensar una molestia."
+,
+      "explanation": "compensar a alguien は「人に埋め合わせをする」。"
+,
+      "blankWord": "compensaré"
+      },
+      {
+      "keyPhrase": "Shame on you!"
+,
+      "japanese": "¡Debería darte vergüenza!"
+,
+      "fullQuote": "¡Debería darte vergüenza!"
+,
+      "situation": "Ejemplo general: se reprende duramente una acción inmoral."
+,
+      "explanation": "強い道徳的非難。「恥を知れ」。"
+,
+      "blankWord": "vergüenza"
+      },
+      {
+      "keyPhrase": "What if they don't show up?"
+,
+      "japanese": "¿Y si...?"
+,
+      "fullQuote": "¿Y si no aparece?"
+,
+      "situation": "Ejemplo general: se teme que alguien no llegue a una cita."
+,
+      "explanation": "¿Y si...? は「もし〜だったらどうする？」。"
+,
+      "blankWord": "si"
+      },
+      {
+      "keyPhrase": "I can't get over them."
+,
+      "japanese": "superar a alguien"
+,
+      "fullQuote": "No puedo superarlo."
+,
+      "situation": "Ejemplo general: alguien no logra superar a una expareja."
+,
+      "explanation": "superar a alguien は失恋などを「乗り越える」。"
+,
+      "blankWord": "superarlo"
+      },
+      {
+      "keyPhrase": "He is unlikely to change his mind."
+,
+      "japanese": "ser poco probable que"
+,
+      "fullQuote": "Es poco probable que cambie de opinión."
+,
+      "situation": "Ejemplo general: se habla de una persona obstinada."
+,
+      "explanation": "Es poco probable que + 接続法で「〜しそうにない」。"
+,
+      "blankWord": "poco"
+      },
+      {
+      "keyPhrase": "All applicants are required to pass the first test."
+,
+      "japanese": "estar obligado a"
+,
+      "fullQuote": "Todos los solicitantes están obligados a aprobar el primer examen."
+,
+      "situation": "Ejemplo general: se explica una condición formal de un examen."
+,
+      "explanation": "estar obligado a + 不定詞は制度上の義務。"
+,
+      "blankWord": "obligados"
+      },
+      {
+      "keyPhrase": "The ceremony is scheduled to begin at noon."
+,
+      "japanese": "estar programado para"
+,
+      "fullQuote": "La ceremonia está programada para empezar al mediodía."
+,
+      "situation": "Ejemplo general: se informa de un horario oficial."
+,
+      "explanation": "estar programado para + 不定詞は公式予定を表す。"
+,
+      "blankWord": "programado"
       }
       ]
     },
