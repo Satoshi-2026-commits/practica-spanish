@@ -1408,422 +1408,422 @@ const SETS = [
     {
       "id": "travel",
       "name": "Set 3",
-      "audioVersion": "a687b926",
+      "audioVersion": "097cd31d",
       "chunks": [
       {
-      "japanese": "1981年7月3日に横浜で生まれた。"
+      "keyPhrase": "I was born in Yokohama on July 3, 1981."
 ,
-      "english": "I was born in Yokohama on July 3, 1981."
+      "japanese": "Nací en Yokohama el 3 de julio de 1981."
       },
       {
-      "japanese": "姉が2人いる。"
+      "keyPhrase": "I have two older sisters."
 ,
-      "english": "I have two older sisters."
+      "japanese": "Tengo dos hermanas mayores."
       },
       {
-      "japanese": "私は末っ子だ。"
+      "keyPhrase": "I'm the youngest in my family."
 ,
-      "english": "I'm the youngest in my family."
+      "japanese": "Soy el menor de la familia."
       },
       {
-      "japanese": "横浜は人口300万人ほどの都市だ。"
+      "keyPhrase": "Yokohama has about three million people."
 ,
-      "english": "Yokohama has about three million people."
+      "japanese": "Yokohama tiene unos tres millones de habitantes."
       },
       {
-      "japanese": "横浜には大きな港がある。"
+      "keyPhrase": "Yokohama has a large port."
 ,
-      "english": "Yokohama has a large port."
+      "japanese": "Yokohama tiene un puerto grande."
       },
       {
-      "japanese": "横浜の大学で物理を学んだ。"
+      "keyPhrase": "I studied physics at a university in Yokohama."
 ,
-      "english": "I studied physics at a university in Yokohama."
+      "japanese": "Estudié física en una universidad de Yokohama."
       },
       {
-      "japanese": "大学を卒業した。"
+      "keyPhrase": "I graduated from university."
 ,
-      "english": "I graduated from university."
+      "japanese": "Me gradué de la universidad."
       },
       {
-      "japanese": "大学時代は実家から通っていた。"
+      "keyPhrase": "I lived with my family during university."
 ,
-      "english": "I lived with my family during university."
+      "japanese": "Durante la universidad vivía en casa de mis padres."
       },
       {
-      "japanese": "卒業後、東京で働いた。"
+      "keyPhrase": "After university, I worked in Tokyo."
 ,
-      "english": "After university, I worked in Tokyo."
+      "japanese": "Después de la universidad, trabajé en Tokio."
       },
       {
-      "japanese": "最初の仕事はシステム開発だった。"
+      "keyPhrase": "My first job was system development."
 ,
-      "english": "My first job was system development."
+      "japanese": "Mi primer trabajo fue el desarrollo de sistemas."
       },
       {
-      "japanese": "携帯電話のメールソフトを開発した。"
+      "keyPhrase": "I developed email software for mobile phones."
 ,
-      "english": "I developed email software for mobile phones."
+      "japanese": "Desarrollé un software de correo para teléfonos móviles."
       },
       {
-      "japanese": "仕事は面白かった。"
+      "keyPhrase": "The work was interesting."
 ,
-      "english": "The work was interesting."
+      "japanese": "El trabajo era interesante."
       },
       {
-      "japanese": "でも、とても忙しかった。"
+      "keyPhrase": "But it was very demanding."
 ,
-      "english": "But it was very demanding."
+      "japanese": "Pero era muy exigente."
       },
       {
-      "japanese": "月100時間以上残業することも普通だった。"
+      "keyPhrase": "Over 100 hours of overtime was normal."
 ,
-      "english": "Over 100 hours of overtime was normal."
+      "japanese": "Era normal trabajar más de 100 horas extra al mes."
       },
       {
-      "japanese": "2年働いて会社を辞めた。"
+      "keyPhrase": "I quit after two years."
 ,
-      "english": "I quit after two years."
+      "japanese": "Renuncié después de dos años."
       },
       {
-      "japanese": "ドイツにワーキングホリデーに行った。"
+      "keyPhrase": "I went to Germany on a working holiday."
 ,
-      "english": "I went to Germany on a working holiday."
+      "japanese": "Me fui a Alemania con visa de working holiday."
       },
       {
-      "japanese": "ドイツに1年間滞在した。"
+      "keyPhrase": "I stayed in Germany for a year."
 ,
-      "english": "I stayed in Germany for a year."
+      "japanese": "Me quedé en Alemania un año."
       },
       {
-      "japanese": "ヨーロッパをバックパックで旅した。"
+      "keyPhrase": "I traveled around Europe with a backpack."
 ,
-      "english": "I traveled around Europe with a backpack."
+      "japanese": "Viajé por Europa con una mochila."
       },
       {
-      "japanese": "海外の文化を学ぶのが好きだった。"
+      "keyPhrase": "I enjoyed learning about other cultures."
 ,
-      "english": "I enjoyed learning about other cultures."
+      "japanese": "Disfruté aprendiendo sobre otras culturas."
       },
       {
-      "japanese": "帰国後、鍼灸師を目指した。"
+      "keyPhrase": "After I came back, I decided to become an acupuncturist."
 ,
-      "english": "After I came back, I decided to become an acupuncturist."
+      "japanese": "Al volver, decidí convertirme en acupuntor."
       },
       {
-      "japanese": "働きながら勉強した。"
+      "keyPhrase": "I studied while working."
 ,
-      "english": "I studied while working."
+      "japanese": "Estudiaba mientras trabajaba."
       },
       {
-      "japanese": "鍼灸の学校に3年間通った。"
+      "keyPhrase": "I went to acupuncture school for three years."
 ,
-      "english": "I went to acupuncture school for three years."
+      "japanese": "Fui a una escuela de acupuntura durante tres años."
       },
       {
-      "japanese": "昼間は働いていた。"
+      "keyPhrase": "I worked during the day."
 ,
-      "english": "I worked during the day."
+      "japanese": "Durante el día trabajaba."
       },
       {
-      "japanese": "夜は3時間授業を受けた。"
+      "keyPhrase": "I had three hours of classes at night."
 ,
-      "english": "I had three hours of classes at night."
+      "japanese": "Por la noche tenía tres horas de clases."
       },
       {
-      "japanese": "鍼灸師の資格を取った。"
+      "keyPhrase": "I got my acupuncture license."
 ,
-      "english": "I got my acupuncture license."
+      "japanese": "Obtuve la licencia de acupuntor."
       },
       {
-      "japanese": "その後、ニカラグアに行った。"
+      "keyPhrase": "Then I went to Nicaragua."
 ,
-      "english": "Then I went to Nicaragua."
+      "japanese": "Después me fui a Nicaragua."
       },
       {
-      "japanese": "ニカラグアに1年半滞在した。"
+      "keyPhrase": "I stayed in Nicaragua for a year and a half."
 ,
-      "english": "I stayed in Nicaragua for a year and a half."
+      "japanese": "Me quedé en Nicaragua un año y medio."
       },
       {
-      "japanese": "ニカラグアで鍼灸の仕事をした。"
+      "keyPhrase": "I worked as an acupuncturist in Nicaragua."
 ,
-      "english": "I worked as an acupuncturist in Nicaragua."
+      "japanese": "Trabajé como acupuntor en Nicaragua."
       },
       {
-      "japanese": "東洋医学も教えた。"
+      "keyPhrase": "I also taught traditional Asian medicine."
 ,
-      "english": "I also taught traditional Asian medicine."
+      "japanese": "También enseñé medicina tradicional asiática."
       },
       {
-      "japanese": "その後、アルメニアに行った。"
+      "keyPhrase": "Then I went to Armenia."
 ,
-      "english": "Then I went to Armenia."
+      "japanese": "Después me fui a Armenia."
       },
       {
-      "japanese": "アルメニアに1年間滞在した。"
+      "keyPhrase": "I stayed in Armenia for a year."
 ,
-      "english": "I stayed in Armenia for a year."
+      "japanese": "Me quedé en Armenia un año."
       },
       {
-      "japanese": "アルメニアでも鍼灸の仕事をした。"
+      "keyPhrase": "I also worked as an acupuncturist in Armenia."
 ,
-      "english": "I also worked as an acupuncturist in Armenia."
+      "japanese": "También trabajé como acupuntor en Armenia."
       },
       {
-      "japanese": "インドにも行った。"
+      "keyPhrase": "I also went to India."
 ,
-      "english": "I also went to India."
+      "japanese": "También fui a India."
       },
       {
-      "japanese": "インドのグルガオンに4ヶ月滞在した。"
+      "keyPhrase": "I stayed in Gurgaon, India, for four months."
 ,
-      "english": "I stayed in Gurgaon, India, for four months."
+      "japanese": "Me quedé cuatro meses en Gurgaon, India."
       },
       {
-      "japanese": "帰国後、旅行会社に入った。"
+      "keyPhrase": "After I came back to Japan, I joined a travel company."
 ,
-      "english": "After I came back to Japan, I joined a travel company."
+      "japanese": "Al volver a Japón, entré a una agencia de viajes."
       },
       {
-      "japanese": "今はガイドをしている。"
+      "keyPhrase": "Now I work as a guide."
 ,
-      "english": "Now I work as a guide."
+      "japanese": "Ahora trabajo como guía."
       },
       {
-      "japanese": "去年までは国内ツアーの添乗員だった。"
+      "keyPhrase": "Until last year, I mainly worked as a tour escort."
 ,
-      "english": "Until last year, I mainly worked as a tour escort."
+      "japanese": "Hasta el año pasado, trabajé principalmente como acompañante de tours."
       },
       {
-      "japanese": "登山ツアーも多かった。"
+      "keyPhrase": "I also worked on many hiking tours."
 ,
-      "english": "I also worked on many hiking tours."
+      "japanese": "También trabajé en muchas rutas de senderismo."
       },
       {
-      "japanese": "富士山には3回登った。"
+      "keyPhrase": "I have climbed Mount Fuji three times."
 ,
-      "english": "I have climbed Mount Fuji three times."
+      "japanese": "He subido al monte Fuji tres veces."
       },
       {
-      "japanese": "今はインバウンドのガイドもしている。"
+      "keyPhrase": "Now I also work as an inbound guide."
 ,
-      "english": "Now I also work as an inbound guide."
+      "japanese": "Ahora también trabajo como guía para visitantes extranjeros."
       },
       {
-      "japanese": "クルーズ船でも働いている。"
+      "keyPhrase": "I also work on cruise ships."
 ,
-      "english": "I also work on cruise ships."
+      "japanese": "También trabajo en barcos de crucero."
       },
       {
-      "japanese": "人生では自分の頭で考えることを大切にしている。"
+      "keyPhrase": "I value thinking for myself."
 ,
-      "english": "I value thinking for myself."
+      "japanese": "Valoro pensar por mí mismo."
       },
       {
-      "japanese": "少しずつ前に進みたい。"
+      "keyPhrase": "I want to move forward little by little."
 ,
-      "english": "I want to move forward little by little."
+      "japanese": "Quiero avanzar poco a poco."
       },
       {
-      "japanese": "自分が納得できる人生にしたい。"
+      "keyPhrase": "I want to live a life that feels right to me."
 ,
-      "english": "I want to live a life that feels right to me."
+      "japanese": "Quiero vivir una vida con la que me sienta a gusto."
       },
       {
-      "japanese": "これからも旅を続けたい。"
+      "keyPhrase": "I want to keep traveling."
 ,
-      "english": "I want to keep traveling."
+      "japanese": "Quiero seguir viajando."
       },
       {
-      "japanese": "年を取っても人と関わり続けたい。"
+      "keyPhrase": "I want to keep meeting people as I get older."
 ,
-      "english": "I want to keep meeting people as I get older."
+      "japanese": "Quiero seguir relacionándome con la gente aunque me haga mayor."
       },
       {
-      "japanese": "英語で困らずに話せるようになりたい。"
+      "keyPhrase": "I want to communicate in English comfortably."
 ,
-      "english": "I want to communicate in English comfortably."
+      "japanese": "Quiero comunicarme en inglés sin problemas."
       },
       {
-      "japanese": "趣味は一人旅だ。"
+      "keyPhrase": "My hobby is solo travel."
 ,
-      "english": "My hobby is solo travel."
+      "japanese": "Mi afición es viajar solo."
       },
       {
-      "japanese": "将棋も好きだ。"
+      "keyPhrase": "I also like playing shogi."
 ,
-      "english": "I also like playing shogi."
+      "japanese": "También me gusta jugar shogi."
       },
       {
-      "japanese": "テクノロジーのニュースを見るのも好きだ。"
+      "keyPhrase": "I also like following technology news."
 ,
-      "english": "I also like following technology news."
+      "japanese": "También me gusta ver las noticias de tecnología."
       },
       {
-      "japanese": "旅と登山が好きだ。"
+      "keyPhrase": "I like traveling and hiking."
 ,
-      "english": "I like traveling and hiking."
+      "japanese": "Me gustan los viajes y el senderismo."
       },
       {
-      "japanese": "でも、計画を立てるのは苦手だ。"
+      "keyPhrase": "But I'm not good at making plans."
 ,
-      "english": "But I'm not good at making plans."
+      "japanese": "Pero no se me da bien hacer planes."
       },
       {
-      "japanese": "気を抜くと家にこもってしまう。"
+      "keyPhrase": "If I'm not careful, I tend to stay home."
 ,
-      "english": "If I'm not careful, I tend to stay home."
+      "japanese": "Si me descuido, tiendo a quedarme en casa."
       },
       {
-      "japanese": "変わった食べ物に興味がある。"
+      "keyPhrase": "I'm interested in unusual food."
 ,
-      "english": "I'm interested in unusual food."
+      "japanese": "Me interesan las comidas poco comunes."
       },
       {
-      "japanese": "新しい価値観を与えてくれる食べ物が好きだ。"
+      "keyPhrase": "I like food that gives me new ideas."
 ,
-      "english": "I like food that gives me new ideas."
+      "japanese": "Me gusta la comida que me da nuevas ideas."
       },
       {
-      "japanese": "たくさん食べたいとは思わない。"
+      "keyPhrase": "I don't want to eat a lot."
 ,
-      "english": "I don't want to eat a lot."
+      "japanese": "No quiero comer mucho."
       },
       {
-      "japanese": "ドーナツのような普通の食べ物にはあまり興味がない。"
+      "keyPhrase": "I'm not very interested in familiar foods like donuts."
 ,
-      "english": "I'm not very interested in familiar foods like donuts."
+      "japanese": "No me interesan mucho las comidas comunes como las donas."
       },
       {
-      "japanese": "大学卒業まで横浜で暮らした。"
+      "keyPhrase": "I lived in Yokohama until I graduated from university."
 ,
-      "english": "I lived in Yokohama until I graduated from university."
+      "japanese": "Viví en Yokohama hasta graduarme de la universidad."
       },
       {
-      "japanese": "東京の立川で一人暮らしをした。"
+      "keyPhrase": "I lived by myself in Tachikawa, Tokyo."
 ,
-      "english": "I lived by myself in Tachikawa, Tokyo."
+      "japanese": "Viví solo en Tachikawa, Tokio."
       },
       {
-      "japanese": "現在は神奈川県に住んでいる。"
+      "keyPhrase": "I currently live in Kanagawa."
 ,
-      "english": "I currently live in Kanagawa."
+      "japanese": "Actualmente vivo en Kanagawa."
       },
       {
-      "japanese": "独身だ。"
+      "keyPhrase": "I'm single."
 ,
-      "english": "I'm single."
+      "japanese": "Estoy soltero."
       },
       {
-      "japanese": "叔母と暮らしている。"
+      "keyPhrase": "I live with my aunt."
 ,
-      "english": "I live with my aunt."
+      "japanese": "Vivo con mi tía."
       },
       {
-      "japanese": "結婚には興味がある。"
+      "keyPhrase": "I'm interested in getting married."
 ,
-      "english": "I'm interested in getting married."
+      "japanese": "Me interesa casarme."
       },
       {
-      "japanese": "でも、積極的には相手を探していない。"
+      "keyPhrase": "But I'm not actively looking for a partner."
 ,
-      "english": "But I'm not actively looking for a partner."
+      "japanese": "Pero no busco pareja de forma activa."
       },
       {
-      "japanese": "旅で知り合った友達とよく遊ぶ。"
+      "keyPhrase": "I often spend time with friends I met while traveling."
 ,
-      "english": "I often spend time with friends I met while traveling."
+      "japanese": "A menudo paso tiempo con amigos que conocí en mis viajes."
       },
       {
-      "japanese": "東京から行ける山はたくさんある。"
+      "keyPhrase": "There are many mountains you can visit from Tokyo."
 ,
-      "english": "There are many mountains you can visit from Tokyo."
+      "japanese": "Hay muchas montañas a las que puedes ir desde Tokio."
       },
       {
-      "japanese": "日帰りで行ける山も多い。"
+      "keyPhrase": "Many can be visited on a day trip."
 ,
-      "english": "Many can be visited on a day trip."
+      "japanese": "Muchas se pueden visitar en una excursión de un día."
       },
       {
-      "japanese": "八ヶ岳はおすすめだ。"
+      "keyPhrase": "I recommend Yatsugatake."
 ,
-      "english": "I recommend Yatsugatake."
+      "japanese": "Recomiendo Yatsugatake."
       },
       {
-      "japanese": "八ヶ岳は一年中楽しめる。"
+      "keyPhrase": "You can enjoy Yatsugatake all year round."
 ,
-      "english": "You can enjoy Yatsugatake all year round."
+      "japanese": "Se puede disfrutar de Yatsugatake todo el año."
       },
       {
-      "japanese": "冬でもバスで山の近くまで行ける。"
+      "keyPhrase": "You can take a bus near the mountain even in winter."
 ,
-      "english": "You can take a bus near the mountain even in winter."
+      "japanese": "Incluso en invierno, puedes ir en autobús hasta cerca de la montaña."
       },
       {
-      "japanese": "ロープウェイで山の中腹まで行ける。"
+      "keyPhrase": "You can take a ropeway to the middle of the mountain."
 ,
-      "english": "You can take a ropeway to the middle of the mountain."
+      "japanese": "Se puede subir en teleférico hasta la mitad de la montaña."
       },
       {
-      "japanese": "そこでスノーハイクを楽しめる。"
+      "keyPhrase": "You can enjoy snow hiking there."
 ,
-      "english": "You can enjoy snow hiking there."
+      "japanese": "Ahí puedes disfrutar del senderismo con nieve."
       },
       {
-      "japanese": "日本では公共交通機関が便利だ。"
+      "keyPhrase": "Public transportation is convenient in Japan."
 ,
-      "english": "Public transportation is convenient in Japan."
+      "japanese": "El transporte público es cómodo en Japón."
       },
       {
-      "japanese": "田舎以外なら電車やバスで行ける。"
+      "keyPhrase": "You can get around by train or bus almost everywhere."
 ,
-      "english": "You can get around by train or bus almost everywhere."
+      "japanese": "Casi en todas partes te puedes mover en tren o autobús."
       },
       {
-      "japanese": "日本はとても安全だ。"
+      "keyPhrase": "Japan is very safe."
 ,
-      "english": "Japan is very safe."
+      "japanese": "Japón es muy seguro."
       },
       {
-      "japanese": "日本には地域ごとの特徴がある。"
+      "keyPhrase": "Each region of Japan is different."
 ,
-      "english": "Each region of Japan is different."
+      "japanese": "Cada región de Japón es diferente."
       },
       {
-      "japanese": "日本には自然も多い。"
+      "keyPhrase": "Japan also has a lot of nature."
 ,
-      "english": "Japan also has a lot of nature."
+      "japanese": "Japón también tiene mucha naturaleza."
       },
       {
-      "japanese": "地図を見て行き先を決めるのもいい。"
+      "keyPhrase": "You can choose a place by looking at a map."
 ,
-      "english": "You can choose a place by looking at a map."
+      "japanese": "Puedes elegir el destino mirando el mapa."
       },
       {
-      "japanese": "日本では英語が通じないことも多い。"
+      "keyPhrase": "English is still not widely spoken in Japan."
 ,
-      "english": "English is still not widely spoken in Japan."
+      "japanese": "En Japón todavía no se habla mucho inglés."
       },
       {
-      "japanese": "でも、少し日本語を話すだけで印象が変わる。"
+      "keyPhrase": "But speaking a little Japanese can make a big difference."
 ,
-      "english": "But speaking a little Japanese can make a big difference."
+      "japanese": "Pero hablar un poco de japonés puede cambiar mucho la impresión."
       },
       {
-      "japanese": "日本人は親切にしてくれると思う。"
+      "keyPhrase": "I think Japanese people will be kind to you."
 ,
-      "english": "I think Japanese people will be kind to you."
+      "japanese": "Creo que los japoneses te tratarán con amabilidad."
       },
       {
-      "japanese": "旅行中、もっと英語を使いたいと思う。"
+      "keyPhrase": "When I travel, I want to use English more."
 ,
-      "english": "When I travel, I want to use English more."
+      "japanese": "Cuando viajo, quiero usar más el inglés."
       },
       {
-      "japanese": "だから英語を勉強している。"
+      "keyPhrase": "That's why I'm studying English."
 ,
-      "english": "That's why I'm studying English."
+      "japanese": "Por eso estoy estudiando inglés."
       }
       ]
     }
