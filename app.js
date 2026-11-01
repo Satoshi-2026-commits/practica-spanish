@@ -1925,16 +1925,23 @@ function getChunkQuoteText(chunk) {
   return chunk.fullQuote || chunk.keyPhrase || chunk.english || "";
 }
 
-// 穴埋め単語の取得。指定がない場合は英文の中で最も長い単語を自動補完する
-//（2列データでも穴埋めモードが動くようにするため。ガイド上は任意列）
+// 穴埋め単語の決定値キャッシュ（問題ごとに一度決めたら固定。再描画で変えないため）
+const blankWordCache = new WeakMap();
+
+// 穴埋め単語の取得。指定がない場合は文中のランダムな単語を使用する（4文字以上を優先）
 function getEffectiveBlankWord(chunk) {
   if (!chunk) return "";
   if (chunk.blankWord) return chunk.blankWord;
+  if (blankWordCache.has(chunk)) return blankWordCache.get(chunk);
   const quote = getChunkQuoteText(chunk);
   if (!quote) return "";
-  const words = quote.split(/[^A-Za-z'-]+/).filter(Boolean);
+  const words = quote.split(/[^A-Za-zÁÉÍÓÚÜÑáéíóúüñ'-]+/).filter(Boolean);
   if (words.length === 0) return "";
-  return words.reduce((a, b) => (b.length > a.length ? b : a));
+  const candidates = words.filter((w) => w.length >= 3);
+  const pool = candidates.length > 0 ? candidates : words;
+  const word = pool[Math.floor(Math.random() * pool.length)];
+  blankWordCache.set(chunk, word);
+  return word;
 }
 
 // 穴埋め用の下線HTMLを生成
