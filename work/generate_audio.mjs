@@ -43,11 +43,14 @@ function detectHeaderField(headerText) {
   const rules = [
     ["explanation", ["解説", "ニュアンス", "説明", "explanation"]],
     ["blankWord", ["穴埋め", "blank"]],
-    ["fullQuote", ["セリフ", "例文", "使用例", "フル", "quote"]],
+    // 英語訳列は「セリフ」という語を含むため、fullQuoteより先に判定する
+    ["keyPhrase", ["英語訳", "english", "英文", "英語", "phrase"]],
+    ["fullQuote", ["漫画内", "実際のセリフ", "セリフ", "例文", "使用例", "フル", "quote"]],
     ["situation", ["作品", "キャラ", "状況", "場面", "situation"]],
-    ["keyPhrase", ["英文", "英語", "english", "phrase", "キーフレーズ"]],
-    // ※ スペイン語は japanese スロット（=出題源）に入れる
+    // ※ スペイン語のフレーズは japanese スロット（=出題源）に入れる
+    // ※ keyPhraseが「キーフレーズ」を先に拾わないよう後ろに置く
     ["japanese", ["日本語", "訳", "japanese", "意味", "spanish", "español", "espanol", "スペイン語", "西語"]],
+    ["keyPhrase", ["キーフレーズ"]],
   ];
   for (const [field, keywords] of rules) {
     if (keywords.some((k) => text.includes(k.toLowerCase()))) return field;
@@ -109,8 +112,8 @@ function parseCSV(csvText) {
       const headerKeywords = [
         "英文", "日本語訳", "実際のセリフ", "使用例", "作品", "キャラクター", "状況",
         "ニュアンス", "解説", "穴埋め", "単語", "phrase", "english", "japanese",
-        "spanish", "español", "espanol", "quote", "situation", "explanation",
-        "blank", "問題", "答え", "意味", "訳"
+        "spanish", "español", "espanol", "スペイン語", "キーフレーズ", "英語訳",
+        "quote", "situation", "explanation", "blank", "問題", "答え", "意味", "訳"
       ];
       if (headerKeywords.some((k) => headerText.includes(k.toLowerCase()))) {
         headerFieldMap = cols.map(detectHeaderField);
@@ -149,9 +152,11 @@ function parseCSV(csvText) {
  * app.js の更新（SETS 配列の書き換え）
  * ------------------------------------------------------------------ */
 
-// 音声に使う英文テキスト（アプリのgetEnglishAnswer/getChunkQuoteTextと同じ優先順位）
+// 英語正解テキストの取得（英語訳 → セリフ → english の優先順位）
+// ※ スペイン語版では fullQuote（漫画内のセリフ）がスペイン語になるため
+//   英語は keyPhrase（セリフの英語訳）を優先する
 function getEnglishText(chunk) {
-  return chunk.fullQuote || chunk.keyPhrase || chunk.english || "";
+  return chunk.keyPhrase || chunk.fullQuote || chunk.english || "";
 }
 
 // セット計算のハッシュ（音声設定込み）→ 音声URLの ?v= に使う

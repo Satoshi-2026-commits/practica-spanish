@@ -1442,6 +1442,7 @@ const questionSituation = document.querySelector("#question-situation");
 
 const meaningArea = document.querySelector("#meaning-area");
 const answerMain = document.querySelector("#answer-main");
+const answerEnglish = document.querySelector("#answer-english");
 const answerExplanation = document.querySelector("#answer-explanation");
 
 const progressCount = document.querySelector("#progress-count");
@@ -1639,6 +1640,8 @@ function showCurrentChunk(resetTimerState = true) {
     questionSituation.textContent = "Check the learning set data";
     meaningArea.hidden = false;
     answerMain.textContent = "";
+    answerEnglish.hidden = true;
+    answerEnglish.textContent = "";
     answerExplanation.textContent = "";
     updateProgress();
     return;
@@ -1692,6 +1695,16 @@ function showCurrentChunk(resetTimerState = true) {
       answerMain.textContent = currentChunk.fullQuote || currentChunk.keyPhrase || "";
     }
 
+    // 補足: 英語訳（セリフの英語訳列）。スペイン語の正解の下に参考として表示
+    const englishSupplement = getEnglishAnswer(currentChunk);
+    if (englishSupplement && englishSupplement !== answerMain.textContent) {
+      answerEnglish.textContent = `🇬🇧 ${englishSupplement}`;
+      answerEnglish.hidden = false;
+    } else {
+      answerEnglish.textContent = "";
+      answerEnglish.hidden = true;
+    }
+
     if (currentChunk.explanation) {
       answerExplanation.textContent = currentChunk.explanation;
       answerExplanation.hidden = false;
@@ -1711,6 +1724,14 @@ function showCurrentChunk(resetTimerState = true) {
     }
     questionSituation.textContent = "";
     answerMain.textContent = currentChunk.english || "";
+    const englishSupplement = getEnglishAnswer(currentChunk);
+    if (englishSupplement && englishSupplement !== answerMain.textContent) {
+      answerEnglish.textContent = `🇬🇧 ${englishSupplement}`;
+      answerEnglish.hidden = false;
+    } else {
+      answerEnglish.textContent = "";
+      answerEnglish.hidden = true;
+    }
     answerExplanation.textContent = "";
     answerExplanation.hidden = true;
   }
@@ -2700,10 +2721,12 @@ function updateInstantStatus(status, text) {
   }
 }
 
-// 英語正解テキストの取得（fullQuote優先、2列の場合はenglish）
+// 英語正解テキストの取得（英語訳 → セリフ → english の優先順位）
+// ※ スペイン語版では fullQuote（漫画内のセリフ）がスペイン語になるため
+//   英語は keyPhrase（セリフの英語訳）を優先する
 function getEnglishAnswer(chunk) {
   if (!chunk) return "";
-  return chunk.fullQuote || chunk.keyPhrase || chunk.english || "";
+  return chunk.keyPhrase || chunk.fullQuote || chunk.english || "";
 }
 
 // 瞬間英作文カードの表示更新

@@ -442,6 +442,17 @@ h1 {
   transition: font-size 0.15s ease;
 }
 
+.answer-english {
+  color: #6f5f52;
+  font-size: calc(clamp(0.95rem, 3.8vw, 1.1rem) * var(--card-font-scale, 1));
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1.4;
+  margin: 6px 0 0;
+  word-break: break-word;
+  white-space: pre-line;
+}
+
 .answer-explanation {
   color: #6f5f52;
   font-size: calc(clamp(0.85rem, 3.4vw, 0.98rem) * var(--card-font-scale, 1));
