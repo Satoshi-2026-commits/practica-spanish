@@ -12,10 +12,9 @@
  *   「問題データ反映.command」をダブルクリック
  *   （または手動で pbpaste > work/sets/<セット名>.tsv して node work/generate_audio.mjs）
  *
- * 音声はmacOS内蔵ボイス Kyoko / Samantha を使用します。
+ * 音声はmacOS内蔵ボイス Paulina (es_MX) / Samantha (en_US) を使用します。
  *   ※ Enhanced版ボイス（システム設定 → アクセシビリティ → 読み上げコンテンツ → システムボイス）
  *     をインストールして再実行すると、より高品質な音声になります。
- *   ※ 日本語はアプリの設定（1.06倍速）に合わせています（Kyoko標準180wpm × 1.06 ≒ 191wpm）。
  */
 import { execFileSync } from "node:child_process";
 import fs from "node:fs";
@@ -30,9 +29,9 @@ const APP_FILE = "app.js";
 const OUT_DIR = "audio";
 
 // 速度設定（アプリのspeechSynthesisの速度設定に合わせる）
-// Kyokoの標準速度は -r 180 相当（実測）→ アプリの日本語1.06倍 = -r 191
-const JA_VOICE = "Kyoko";
-const JA_RATE = "191";
+// スペイン語は Paulina（es_MX・メキシコ）を標準速度、英語は Samantha を使用
+// ※ データ構造は日本語版と共通のため、スペイン語テキストは japanese スロットに入る
+const ES_VOICE = "Paulina";
 const EN_VOICE = "Samantha";
 
 /* ------------------------------------------------------------------
@@ -47,7 +46,8 @@ function detectHeaderField(headerText) {
     ["fullQuote", ["セリフ", "例文", "使用例", "フル", "quote"]],
     ["situation", ["作品", "キャラ", "状況", "場面", "situation"]],
     ["keyPhrase", ["英文", "英語", "english", "phrase", "キーフレーズ"]],
-    ["japanese", ["日本語", "訳", "japanese", "意味"]],
+    // ※ スペイン語は japanese スロット（=出題源）に入れる
+    ["japanese", ["日本語", "訳", "japanese", "意味", "spanish", "español", "espanol", "スペイン語", "西語"]],
   ];
   for (const [field, keywords] of rules) {
     if (keywords.some((k) => text.includes(k.toLowerCase()))) return field;
@@ -109,7 +109,8 @@ function parseCSV(csvText) {
       const headerKeywords = [
         "英文", "日本語訳", "実際のセリフ", "使用例", "作品", "キャラクター", "状況",
         "ニュアンス", "解説", "穴埋め", "単語", "phrase", "english", "japanese",
-        "quote", "situation", "explanation", "blank", "問題", "答え", "意味", "訳"
+        "spanish", "español", "espanol", "quote", "situation", "explanation",
+        "blank", "問題", "答え", "意味", "訳"
       ];
       if (headerKeywords.some((k) => headerText.includes(k.toLowerCase()))) {
         headerFieldMap = cols.map(detectHeaderField);
@@ -156,7 +157,7 @@ function getEnglishText(chunk) {
 // セット計算のハッシュ（音声設定込み）→ 音声URLの ?v= に使う
 function computeSetHash(chunks) {
   const canonical = [
-    JA_VOICE, JA_RATE, EN_VOICE,
+    ES_VOICE, EN_VOICE,
     ...chunks.map((c) => `${c.japanese}\n${getEnglishText(c)}`),
   ].join("\u0000");
   return crypto.createHash("sha256").update(canonical).digest("hex").slice(0, 8);
@@ -209,7 +210,7 @@ function syncSets(appSets) {
 function removeGeneratedAudio(setOutDir) {
   if (!fs.existsSync(setOutDir)) return;
   for (const file of fs.readdirSync(setOutDir)) {
-    if (/^(ja|en)-\d+\.m4a$/.test(file)) {
+    if (/^(es|en)-\d+\.m4a$/.test(file)) {
       fs.unlinkSync(path.join(setOutDir, file));
     }
   }
@@ -300,7 +301,7 @@ for (const entry of manifest.sets) {
       const num = String(i + 1).padStart(2, "0");
       const chunk = chunkList[i];
       try {
-        generateAudioFile(chunk.japanese, JA_VOICE, JA_RATE, path.join(setOutDir, `ja-${num}.m4a`));
+        generateAudioFile(chunk.japanese, ES_VOICE, null, path.join(setOutDir, `es-${num}.m4a`));
         generateAudioFile(getEnglishText(chunk), EN_VOICE, null, path.join(setOutDir, `en-${num}.m4a`));
         generated += 2;
       } catch (error) {
