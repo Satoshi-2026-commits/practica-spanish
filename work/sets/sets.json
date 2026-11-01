@@ -1,0 +1,9 @@
+{
+  "sets": [
+    { "id": "daily",    "name": "日常会話",       "tsv": "daily.tsv" },
+    { "id": "business", "name": "ビジネス",       "tsv": "business.tsv" },
+    { "id": "travel",   "name": "旅行・ホテル",   "tsv": "travel.tsv" },
+    { "id": "idiom",    "name": "イディオム・慣用句", "tsv": "idiom.tsv" },
+    { "id": "toeic",    "name": "TOEIC頻出",      "tsv": "toeic.tsv" }
+  ]
+}
