@@ -201,6 +201,11 @@ h1 {
   will-change: transform;
 }
 
+/* hidden属性を効かせるため（display:flexがhiddenの既定値を上書きしてしまうのを防ぐ） */
+.chunk-card[hidden] {
+  display: none;
+}
+
 .chunk-card.dragging {
   cursor: grabbing;
   transition: none !important;
