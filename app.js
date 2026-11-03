@@ -1895,6 +1895,7 @@ const timerBar = document.querySelector("#timer-bar");
 const timerBadge = document.querySelector("#timer-badge");
 const timerCount = document.querySelector("#timer-count");
 const timerSelect = document.querySelector("#timer-select");
+const timerWalker = document.querySelector("#timer-walker");
 
 // ナビゲーション・文字サイズ調整要素
 const prevButton = document.querySelector("#prev-button");
@@ -2008,6 +2009,12 @@ function updateTimerDisplay() {
   const percentage = (remainingTime / timerDuration) * 100;
   timerBar.style.width = `${percentage}%`;
 
+  // タイマーウォーカーをバーに合わせて右へ移動（100%時点で右端に到達）
+  if (timerWalker) {
+    const walkerLeft = timerDuration > 0 ? ((timerDuration - remainingTime) / timerDuration) * 100 : 0;
+    timerWalker.style.left = `${walkerLeft}%`;
+  }
+
   if (remainingTime <= 3 && remainingTime > 0) {
     timerContainer.classList.add("timer-warning");
   } else {
@@ -2042,12 +2049,29 @@ function startTimer() {
   void timerBar.offsetWidth; // 強制リフロー
   timerBar.style.transition = "width 1s linear, background-color 0.3s ease";
 
+  // タイマーウォーカーを表示してスタート位置（左端）に戻す
+  if (timerWalker && timerDuration > 0) {
+    timerWalker.hidden = false;
+    timerWalker.classList.add("walking");
+    timerWalker.style.transition = "none";
+    timerWalker.style.left = "0%";
+    void timerWalker.offsetWidth; // 強制リフロー
+    timerWalker.style.transition = "left 1s linear, opacity 0.3s ease";
+  }
+
   timerInterval = setInterval(() => {
     remainingTime--;
     updateTimerDisplay();
 
     if (remainingTime <= 0) {
       stopTimer();
+      // タイマーウォーカーをフェードアウト
+      if (timerWalker) {
+        timerWalker.style.opacity = "0";
+        setTimeout(() => {
+          timerWalker.hidden = true;
+        }, 350);
+      }
       // 0秒になったら自動で意味を表示
       if (meaningArea.hidden) {
         meaningArea.hidden = false;
@@ -2061,6 +2085,10 @@ function stopTimer() {
   if (timerInterval) {
     clearInterval(timerInterval);
     timerInterval = null;
+  }
+  // 歩行アニメーションを止める
+  if (timerWalker) {
+    timerWalker.classList.remove("walking");
   }
 }
 

@@ -375,6 +375,88 @@ h1 {
   }
 }
 
+/* ── タイマーバー上を歩くドット絵ロボット ── */
+.timer-bar-track {
+  position: relative;
+}
+
+.timer-walker {
+  --rb: #c97b4a; /* 本体 → テーマカラー */
+  --rf: #fdf6ec; /* 顔 */
+  --rd: #34251d; /* 輪郭・目・口・アンテナ */
+  --rk: #e8b08a; /* 頬 */
+  position: absolute;
+  left: 0%;
+  top: -10px;
+  transform: translateX(-50%) scale(0.5);
+  transform-origin: left center;
+  width: 60px;
+  height: 60px;
+  z-index: 3;
+  pointer-events: none;
+  opacity: 1;
+  transition: left 1s linear, opacity 0.3s ease;
+}
+.timer-walker.walking {
+  animation: timer-walk-bob 0.3s steps(1) infinite;
+}
+@keyframes timer-walk-bob {
+  0%, 100% {
+    transform: translateX(-50%) scale(0.5) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) scale(0.5) translateY(-2px);
+  }
+}
+
+.timer-robot {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+.timer-robot .dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 4px;
+}
+.timer-robot .timer-static {
+  box-shadow: 28px 0 var(--rd),28px 4px var(--rd),12px 8px var(--rb),16px 8px var(--rb),20px 8px var(--rb),24px 8px var(--rb),28px 8px var(--rb),32px 8px var(--rb),36px 8px var(--rb),40px 8px var(--rb),44px 8px var(--rb),12px 12px var(--rb),16px 12px var(--rf),20px 12px var(--rf),24px 12px var(--rf),28px 12px var(--rf),32px 12px var(--rf),36px 12px var(--rf),40px 12px var(--rf),44px 12px var(--rb),12px 16px var(--rb),16px 16px var(--rf),20px 16px var(--rd),24px 16px var(--rd),28px 16px var(--rf),32px 16px var(--rd),36px 16px var(--rd),40px 16px var(--rf),44px 16px var(--rb),12px 20px var(--rb),16px 20px var(--rk),20px 20px var(--rf),24px 20px var(--rf),28px 20px var(--rf),32px 20px var(--rf),36px 20px var(--rf),40px 20px var(--rk),44px 20px var(--rb),12px 24px var(--rb),16px 24px var(--rf),20px 24px var(--rf),24px 24px var(--rd),28px 24px var(--rd),32px 24px var(--rd),36px 24px var(--rf),40px 24px var(--rf),44px 24px var(--rb),12px 28px var(--rb),16px 28px var(--rf),20px 28px var(--rf),24px 28px var(--rf),28px 28px var(--rf),32px 28px var(--rf),36px 28px var(--rf),40px 28px var(--rf),44px 28px var(--rb),12px 32px var(--rb),16px 32px var(--rb),20px 32px var(--rb),24px 32px var(--rb),28px 32px var(--rb),32px 32px var(--rb),36px 32px var(--rb),40px 32px var(--rb),44px 32px var(--rb),16px 36px var(--rb),20px 36px var(--rb),24px 36px var(--rb),28px 36px var(--rb),32px 36px var(--rb),36px 36px var(--rb),40px 36px var(--rb),16px 40px var(--rb),20px 40px var(--rb),24px 40px var(--rb),28px 40px var(--rb),32px 40px var(--rb),36px 40px var(--rb),40px 40px var(--rb),16px 44px var(--rb),20px 44px var(--rf),24px 44px var(--rf),28px 44px var(--rf),32px 44px var(--rf),36px 44px var(--rf),40px 44px var(--rb),8px 48px var(--rb),12px 48px var(--rb),16px 48px var(--rb),20px 48px var(--rb),24px 48px var(--rb),28px 48px var(--rb),32px 48px var(--rb),36px 48px var(--rb),40px 48px var(--rb),44px 48px var(--rb),48px 48px var(--rb),16px 52px var(--rb),20px 52px var(--rb),24px 52px var(--rb),28px 52px var(--rb),32px 52px var(--rb),36px 52px var(--rb),40px 52px var(--rb),16px 56px var(--rb),20px 56px var(--rb),36px 56px var(--rb),40px 56px var(--rb);
+}
+.timer-robot .timer-arm-down {
+  box-shadow: 8px 40px var(--rb),8px 44px var(--rb),48px 40px var(--rb),48px 44px var(--rb);
+}
+.timer-robot .timer-leg-a {
+  box-shadow: 16px 56px var(--rb),20px 56px var(--rb),32px 56px var(--rb),36px 56px var(--rb);
+  animation: timer-leg-a 0.3s steps(1) infinite;
+}
+.timer-robot .timer-leg-b {
+  box-shadow: 12px 56px var(--rb),16px 56px var(--rb),36px 56px var(--rb),40px 56px var(--rb);
+  animation: timer-leg-b 0.3s steps(1) infinite;
+}
+@keyframes timer-leg-a {
+  0%, 49.9% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+@keyframes timer-leg-b {
+  0%, 49.9% {
+    opacity: 0;
+  }
+  50%, 100% {
+    opacity: 1;
+  }
+}
+
+/* タイマーOFF時はロボットも非表示 */
+.timer-container.timer-off .timer-walker {
+  opacity: 0;
+}
+
 .question-area {
   margin: 16px 0;
   display: flex;
