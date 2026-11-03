@@ -492,6 +492,38 @@ h1 {
   animation: bounce 0.6s ease;
 }
 
+/* ── 完了画面のドット絵ロボット（候補A：両手を上げてジャンプ） ──
+   box-shadow方式: 4px角のセル1個に座標違いの影を多数重ねてドット絵を描く（約2KB） */
+.robot-happy {
+  --rb: #c97b4a; /* 本体 → アプリのテーマ色（テラコッタ） */
+  --rf: #fdf6ec; /* 顔 */
+  --rd: #34251d; /* 輪郭・目・口・アンテナ */
+  --rk: #e8b08a; /* 頬 */
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin: 6px auto 0;
+  animation: robot-hop 1.1s infinite;
+}
+.robot-happy .dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 4px;
+}
+/* 頭+胴+脚（動かない部分） */
+.robot-happy .robot-static { box-shadow: 28px 0 var(--rd),28px 4px var(--rd),12px 8px var(--rb),16px 8px var(--rb),20px 8px var(--rb),24px 8px var(--rb),28px 8px var(--rb),32px 8px var(--rb),36px 8px var(--rb),40px 8px var(--rb),44px 8px var(--rb),12px 12px var(--rb),16px 12px var(--rf),20px 12px var(--rf),24px 12px var(--rf),28px 12px var(--rf),32px 12px var(--rf),36px 12px var(--rf),40px 12px var(--rf),44px 12px var(--rb),12px 16px var(--rb),16px 16px var(--rf),20px 16px var(--rd),24px 16px var(--rd),28px 16px var(--rf),32px 16px var(--rd),36px 16px var(--rd),40px 16px var(--rf),44px 16px var(--rb),12px 20px var(--rb),16px 20px var(--rk),20px 20px var(--rf),24px 20px var(--rf),28px 20px var(--rf),32px 20px var(--rf),36px 20px var(--rf),40px 20px var(--rk),44px 20px var(--rb),12px 24px var(--rb),16px 24px var(--rf),20px 24px var(--rf),24px 24px var(--rd),28px 24px var(--rd),32px 24px var(--rd),36px 24px var(--rf),40px 24px var(--rf),44px 24px var(--rb),12px 28px var(--rb),16px 28px var(--rf),20px 28px var(--rf),24px 28px var(--rf),28px 28px var(--rf),32px 28px var(--rf),36px 28px var(--rf),40px 28px var(--rf),44px 28px var(--rb),12px 32px var(--rb),16px 32px var(--rb),20px 32px var(--rb),24px 32px var(--rb),28px 32px var(--rb),32px 32px var(--rb),36px 32px var(--rb),40px 32px var(--rb),44px 32px var(--rb),16px 36px var(--rb),20px 36px var(--rb),24px 36px var(--rb),28px 36px var(--rb),32px 36px var(--rb),36px 36px var(--rb),40px 36px var(--rb),16px 40px var(--rb),20px 40px var(--rb),24px 40px var(--rb),28px 40px var(--rb),32px 40px var(--rb),36px 40px var(--rb),40px 40px var(--rb),16px 44px var(--rb),20px 44px var(--rf),24px 44px var(--rf),28px 44px var(--rf),32px 44px var(--rf),36px 44px var(--rf),40px 44px var(--rb),8px 48px var(--rb),12px 48px var(--rb),16px 48px var(--rb),20px 48px var(--rb),24px 48px var(--rb),28px 48px var(--rb),32px 48px var(--rb),36px 48px var(--rb),40px 48px var(--rb),44px 48px var(--rb),48px 48px var(--rb),16px 52px var(--rb),20px 52px var(--rb),24px 52px var(--rb),28px 52px var(--rb),32px 52px var(--rb),36px 52px var(--rb),40px 52px var(--rb),16px 56px var(--rb),20px 56px var(--rb),36px 56px var(--rb),40px 56px var(--rb); }
+/* 腕（上げ⇄下げを点滅で切替） */
+.robot-happy .arm-up { box-shadow: 8px 36px var(--rb),8px 40px var(--rb),8px 44px var(--rb),48px 36px var(--rb),48px 40px var(--rb),48px 44px var(--rb); animation: robot-blink-a 0.55s infinite; }
+.robot-happy .arm-down { box-shadow: 8px 40px var(--rb),8px 44px var(--rb),48px 40px var(--rb),48px 44px var(--rb); animation: robot-blink-b 0.55s infinite; }
+/* 紙吹雪（2層を交互に点滅） */
+.robot-happy .con-a { box-shadow: 20px 8px #e05c5c,4px 40px #58a6d6,60px 8px #e8b13d; animation: robot-blink-b 1.1s infinite; }
+.robot-happy .con-b { box-shadow: 64px 44px #7bb661,-4px 16px #e8b13d,36px 68px #e05c5c; animation: robot-blink-a 1.1s infinite; }
+@keyframes robot-blink-a { 0%,49.9% { opacity: 1 } 50%,100% { opacity: 0 } }
+@keyframes robot-blink-b { 0%,49.9% { opacity: 0 } 50%,100% { opacity: 1 } }
+@keyframes robot-hop { 0%,38% { transform: translateY(0) } 46%,58% { transform: translateY(-10px) } 66%,100% { transform: translateY(0) } }
+
 .complete-card h2 {
   color: #c97b4a;
   font-size: 1.5rem;
