@@ -302,6 +302,7 @@ for (const entry of manifest.sets) {
     console.log(`[${entry.name}] ${chunkList.length} 問の音声を生成...`);
     fs.mkdirSync(setOutDir, { recursive: true });
     removeGeneratedAudio(setOutDir);
+    let setFailed = 0; // このセット内の失敗数（1問でも失敗したらハッシュを記録しない）
     for (let i = 0; i < chunkList.length; i++) {
       const num = String(i + 1).padStart(2, "0");
       const chunk = chunkList[i];
@@ -311,6 +312,7 @@ for (const entry of manifest.sets) {
         generated += 2;
       } catch (error) {
         failed += 1;
+        setFailed += 1;
         console.error(`  問題 ${num} でエラー:`, error.message);
       }
       // ターミナルに1行プログレスを表示（上書き更新）
@@ -326,7 +328,13 @@ for (const entry of manifest.sets) {
     audioVersion: hash,
     chunks: chunkList,
   });
-  storedHashes[entry.id] = hash;
+  // ※ 1問でも音声生成に失敗したセットはハッシュを記録しない。
+  //   記録してしまうと次回「変更なし」と判断され、抜けた音声が永久に再生成されなくなるため
+  if (setFailed === 0) {
+    storedHashes[entry.id] = hash;
+  } else {
+    console.warn(`[${entry.name}] 生成失敗のためハッシュを未記録（次回実行時の再生成を保証する仕組み）`);
+  }
 }
 
 if (appSets.length === 0) {
