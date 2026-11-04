@@ -1896,6 +1896,8 @@ const timerBadge = document.querySelector("#timer-badge");
 const timerCount = document.querySelector("#timer-count");
 const timerSelect = document.querySelector("#timer-select");
 const timerWalker = document.querySelector("#timer-walker");
+// タイマーウォーカーのフェードアウト待ち（次の問題と競合しないよう管理）
+let walkerHideTimeout = null;
 
 // ナビゲーション・文字サイズ調整要素
 const prevButton = document.querySelector("#prev-button");
@@ -2009,9 +2011,9 @@ function updateTimerDisplay() {
   const percentage = (remainingTime / timerDuration) * 100;
   timerBar.style.width = `${percentage}%`;
 
-  // タイマーウォーカーをバーに合わせて右へ移動（100%時点で右端に到達）
+  // タイマーウォーカーを残り時間のバー右端に合わせて左へ移動（緑バーが縮む方向と同じ）
   if (timerWalker) {
-    const walkerLeft = timerDuration > 0 ? ((timerDuration - remainingTime) / timerDuration) * 100 : 0;
+    const walkerLeft = timerDuration > 0 ? (remainingTime / timerDuration) * 100 : 0;
     timerWalker.style.left = `${walkerLeft}%`;
   }
 
@@ -2049,12 +2051,18 @@ function startTimer() {
   void timerBar.offsetWidth; // 強制リフロー
   timerBar.style.transition = "width 1s linear, background-color 0.3s ease";
 
-  // タイマーウォーカーを表示してスタート位置（左端）に戻す
+  // タイマーウォーカーを表示してスタート位置（右端）に戻す
   if (timerWalker && timerDuration > 0) {
+    // 前回タイムアップ時のフェードアウト待ちがあれば解除（次の問題と競合しないように）
+    if (walkerHideTimeout) {
+      clearTimeout(walkerHideTimeout);
+      walkerHideTimeout = null;
+    }
     timerWalker.hidden = false;
     timerWalker.classList.add("walking");
+    timerWalker.style.opacity = "1"; // 前回タイムアップ時のフェードアウトをリセット
     timerWalker.style.transition = "none";
-    timerWalker.style.left = "0%";
+    timerWalker.style.left = "100%";
     void timerWalker.offsetWidth; // 強制リフロー
     timerWalker.style.transition = "left 1s linear, opacity 0.3s ease";
   }
@@ -2068,8 +2076,9 @@ function startTimer() {
       // タイマーウォーカーをフェードアウト
       if (timerWalker) {
         timerWalker.style.opacity = "0";
-        setTimeout(() => {
+        walkerHideTimeout = setTimeout(() => {
           timerWalker.hidden = true;
+          walkerHideTimeout = null;
         }, 350);
       }
       // 0秒になったら自動で意味を表示
