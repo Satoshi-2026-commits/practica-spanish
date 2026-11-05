@@ -2146,7 +2146,15 @@ function showCurrentChunk(resetTimerState = true) {
 
   if (isFullFormat) {
     // 1行目: 日本語訳（2列目）
-    questionTranslation.textContent = currentChunk.japanese || "";
+    // Fill-inモードでは全文（japanese=スペイン語）を出すと答えが分かるため、
+    // 英語訳（keyPhrase）を問題として表示する
+    const englishPrompt = getEnglishAnswer(currentChunk);
+    if (maskMode === "blank") {
+      // 英語訳が取れない／全文と同一（スペイン語フォールバック）の場合は空欄文だけ表示
+      questionTranslation.textContent = englishPrompt && englishPrompt !== quoteText ? englishPrompt : "";
+    } else {
+      questionTranslation.textContent = currentChunk.japanese || "";
+    }
 
     // 2行目: 実際のセリフ／使用例（3列目）
     if (maskMode === "blank") {
@@ -2169,8 +2177,9 @@ function showCurrentChunk(resetTimerState = true) {
     }
 
     // 補足: 英語訳（セリフの英語訳列）。スペイン語の正解の下に参考として表示
-    const englishSupplement = getEnglishAnswer(currentChunk);
-    if (englishSupplement && englishSupplement !== answerMain.textContent) {
+    // Fill-inモードでは英語訳を問題文として上部に表示済みのため、ここには出さない
+    const englishSupplement = englishPrompt;
+    if (maskMode !== "blank" && englishSupplement && englishSupplement !== answerMain.textContent) {
       answerEnglish.textContent = `🇬🇧 ${englishSupplement}`;
       answerEnglish.hidden = false;
     } else {
