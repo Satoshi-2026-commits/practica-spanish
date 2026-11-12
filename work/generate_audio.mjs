@@ -292,6 +292,9 @@ for (const entry of manifest.sets) {
   }
 
   const hash = computeSetHash(chunkList);
+  // このセット内の失敗数（1問でも失敗したらハッシュを記録しない）
+  // ※ 生成をスキップする（変更なし）場合でも参照するため、if/else の外で宣言する
+  let setFailed = 0;
   const setOutDir = path.join(OUT_DIR, entry.id);
   const unchanged = storedHashes[entry.id] === hash && fs.existsSync(setOutDir);
 
@@ -302,7 +305,6 @@ for (const entry of manifest.sets) {
     console.log(`[${entry.name}] ${chunkList.length} 問の音声を生成...`);
     fs.mkdirSync(setOutDir, { recursive: true });
     removeGeneratedAudio(setOutDir);
-    let setFailed = 0; // このセット内の失敗数（1問でも失敗したらハッシュを記録しない）
     for (let i = 0; i < chunkList.length; i++) {
       const num = String(i + 1).padStart(2, "0");
       const chunk = chunkList[i];
