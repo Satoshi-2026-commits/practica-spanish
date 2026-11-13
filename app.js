@@ -4171,6 +4171,14 @@ chunkCard.addEventListener("pointerup", (event) => {
 
   resetSwipeUI();
 
+  // テキスト選択中(長タップで単語を選択した直後)は
+  // タップ・スワイプ判定を無効にして、iOSの「調べる」メニューを活かす
+  const currentSelection = window.getSelection();
+  if (currentSelection && !currentSelection.isCollapsed) {
+    chunkCard.style.transform = "";
+    return;
+  }
+
   // タップ（クリック）：意味の表示／非表示を切り替え
   if (absH < TAP_THRESHOLD && absV < TAP_THRESHOLD) {
     toggleMeaning();

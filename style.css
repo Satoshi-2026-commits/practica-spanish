@@ -564,6 +564,15 @@ h1 {
   transition: font-size 0.15s ease;
 }
 
+/* 回答テキストは長タップでの単語選択(iOSの「調べる」)を有効にする。
+   カード全体はスワイプ操作のため user-select: none だが、この部分だけ解除 */
+.answer-main,
+.answer-english,
+.answer-explanation {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
 .complete-card {
   background: #ffffff;
   border-radius: 20px;
