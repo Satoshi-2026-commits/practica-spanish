@@ -2548,6 +2548,871 @@ const SETS = [
       "explanation": "免税手続きの機械はあちらにあります。一緒に行きましょう。"
       }
       ]
+    },
+    {
+      "id": "toeic",
+      "name": "Set 5",
+      "audioVersion": "f3e7a239",
+      "chunks": [
+      {
+      "keyPhrase": "Good morning, everyone."
+,
+      "japanese": "Buenos días a todos."
+,
+      "fullQuote": "Buenos días a todos."
+,
+      "situation": "なし"
+,
+      "explanation": "おはようございます。皆さん。"
+      },
+      {
+      "keyPhrase": "How are you?"
+,
+      "japanese": "¿Qué tal están?"
+,
+      "fullQuote": "¿Qué tal están?"
+,
+      "situation": "なし"
+,
+      "explanation": "お元気ですか？"
+      },
+      {
+      "keyPhrase": "Today is your departure day."
+,
+      "japanese": "Hoy es el día de regreso a casa."
+,
+      "fullQuote": "Hoy es el día de regreso a casa."
+,
+      "situation": "なし"
+,
+      "explanation": "今日は帰国の日ですね。"
+      },
+      {
+      "keyPhrase": "How was your trip to Japan?"
+,
+      "japanese": "¿Qué tal ha sido el viaje por Japón?"
+,
+      "fullQuote": "¿Qué tal ha sido el viaje por Japón?"
+,
+      "situation": "なし"
+,
+      "explanation": "日本旅行はいかがでしたか？"
+      },
+      {
+      "keyPhrase": "Have you enjoyed Japan?"
+,
+      "japanese": "¿Han disfrutado de Japón?"
+,
+      "fullQuote": "¿Han disfrutado de Japón?"
+,
+      "situation": "なし"
+,
+      "explanation": "日本を楽しんでいただけましたか？"
+      },
+      {
+      "keyPhrase": "I'm glad to hear that!"
+,
+      "japanese": "¡Me alegro mucho!"
+,
+      "fullQuote": "¡Me alegro mucho!"
+,
+      "situation": "なし"
+,
+      "explanation": "それはよかったです！"
+      },
+      {
+      "keyPhrase": "Is everything ready?"
+,
+      "japanese": "¿Está todo preparado?"
+,
+      "fullQuote": "¿Está todo preparado?"
+,
+      "situation": "なし"
+,
+      "explanation": "準備はできていますか？"
+      },
+      {
+      "keyPhrase": "Let me know when everyone is ready."
+,
+      "japanese": "Avíseme cuando todos estén preparados."
+,
+      "fullQuote": "Avíseme cuando todos estén preparados."
+,
+      "situation": "なし"
+,
+      "explanation": "皆さんの準備ができたら教えてください。"
+      },
+      {
+      "keyPhrase": "Please ask the passengers to wait in the lobby."
+,
+      "japanese": "Por favor, dígales a los pasajeros que esperen en el vestíbulo."
+,
+      "fullQuote": "Por favor, dígales a los pasajeros que esperen en el vestíbulo."
+,
+      "situation": "なし"
+,
+      "explanation": "お客様にロビーでお待ちいただくよう伝えてください。"
+      },
+      {
+      "keyPhrase": "I'm in contact with the bus driver."
+,
+      "japanese": "Estoy en contacto con el conductor del autobús."
+,
+      "fullQuote": "Estoy en contacto con el conductor del autobús."
+,
+      "situation": "なし"
+,
+      "explanation": "バスのドライバーと連絡を取っています。"
+      },
+      {
+      "keyPhrase": "Has the bus arrived yet?"
+,
+      "japanese": "¿Ya ha llegado el autobús?"
+,
+      "fullQuote": "¿Ya ha llegado el autobús?"
+,
+      "situation": "なし"
+,
+      "explanation": "バスはもう到着しましたか？"
+      },
+      {
+      "keyPhrase": "The bus will arrive shortly."
+,
+      "japanese": "El autobús llegará en breve."
+,
+      "fullQuote": "El autobús llegará en breve."
+,
+      "situation": "なし"
+,
+      "explanation": "バスはまもなく到着します。"
+      },
+      {
+      "keyPhrase": "The bus is expected to arrive in about ten minutes."
+,
+      "japanese": "Se espera que el autobús llegue en unos diez minutos."
+,
+      "fullQuote": "Se espera que el autobús llegue en unos diez minutos."
+,
+      "situation": "なし"
+,
+      "explanation": "バスはあと10分ほどで到着する予定です。"
+      },
+      {
+      "keyPhrase": "The bus will arrive at the main entrance of the hotel."
+,
+      "japanese": "El autobús llegará a la entrada principal del hotel."
+,
+      "fullQuote": "El autobús llegará a la entrada principal del hotel."
+,
+      "situation": "なし"
+,
+      "explanation": "バスはホテルの正面に到着します。"
+      },
+      {
+      "keyPhrase": "The bus has arrived."
+,
+      "japanese": "El autobús ya ha llegado."
+,
+      "fullQuote": "El autobús ya ha llegado."
+,
+      "situation": "なし"
+,
+      "explanation": "バスが到着しました。"
+      },
+      {
+      "keyPhrase": "Please gather here."
+,
+      "japanese": "Por favor, reúnanse aquí."
+,
+      "fullQuote": "Por favor, reúnanse aquí."
+,
+      "situation": "なし"
+,
+      "explanation": "皆さん、こちらに集まってください。"
+      },
+      {
+      "keyPhrase": "Please get on the bus in order."
+,
+      "japanese": "Suban al autobús en orden, por favor."
+,
+      "fullQuote": "Suban al autobús en orden, por favor."
+,
+      "situation": "なし"
+,
+      "explanation": "順番にバスに乗ってください。"
+      },
+      {
+      "keyPhrase": "Watch your step when getting on."
+,
+      "japanese": "Tengan cuidado al subir."
+,
+      "fullQuote": "Tengan cuidado al subir."
+,
+      "situation": "なし"
+,
+      "explanation": "足元にお気をつけください。"
+      },
+      {
+      "keyPhrase": "We're going to load the suitcases onto the bus."
+,
+      "japanese": "Vamos a cargar las maletas en el autobús."
+,
+      "fullQuote": "Vamos a cargar las maletas en el autobús."
+,
+      "situation": "なし"
+,
+      "explanation": "スーツケースをバスに積み込みます。"
+      },
+      {
+      "keyPhrase": "Please take your hand luggage with you."
+,
+      "japanese": "Lleven el equipaje de mano con ustedes."
+,
+      "fullQuote": "Lleven el equipaje de mano con ustedes."
+,
+      "situation": "なし"
+,
+      "explanation": "手荷物は車内に持ち込んでください。"
+      },
+      {
+      "keyPhrase": "Has everyone boarded?"
+,
+      "japanese": "¿Ya han subido todos?"
+,
+      "fullQuote": "¿Ya han subido todos?"
+,
+      "situation": "なし"
+,
+      "explanation": "全員乗車しましたか？"
+      },
+      {
+      "keyPhrase": "I'll check the number of passengers."
+,
+      "japanese": "Voy a comprobar el número de pasajeros."
+,
+      "fullQuote": "Voy a comprobar el número de pasajeros."
+,
+      "situation": "なし"
+,
+      "explanation": "人数を確認します。"
+      },
+      {
+      "keyPhrase": "Is everyone here?"
+,
+      "japanese": "¿Están todos?"
+,
+      "fullQuote": "¿Están todos?"
+,
+      "situation": "なし"
+,
+      "explanation": "全員揃っていますか？"
+      },
+      {
+      "keyPhrase": "Have you left anything behind?"
+,
+      "japanese": "¿Se han dejado algo?"
+,
+      "fullQuote": "¿Se han dejado algo?"
+,
+      "situation": "なし"
+,
+      "explanation": "忘れ物はありませんか？"
+      },
+      {
+      "keyPhrase": "Are all the suitcases here?"
+,
+      "japanese": "¿Están todas las maletas?"
+,
+      "fullQuote": "¿Están todas las maletas?"
+,
+      "situation": "なし"
+,
+      "explanation": "スーツケースは全部揃っていますか？"
+      },
+      {
+      "keyPhrase": "All right, we're setting off."
+,
+      "japanese": "Bueno, nos ponemos en marcha."
+,
+      "fullQuote": "Bueno, nos ponemos en marcha."
+,
+      "situation": "なし"
+,
+      "explanation": "それでは出発します。"
+      },
+      {
+      "keyPhrase": "The journey to Narita Airport will take about an hour and a half."
+,
+      "japanese": "El trayecto hasta el aeropuerto de Narita durará aproximadamente una hora y media."
+,
+      "fullQuote": "El trayecto hasta el aeropuerto de Narita durará aproximadamente una hora y media."
+,
+      "situation": "なし"
+,
+      "explanation": "成田空港まで約1時間半です。"
+      },
+      {
+      "keyPhrase": "According to the driver, everything is going well so far."
+,
+      "japanese": "Según el conductor, todo va bien por ahora."
+,
+      "fullQuote": "Según el conductor, todo va bien por ahora."
+,
+      "situation": "なし"
+,
+      "explanation": "ドライバーによると、現在のところ順調です。"
+      },
+      {
+      "keyPhrase": "There's some traffic."
+,
+      "japanese": "Hay algo de tráfico."
+,
+      "fullQuote": "Hay algo de tráfico."
+,
+      "situation": "なし"
+,
+      "explanation": "道路が少し混雑しています。"
+      },
+      {
+      "keyPhrase": "It looks like there's quite a lot of traffic."
+,
+      "japanese": "Parece que hay bastante tráfico."
+,
+      "fullQuote": "Parece que hay bastante tráfico."
+,
+      "situation": "なし"
+,
+      "explanation": "かなり渋滞しているようですね。"
+      },
+      {
+      "keyPhrase": "We may take a little longer than expected."
+,
+      "japanese": "Es posible que tardemos un poco más de lo previsto."
+,
+      "fullQuote": "Es posible que tardemos un poco más de lo previsto."
+,
+      "situation": "なし"
+,
+      "explanation": "予定より少し時間がかかるかもしれません。"
+      },
+      {
+      "keyPhrase": "I'll check the estimated arrival time."
+,
+      "japanese": "Voy a confirmar la hora prevista de llegada."
+,
+      "fullQuote": "Voy a confirmar la hora prevista de llegada."
+,
+      "situation": "なし"
+,
+      "explanation": "到着予定時刻を確認します。"
+      },
+      {
+      "keyPhrase": "We'll arrive in about 30 minutes."
+,
+      "japanese": "Faltan unos treinta minutos para llegar."
+,
+      "fullQuote": "Faltan unos treinta minutos para llegar."
+,
+      "situation": "なし"
+,
+      "explanation": "到着まであと30分ほどです。"
+      },
+      {
+      "keyPhrase": "We'll arrive at Narita Airport shortly."
+,
+      "japanese": "Llegaremos al aeropuerto de Narita en breve."
+,
+      "fullQuote": "Llegaremos al aeropuerto de Narita en breve."
+,
+      "situation": "なし"
+,
+      "explanation": "まもなく成田空港に到着します。"
+      },
+      {
+      "keyPhrase": "Please keep your passports handy."
+,
+      "japanese": "Tengan los pasaportes a mano."
+,
+      "fullQuote": "Tengan los pasaportes a mano."
+,
+      "situation": "なし"
+,
+      "explanation": "パスポートをすぐに取り出せるようにしておいてください。"
+      },
+      {
+      "keyPhrase": "Please check that you haven't left anything behind."
+,
+      "japanese": "Comprueben que no se dejan nada."
+,
+      "fullQuote": "Comprueben que no se dejan nada."
+,
+      "situation": "なし"
+,
+      "explanation": "忘れ物がないか確認してください。"
+      },
+      {
+      "keyPhrase": "When we arrive at the airport, we'll unload the luggage right away."
+,
+      "japanese": "Cuando lleguemos al aeropuerto, descargaremos el equipaje enseguida."
+,
+      "fullQuote": "Cuando lleguemos al aeropuerto, descargaremos el equipaje enseguida."
+,
+      "situation": "なし"
+,
+      "explanation": "空港に着いたら、すぐに荷物を降ろします。"
+      },
+      {
+      "keyPhrase": "We've arrived at Narita Airport Terminal 2."
+,
+      "japanese": "Hemos llegado a la Terminal 2 del aeropuerto de Narita."
+,
+      "fullQuote": "Hemos llegado a la Terminal 2 del aeropuerto de Narita."
+,
+      "situation": "なし"
+,
+      "explanation": "成田空港第2ターミナルに到着しました。"
+      },
+      {
+      "keyPhrase": "We'll get off the bus here."
+,
+      "japanese": "Bajaremos del autobús aquí."
+,
+      "fullQuote": "Bajaremos del autobús aquí."
+,
+      "situation": "なし"
+,
+      "explanation": "こちらでバスを降ります。"
+      },
+      {
+      "keyPhrase": "We'll unload the luggage. Please wait a moment."
+,
+      "japanese": "Vamos a descargar el equipaje. Esperen un momento, por favor."
+,
+      "fullQuote": "Vamos a descargar el equipaje. Esperen un momento, por favor."
+,
+      "situation": "なし"
+,
+      "explanation": "荷物を降ろしますので、少々お待ちください。"
+      },
+      {
+      "keyPhrase": "Please collect your suitcases."
+,
+      "japanese": "Recojan sus maletas, por favor."
+,
+      "fullQuote": "Recojan sus maletas, por favor."
+,
+      "situation": "なし"
+,
+      "explanation": "荷物を受け取ってください。"
+      },
+      {
+      "keyPhrase": "Please check that everyone is here."
+,
+      "japanese": "Por favor, compruebe que están todos."
+,
+      "fullQuote": "Por favor, compruebe que están todos."
+,
+      "situation": "なし"
+,
+      "explanation": "全員揃っているか確認してください。"
+      },
+      {
+      "keyPhrase": "Are all the suitcases here?"
+,
+      "japanese": "¿Están todas las maletas?"
+,
+      "fullQuote": "¿Están todas las maletas?"
+,
+      "situation": "なし"
+,
+      "explanation": "荷物は全部揃っていますか？"
+      },
+      {
+      "keyPhrase": "Now let's go to the check-in counter."
+,
+      "japanese": "Ahora vamos al mostrador de facturación."
+,
+      "fullQuote": "Ahora vamos al mostrador de facturación."
+,
+      "situation": "なし"
+,
+      "explanation": "それでは、チェックインカウンターに向かいましょう。"
+      },
+      {
+      "keyPhrase": "Which airline are you flying with?"
+,
+      "japanese": "¿Con qué compañía aérea vuelan?"
+,
+      "fullQuote": "¿Con qué compañía aérea vuelan?"
+,
+      "situation": "なし"
+,
+      "explanation": "どの航空会社を利用されますか？"
+      },
+      {
+      "keyPhrase": "I'll take you to the Qatar Airways check-in counter."
+,
+      "japanese": "Les llevaré al mostrador de facturación de Qatar Airways."
+,
+      "fullQuote": "Les llevaré al mostrador de facturación de Qatar Airways."
+,
+      "situation": "なし"
+,
+      "explanation": "カタール航空のチェックインカウンターにご案内します。"
+      },
+      {
+      "keyPhrase": "Please follow me."
+,
+      "japanese": "Síganme, por favor."
+,
+      "fullQuote": "Síganme, por favor."
+,
+      "situation": "なし"
+,
+      "explanation": "こちらについてきてください。"
+      },
+      {
+      "keyPhrase": "This way, please."
+,
+      "japanese": "Por aquí, por favor."
+,
+      "fullQuote": "Por aquí, por favor."
+,
+      "situation": "なし"
+,
+      "explanation": "こちらへどうぞ。"
+      },
+      {
+      "keyPhrase": "It's over there."
+,
+      "japanese": "Es por allí."
+,
+      "fullQuote": "Es por allí."
+,
+      "situation": "なし"
+,
+      "explanation": "あちらです。"
+      },
+      {
+      "keyPhrase": "Here is the Qatar Airways check-in counter."
+,
+      "japanese": "Aquí está el mostrador de facturación de Qatar Airways."
+,
+      "fullQuote": "Aquí está el mostrador de facturación de Qatar Airways."
+,
+      "situation": "なし"
+,
+      "explanation": "こちらがカタール航空のチェックインカウンターです。"
+      },
+      {
+      "keyPhrase": "Please check in here."
+,
+      "japanese": "Hagan el check-in aquí, por favor."
+,
+      "fullQuote": "Hagan el check-in aquí, por favor."
+,
+      "situation": "なし"
+,
+      "explanation": "こちらでチェックインしてください。"
+      },
+      {
+      "keyPhrase": "Please check your suitcases in here."
+,
+      "japanese": "Facturen aquí sus maletas, por favor."
+,
+      "fullQuote": "Facturen aquí sus maletas, por favor."
+,
+      "situation": "なし"
+,
+      "explanation": "こちらでスーツケースを預けてください。"
+      },
+      {
+      "keyPhrase": "Please prepare your passports."
+,
+      "japanese": "Preparen sus pasaportes, por favor."
+,
+      "fullQuote": "Preparen sus pasaportes, por favor."
+,
+      "situation": "なし"
+,
+      "explanation": "パスポートを準備してください。"
+      },
+      {
+      "keyPhrase": "Please collect your boarding passes."
+,
+      "japanese": "Recojan sus tarjetas de embarque, por favor."
+,
+      "fullQuote": "Recojan sus tarjetas de embarque, por favor."
+,
+      "situation": "なし"
+,
+      "explanation": "搭乗券を受け取ってください。"
+      },
+      {
+      "keyPhrase": "Have you checked in yet?"
+,
+      "japanese": "¿Ya han hecho el check-in?"
+,
+      "fullQuote": "¿Ya han hecho el check-in?"
+,
+      "situation": "なし"
+,
+      "explanation": "チェックインは済みましたか？"
+      },
+      {
+      "keyPhrase": "Do you have your boarding passes?"
+,
+      "japanese": "¿Ya tienen las tarjetas de embarque?"
+,
+      "fullQuote": "¿Ya tienen las tarjetas de embarque?"
+,
+      "situation": "なし"
+,
+      "explanation": "搭乗券は受け取りましたか？"
+      },
+      {
+      "keyPhrase": "I'll now accompany you to the entrance of the security checkpoint."
+,
+      "japanese": "Ahora les acompañaré hasta la entrada del control de seguridad."
+,
+      "fullQuote": "Ahora les acompañaré hasta la entrada del control de seguridad."
+,
+      "situation": "なし"
+,
+      "explanation": "これから保安検査場の入口までご案内します。"
+      },
+      {
+      "keyPhrase": "After security, please proceed to your boarding gate."
+,
+      "japanese": "Después del control de seguridad, tendrán que dirigirse a la puerta de embarque."
+,
+      "fullQuote": "Después del control de seguridad, tendrán que dirigirse a la puerta de embarque."
+,
+      "situation": "なし"
+,
+      "explanation": "保安検査を通過した後は、搭乗ゲートに向かってください。"
+      },
+      {
+      "keyPhrase": "Please check your gate number on the information screens."
+,
+      "japanese": "Comprueben el número de la puerta de embarque en las pantallas."
+,
+      "fullQuote": "Comprueben el número de la puerta de embarque en las pantallas."
+,
+      "situation": "なし"
+,
+      "explanation": "搭乗ゲートの番号を案内表示で確認してください。"
+      },
+      {
+      "keyPhrase": "My job ends here."
+,
+      "japanese": "Mi trabajo termina aquí."
+,
+      "fullQuote": "Mi trabajo termina aquí."
+,
+      "situation": "なし"
+,
+      "explanation": "私の業務はここまでです。"
+      },
+      {
+      "keyPhrase": "It was a pleasure accompanying you."
+,
+      "japanese": "Ha sido un placer acompañarles."
+,
+      "fullQuote": "Ha sido un placer acompañarles."
+,
+      "situation": "なし"
+,
+      "explanation": "ご一緒できて光栄でした。"
+      },
+      {
+      "keyPhrase": "Thank you very much for visiting Japan."
+,
+      "japanese": "Muchas gracias por haber venido a Japón."
+,
+      "fullQuote": "Muchas gracias por haber venido a Japón."
+,
+      "situation": "なし"
+,
+      "explanation": "日本に来てくださってありがとうございました。"
+      },
+      {
+      "keyPhrase": "Have a nice flight!"
+,
+      "japanese": "¡Que tengan un buen vuelo!"
+,
+      "fullQuote": "¡Que tengan un buen vuelo!"
+,
+      "situation": "なし"
+,
+      "explanation": "どうぞ良いフライトを！"
+      },
+      {
+      "keyPhrase": "Have a safe journey back to Spain."
+,
+      "japanese": "¡Buen viaje de vuelta a España!"
+,
+      "fullQuote": "¡Buen viaje de vuelta a España!"
+,
+      "situation": "なし"
+,
+      "explanation": "スペインまでお気をつけてお帰りください。"
+      },
+      {
+      "keyPhrase": "Let me check."
+,
+      "japanese": "Déjeme comprobarlo."
+,
+      "fullQuote": "Déjeme comprobarlo."
+,
+      "situation": "なし"
+,
+      "explanation": "ちょっと確認させてください。"
+      },
+      {
+      "keyPhrase": "I'll check with the driver."
+,
+      "japanese": "Voy a consultarlo con el conductor."
+,
+      "fullQuote": "Voy a consultarlo con el conductor."
+,
+      "situation": "なし"
+,
+      "explanation": "ドライバーに確認します。"
+      },
+      {
+      "keyPhrase": "Please wait a moment."
+,
+      "japanese": "Espere un momento, por favor."
+,
+      "fullQuote": "Espere un momento, por favor."
+,
+      "situation": "なし"
+,
+      "explanation": "少々お待ちください。"
+      },
+      {
+      "keyPhrase": "Understood."
+,
+      "japanese": "De acuerdo."
+,
+      "fullQuote": "De acuerdo."
+,
+      "situation": "なし"
+,
+      "explanation": "分かりました。"
+      },
+      {
+      "keyPhrase": "Exactly."
+,
+      "japanese": "Exactamente."
+,
+      "fullQuote": "Exactamente."
+,
+      "situation": "なし"
+,
+      "explanation": "そのとおりです。"
+      },
+      {
+      "keyPhrase": "Could you repeat that, please?"
+,
+      "japanese": "¿Puede repetirlo, por favor?"
+,
+      "fullQuote": "¿Puede repetirlo, por favor?"
+,
+      "situation": "なし"
+,
+      "explanation": "もう一度お願いします。"
+      },
+      {
+      "keyPhrase": "Could you speak a little more slowly?"
+,
+      "japanese": "¿Puede hablar un poco más despacio?"
+,
+      "fullQuote": "¿Puede hablar un poco más despacio?"
+,
+      "situation": "なし"
+,
+      "explanation": "もう少しゆっくり話していただけますか？"
+      },
+      {
+      "keyPhrase": "If I understand correctly..."
+,
+      "japanese": "Si lo he entendido bien..."
+,
+      "fullQuote": "Si lo he entendido bien..."
+,
+      "situation": "なし"
+,
+      "explanation": "私の理解が正しければ……"
+      },
+      {
+      "keyPhrase": "No problem."
+,
+      "japanese": "No hay ningún problema."
+,
+      "fullQuote": "No hay ningún problema."
+,
+      "situation": "なし"
+,
+      "explanation": "問題ありません。"
+      },
+      {
+      "keyPhrase": "I'll take care of it."
+,
+      "japanese": "Yo me encargo."
+,
+      "fullQuote": "Yo me encargo."
+,
+      "situation": "なし"
+,
+      "explanation": "こちらで対応します。"
+      },
+      {
+      "keyPhrase": "Do you need any help?"
+,
+      "japanese": "¿Necesitan ayuda?"
+,
+      "fullQuote": "¿Necesitan ayuda?"
+,
+      "situation": "なし"
+,
+      "explanation": "お手伝いは必要ですか？"
+      },
+      {
+      "keyPhrase": "Please be careful."
+,
+      "japanese": "Tengan cuidado."
+,
+      "fullQuote": "Tengan cuidado."
+,
+      "situation": "なし"
+,
+      "explanation": "お気をつけください。"
+      },
+      {
+      "keyPhrase": "We're almost there."
+,
+      "japanese": "Ya casi hemos llegado."
+,
+      "fullQuote": "Ya casi hemos llegado."
+,
+      "situation": "なし"
+,
+      "explanation": "もうすぐ到着です。"
+      },
+      {
+      "keyPhrase": "Have a good trip!"
+,
+      "japanese": "¡Que tengan buen viaje!"
+,
+      "fullQuote": "¡Que tengan buen viaje!"
+,
+      "situation": "なし"
+,
+      "explanation": "良い旅を！"
+      }
+      ]
     }
 ];
 
