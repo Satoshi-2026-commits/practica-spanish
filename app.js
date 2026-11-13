@@ -3440,6 +3440,8 @@ let currentIndex = 0;
 let pointerStartX = 0;
 let pointerStartY = 0;
 let isDragging = false;
+// 長押し(文字選択)をタップと誤判定しないための押下開始時刻
+let pointerDownTime = 0;
 let currentFontScale = parseFloat(localStorage.getItem(FONT_SCALE_KEY)) || 1.0;
 let orderMode = localStorage.getItem(ORDER_MODE_KEY) || "sequential"; // "sequential" | "random"
 let maskMode = localStorage.getItem(MASK_MODE_KEY) || "blank"; // "blank" | "hidden"
@@ -4093,6 +4095,7 @@ chunkCard.addEventListener("pointerdown", (event) => {
   isDragging = true;
   pointerStartX = event.clientX;
   pointerStartY = event.clientY;
+  pointerDownTime = event.timeStamp;
   chunkCard.classList.remove("snap-back");
   chunkCard.classList.add("dragging");
   if (chunkCard.setPointerCapture) {
@@ -4173,8 +4176,11 @@ chunkCard.addEventListener("pointerup", (event) => {
 
   // テキスト選択中(長タップで単語を選択した直後)は
   // タップ・スワイプ判定を無効にして、iOSの「調べる」メニューを活かす
+  // ※ iOSでは指を離した瞬間に getSelection() が空を返すことがあるため、
+  //   「押下時間が長押し(iOSの選択開始しきい値約0.5秒)以上」でもタップ扱いにしない
   const currentSelection = window.getSelection();
-  if (currentSelection && !currentSelection.isCollapsed) {
+  const isLongPress = event.timeStamp - pointerDownTime >= 500;
+  if ((currentSelection && !currentSelection.isCollapsed) || isLongPress) {
     chunkCard.style.transform = "";
     return;
   }
